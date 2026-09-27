@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	<append xpath="/quests">
+		
+		<quest id="quest_suicide_arlene">
+			<property name="name_key" value="quest_suicide"/>
+			<property name="group_name_key" value="quest_suicide"/>
+			<property name="subtitle_key" value="quest_suicide_arlene"/>
+			<property name="description_key" value="quest_suicide_arlene_desc"/>
+			<property name="offer_key" value="quest_suicide_arlene_desc"/>
+			<property name="icon" value="ui_game_symbol_near_death_trauma"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="3"/>
+			<property name="shareable" value="false"/>
+			
+			<objective type="EntityKill" id="zombieArleneIrradiationComand,zombieArleneElectricComand,zombieArleneFireComand" value="5" phase="1" />
+						
+			<requirement type="Quests.Requirements.Holding" id="meleeWpnBladeT0BoneKnife" phase="1"/>
+			
+			<reward type="Exp" value="800"/>
+			<reward type="Item" id="casinoCoin" value="1600"/>
+			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
+			<reward type="Item" id="questRewardT2BookBundle" value="1"/>
+			<reward type="SkillPoints" value="1"/>
+		</quest>
+		
+		<quest id="quest_suicide_burnt_elite">
+			<property name="name_key" value="quest_suicide"/>
+			<property name="group_name_key" value="quest_suicide"/>
+			<property name="subtitle_key" value="quest_suicide_burnt_elite"/>
+			<property name="description_key" value="quest_suicide_burnt_elite_desc"/>
+			<property name="offer_key" value="quest_suicide_burnt_elite_desc" param1="offer"/>
+			<property name="icon" value="ui_game_symbol_near_death_trauma"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="5"/>
+			<property name="shareable" value="false"/>
+			
+			<objective type="EntityKill" id="zombieBurntIrradiationElite,zombieBurntElectricElite,zombieBurntFireElite" value="5" phase="1">
+				<property name="biome_filter_type" value="OnlyBiome"/>
+				<property name="biome_filter" value="burnt_forest"/>				
+			</objective>
+			
+			<requirement type="Quests.Requirements.Holding" id="meleeWpnSpearT3SteelSpear" phase="1"/>
+			
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
+			<reward type="Item" id="questRewardT5BookBundle" value="1"/>
+			<reward type="Item" id="modTMBulletFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowShockSchematic" value="1"/>
+			<reward type="SkillPoints" value="3"/>
+		</quest>
+		
+		<quest id="quest_suicide_rancher_elite">
+			<property name="name_key" value="quest_suicide"/>
+			<property name="group_name_key" value="quest_suicide"/>
+			<property name="subtitle_key" value="quest_suicide_rancher_elite"/>
+			<property name="description_key" value="quest_suicide_rancher_elite_desc"/>
+			<property name="offer_key" value="quest_suicide_rancher_elite_desc" param1="offer"/>
+			<property name="icon" value="ui_game_symbol_near_death_trauma"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="5"/>
+			<property name="shareable" value="false"/>
+			
+			<objective type="EntityKill" id="zombieRancherIrradiation,zombieRancherElectric,zombieRancherFire" value="5" phase="1">
+				<property name="biome_filter_type" value="OnlyBiome"/>
+				<property name="biome_filter" value="desert"/>
+			</objective>
+			
+			<requirement type="Quests.Requirements.Holding" id="meleeWpnSpearT3SteelSpear" phase="1"/>
+			
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
+			<reward type="Item" id="questRewardT5BookBundle" value="1"/>
+			<reward type="Item" id="modTMBulletFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowShockSchematic" value="1"/>
+			<reward type="SkillPoints" value="3"/>
+		</quest>
+		
+		<quest id="quest_suicide_chuck_elite">
+			<property name="name_key" value="quest_suicide"/>
+			<property name="group_name_key" value="quest_suicide"/>
+			<property name="subtitle_key" value="quest_suicide_chuck_elite"/>
+			<property name="description_key" value="quest_suicide_chuck_elite_desc"/>
+			<property name="offer_key" value="quest_suicide_chuck_elite_desc" param1="offer"/>
+			<property name="icon" value="ui_game_symbol_near_death_trauma"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="5"/>
+			<property name="shareable" value="false"/>
+			
+			<objective type="EntityKill" id="zombieChuckIrradiation,zombieChuckElectric,zombieChuckFire" value="5" phase="1">
+				<property name="biome_filter_type" value="OnlyBiome"/>
+				<property name="biome_filter" value="snow"/>
+			</objective>
+			
+			<requirement type="Quests.Requirements.Holding" id="meleeWpnSpearT3SteelSpear" phase="1"/>
+			
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
+			<reward type="Item" id="questRewardT5BookBundle" value="1"/>
+			<reward type="Item" id="modTMBulletFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowShockSchematic" value="1"/>
+			<reward type="SkillPoints" value="3"/>
+		</quest>
+		
+		<quest id="quest_suicide_super_biker">
+			<property name="name_key" value="quest_suicide"/>
+			<property name="group_name_key" value="quest_suicide"/>
+			<property name="subtitle_key" value="quest_suicide_super_biker"/>
+			<property name="description_key" value="quest_suicide_super_biker_desc"/>
+			<property name="offer_key" value="quest_suicide_super_biker_desc" param1="offer"/>
+			<property name="icon" value="ui_game_symbol_near_death_trauma"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="5"/>
+			<property name="shareable" value="false"/>
+			
+			<objective type="EntityKill" id="zombieSuperBikerIrradiation,zombieSuperBikerElectric,zombieSuperBikerFire" value="5" phase="1">
+				<property name="biome_filter_type" value="OnlyBiome"/>
+				<property name="biome_filter" value="wasteland"/>
+			</objective>
+			
+			<requirement type="Quests.Requirements.Holding" id="meleeWpnSpearT3SteelSpear" phase="1"/>
+			
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
+			<reward type="Item" id="questRewardT5BookBundle" value="1"/>
+			<reward type="Item" id="modTMBulletFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowShockSchematic" value="1"/>
+			<reward type="SkillPoints" value="3"/>
+		</quest>
+		
+		<quest id="quest_suicide_super_cop">
+			<property name="name_key" value="quest_suicide"/>
+			<property name="group_name_key" value="quest_suicide"/>
+			<property name="subtitle_key" value="quest_suicide_super_cop"/>
+			<property name="description_key" value="quest_suicide_super_cop_desc"/>
+			<property name="offer_key" value="quest_suicide_super_cop_desc" param1="offer"/>
+			<property name="icon" value="ui_game_symbol_near_death_trauma"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="5"/>
+			<property name="shareable" value="false"/>
+			
+			<objective type="EntityKill" id="zombieSuperCopIrradiation,zombieSuperCopElectric,zombieSuperCopFire" value="5" phase="1">
+				<property name="biome_filter_type" value="OnlyBiome"/>
+				<property name="biome_filter" value="wasteland"/>
+			</objective>
+			
+			<requirement type="Quests.Requirements.Holding" id="meleeWpnClubT3SteelClub" phase="1"/>
+			
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
+			<reward type="Item" id="questRewardT5BookBundle" value="1"/>
+			<reward type="Item" id="resourceBluePaper" value="100"/>
+			<reward type="Item" id="modTMBulletFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowShockSchematic" value="1"/>
+			<reward type="SkillPoints" value="3"/>
+		</quest>
+		
+		<quest id="quest_suicide_tom_6k">
+			<property name="name_key" value="quest_suicide"/>
+			<property name="group_name_key" value="quest_suicide"/>
+			<property name="subtitle_key" value="quest_suicide_tom_6k"/>
+			<property name="description_key" value="quest_suicide_tom_6k_desc"/>
+			<property name="offer_key" value="quest_suicide_tom_6k_desc" param1="offer"/>
+			<property name="icon" value="ui_game_symbol_near_death_trauma"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="5"/>
+			<property name="shareable" value="false"/>
+			
+			<objective type="EntityKill" id="zombieTomClar6kIrradiation,zombieTomClar6kElectric,zombieTomClar6kFire" value="5" phase="1">
+				<property name="biome_filter_type" value="OnlyBiome"/>
+				<property name="biome_filter" value="burnt_forest"/>
+			</objective>
+			
+			<requirement type="Quests.Requirements.Holding" id="meleeWpnKnucklesT3SteelKnuckles" phase="1"/>
+			
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
+			<reward type="Item" id="questRewardT5BookBundle" value="1"/>
+			<reward type="Item" id="resourceBluePaper" value="100"/>
+			<reward type="Item" id="modTMBulletFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowShockSchematic" value="1"/>
+			<reward type="SkillPoints" value="3"/>
+		</quest>
+		
+		<quest id="quest_suicide_general">
+			<property name="name_key" value="quest_suicide"/>
+			<property name="group_name_key" value="quest_suicide"/>
+			<property name="subtitle_key" value="quest_suicide_general_elite"/>
+			<property name="description_key" value="quest_suicide_general_desc"/>
+			<property name="offer_key" value="quest_suicide_general_desc" param1="offer"/>
+			<property name="icon" value="ui_game_symbol_near_death_trauma"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="5"/>
+			<property name="shareable" value="false"/>
+			
+			<objective type="EntityKill" id="zombieDemolitionIrradiationGeneral,zombieDemolitionElectricGeneral,zombieDemolitionFireGeneral" value="5" phase="1">
+				<property name="biome_filter_type" value="OnlyBiome"/>
+				<property name="biome_filter" value="wasteland"/>
+			</objective>
+			
+			<requirement type="Quests.Requirements.Holding" id="gunExplosivesT3RocketLauncher" phase="1"/>
+			
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+			<reward type="Item" id="questRewardT1SkillMagazineBundle" value="1"/>
+			<reward type="Item" id="questRewardT5BookBundle" value="1"/>
+			<reward type="Item" id="modTMBulletFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowFireSchematic" value="1"/>
+			<reward type="Item" id="modTMArrowShockSchematic" value="1"/>
+			<reward type="SkillPoints" value="3"/>
+		</quest>
+	
+		
+	</append>
+
+</raiz>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	
+	<!-- only test -->
+
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	
+	<append xpath="/item_modifiers/item_modifier[starts-with(@name,'modTM')]"> <property name="Group" value="Mods,Moddet"/> </append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='ModTMTurbo']"> <property name="Group" value="Mods,Moddet"/> </append>
+
+
+
+	<append xpath="/item_modifiers">
+
+		
+
+	</append>
+
+	
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+		
+
+	
+</raiz>

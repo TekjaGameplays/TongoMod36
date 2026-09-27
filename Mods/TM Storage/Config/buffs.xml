@@ -1,0 +1,430 @@
+<configs>
+	<append xpath="/buffs">
+	
+		<buff name="twitch_enemyradTM">
+			<stack_type value="replace"/>
+			<duration value="100"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" target="other" action="AddBuff" buff="buffTwitchRadiationTM">
+					<requirement name="EntityTagCompare" target="other" tags="player"/>
+				</triggered_effect>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand" />
+
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand" />
+
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_radiation_left"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_radiation_right"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_radiation_left" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_radiation_right" />
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffTwitchRadiationTM" name_key="buffRadiation03Name" description_key="buffRadiation03Desc" icon="ui_game_symbol_radiation" icon_color="255,0,0" icon_blink="true">
+			<damage_type value="radiation"/>
+			<stack_type value="replace"/>
+			<duration value="10"/>
+			<update_rate value="1"/>
+
+			<effect_group>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value="3">
+					<requirement name="EntityTagCompare" tags="player"/>
+				</passive_effect>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade=".7" effect_name="Hot" />
+
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot"/>
+
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".6" fade="2"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffTwitchRadiation" />
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
+
+				<passive_effect name="HealthMaxBlockage" operation="base_add" value="10"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="twitch_enemyshockTM">
+			<stack_type value="replace"/>
+			<duration value="100"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" target="other" action="AddBuff" buff="buffTwitchShockedTM">
+					<requirement name="EntityTagCompare" target="other" tags="player"/>
+				</triggered_effect>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_left" parent_transform="LeftHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_left" parent_transform="LeftHand" />
+
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_right" parent_transform="RightHand"  />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_right" parent_transform="RightHand"  />
+
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_shock_left"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_shock_right"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_left" parent_transform="LeftHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_shock_left" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_right" parent_transform="RightHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_shock_right" />
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffTwitchShockedTM" description_key="buffShockedDesc" tooltip_key="buffShockedTooltip" icon="ui_game_symbol_electric_power" name_key="buffShockedName" icon_color="255,0,0">
+			<damage_type value="electrical"/>
+			<stack_type value="replace"/>
+			<duration value="15"/>
+			<update_rate value="1"/>
+
+			<effect_group>
+				<!-- Blinks the display -->
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffTwitchShocked"/>
+
+				<passive_effect name="HealthChangeOT" operation="base_add" value="-3">
+					<requirement name="EntityTagCompare" tags="player"/>
+				</passive_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,-.2,0">
+					<requirement name="!HasParticle" particle="p_electric_shock" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,-.2,0">
+					<requirement name="!HasParticle" particle="p_electric_shock" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="ETrapHit"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="electric_fence_impact"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="twitch_shock_slowdown"/>
+
+				<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="electric_fence_impact"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="electric_fence_impact"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffTwitchShocked" />
+
+				<passive_effect name="HealthMaxBlockage" operation="base_add" value="10"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="twitch_enemyburnTM">
+			<stack_type value="replace"/>
+			<duration value="100"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" target="other" action="AddBuff" buff="buffTwitchBurnTM">
+					<requirement name="EntityTagCompare" target="other" tags="player"/>
+				</triggered_effect>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="LeftHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="LeftHand" />
+
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_right" parent_transform="RightHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_right" parent_transform="RightHand" />
+
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_fire_left"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_fire_right"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="LeftHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_fire_left" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_right" parent_transform="RightHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_fire_right" />
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffTwitchBurnTM" name_key="buffIsOnFireName" description_key="buffIsOnFireDesc" tooltip_key="buffIsOnFireTooltip" icon="ui_game_symbol_fire" icon_color="255,0,0" icon_blink="true">
+			<damage_type value="Heat"/>
+			<stack_type value="replace"/>
+			<duration value="15"/>
+			<update_rate value="1"/>
+
+			<effect_group>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value="3">
+					<requirement name="EntityTagCompare" tags="player"/>
+				</passive_effect>
+			</effect_group>
+
+			<effect_group name="run particles, cleanup">
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".buffIsOnFireDisplay"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffTwitchBurn" />
+
+				<passive_effect name="HealthMaxBlockage" operation="base_add" value="10"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements><requirement name="!IsSDCS"/></requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,0,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,0,0" parent_transform="LOD0" shape_mesh="true"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="IsSDCS"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" parent_transform=".body" local_offset="0,0,0" shape_mesh="false"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" parent_transform=".body" local_offset="0,0,0" shape_mesh="false"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffTMScreamer" hidden="true">
+			<update_rate value="12"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="Screamerbuff0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="positionAOE" range="12" buff="buffTMScreamerS"/>
+			</effect_group>
+		</buff>
+				
+		<buff name="buffTMScreamerS" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="2"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="2" fade="1" effect_name="Blur"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity=".5" fade="1" effect_name="Radiation"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" effect_name="Drunk" fade="1"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Radiation"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Drunk" fade="1"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Blur"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Radiation"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" intensity="0" effect_name="Drunk" fade="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="Screamer" play_in_head="false">
+				<requirement name="EntityTagCompare" tags="player"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="Screamer" play_in_head="false">
+				<requirement name="EntityTagCompare" tags="player"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="twitch_enemyradTM6K">
+			<stack_type value="replace"/>
+			<duration value="100"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" target="other" action="AddBuff" buff="buffTwitchRadiationTM6k">
+					<requirement name="EntityTagCompare" target="other" tags="player"/>
+				</triggered_effect>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand" />
+
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand" />
+
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_radiation_left"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_radiation_right"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_radiation_left" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_radiation_right" />
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffTwitchRadiationTM6k" name_key="buffRadiation03Name" description_key="buffRadiation03Desc" icon="ui_game_symbol_radiation" icon_color="255,0,0" icon_blink="true">
+			<damage_type value="radiation"/>
+			<stack_type value="replace"/>
+			<duration value="10"/>
+			<update_rate value="1"/>
+
+			<effect_group>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value="3">
+					<requirement name="EntityTagCompare" tags="player"/>
+				</passive_effect>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade=".7" effect_name="Hot" />
+
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot"/>
+
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".6" fade="2"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffTwitchRadiation" />
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
+
+				<passive_effect name="HealthMaxBlockage" operation="base_add" value="10"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="tm_remove_duke"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="twitch_enemyshockTM6K">
+			<stack_type value="replace"/>
+			<duration value="100"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" target="other" action="AddBuff" buff="buffTwitchShockedTM6K">
+					<requirement name="EntityTagCompare" target="other" tags="player"/>
+				</triggered_effect>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_left" parent_transform="LeftHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_left" parent_transform="LeftHand" />
+
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_right" parent_transform="RightHand"  />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_right" parent_transform="RightHand"  />
+
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_shock_left"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_shock_right"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_left" parent_transform="LeftHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_shock_left" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_shock_right" parent_transform="RightHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_shock_right" />
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffTwitchShockedTM6K" description_key="buffShockedDesc" tooltip_key="buffShockedTooltip" icon="ui_game_symbol_electric_power" name_key="buffShockedName" icon_color="255,0,0">
+			<damage_type value="electrical"/>
+			<stack_type value="replace"/>
+			<duration value="15"/>
+			<update_rate value="1"/>
+
+			<effect_group>
+				<!-- Blinks the display -->
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffTwitchShocked"/>
+
+				<passive_effect name="HealthChangeOT" operation="base_add" value="-3">
+					<requirement name="EntityTagCompare" tags="player"/>
+				</passive_effect>
+
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,-.2,0">
+					<requirement name="!HasParticle" particle="p_electric_shock" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,-.2,0">
+					<requirement name="!HasParticle" particle="p_electric_shock" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="ETrapHit"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="RemoveParticleEffectFromEntity" particle="p_electric_shock"/>
+
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="electric_fence_impact"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="twitch_shock_slowdown"/>
+
+				<triggered_effect trigger="onSelfBuffRemove" action="FadeOutSound" sound="electric_fence_impact"/>
+				<triggered_effect trigger="onSelfLeaveGame" action="StopSound" sound="electric_fence_impact"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffTwitchShocked" />
+
+				<passive_effect name="HealthMaxBlockage" operation="base_add" value="10"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="tm_remove_duke"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="twitch_enemyburnTM6K">
+			<stack_type value="replace"/>
+			<duration value="100"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfAttackedOther" target="other" action="AddBuff" buff="buffTwitchBurnTM6K">
+					<requirement name="EntityTagCompare" target="other" tags="player"/>
+				</triggered_effect>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="LeftHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="LeftHand" />
+
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_right" parent_transform="RightHand" />
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_right" parent_transform="RightHand" />
+
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_fire_left"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_twitch_zombie_fire_right"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="LeftHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_fire_left" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_right" parent_transform="RightHand">
+					<requirement name="!HasParticle" particle="p_twitch_zombie_fire_right" />
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		
+		<buff name="buffTwitchBurnTM6K" name_key="buffIsOnFireName" description_key="buffIsOnFireDesc" tooltip_key="buffIsOnFireTooltip" icon="ui_game_symbol_fire" icon_color="255,0,0" icon_blink="true">
+			<damage_type value="Heat"/>
+			<stack_type value="replace"/>
+			<duration value="15"/>
+			<update_rate value="1"/>
+
+			<effect_group>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value="3">
+					<requirement name="EntityTagCompare" tags="player"/>
+				</passive_effect>
+			</effect_group>
+
+			<effect_group name="run particles, cleanup">
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".buffIsOnFireDisplay"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveParticleEffectFromEntity" particle="p_onFire"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffTwitchBurn" />
+
+				<passive_effect name="HealthMaxBlockage" operation="base_add" value="10"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="tm_remove_duke"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements><requirement name="!IsSDCS"/></requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,0,0" parent_transform="LOD0" shape_mesh="true"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" local_offset="0,0,0" parent_transform="LOD0" shape_mesh="true"/>
+			</effect_group>
+			
+			<effect_group>
+				<requirements>
+					<requirement name="IsSDCS"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_onFire" parent_transform=".body" local_offset="0,0,0" shape_mesh="false"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AttachParticleEffectToEntity" particle="p_onFire" parent_transform=".body" local_offset="0,0,0" shape_mesh="false"/>
+			</effect_group>
+		</buff>
+		
+	</append>
+</configs>

@@ -1,0 +1,29 @@
+<config>
+
+	<append xpath="/Sounds" >
+		
+		<SoundDataNode name="Siren">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Interact.prefab"/>
+			<Noise ID="2" noise="11" time="1" muffled_when_crouched="0.5"/>
+			<AudioClip ClipName="#@modfolder:Resources/SoundsST.unity3d?Siren"/>
+			<LocalCrouchVolumeScale name="0.5"/>
+			<CrouchNoiseScale name="0.5"/>
+			<NoiseScale name="1"/>
+			<MaxVoices name="10"/>
+			<MaxRepeatRate name="0.01"/>
+		</SoundDataNode>
+		
+		<SoundDataNode name="Creepy">
+			<AudioSource name="@:Sounds/Prefabs/AudioSource_Interact.prefab"/>
+			<Noise ID="2" noise="11" time="1" muffled_when_crouched="0.5"/>
+			<AudioClip ClipName="#@modfolder:Resources/SoundsST.unity3d?Creepy"/>
+			<LocalCrouchVolumeScale name="0.5"/>
+			<CrouchNoiseScale name="0.5"/>
+			<NoiseScale name="1"/>
+			<MaxVoices name="10"/>
+			<MaxRepeatRate name="0.01"/>
+		</SoundDataNode>
+
+	</append>
+
+</config>

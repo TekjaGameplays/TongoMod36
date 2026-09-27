@@ -1,0 +1,312 @@
+<configs>
+
+	<!-- vehicleBicycle storage -->
+	<set xpath="/lootcontainers/lootcontainer[@name='vehicleBicycle']/@size">10,3</set>
+	
+	<!-- vehicleMinibike storage -->
+	<set xpath="/lootcontainers/lootcontainer[@name='vehicleMinibike']/@size">10,5</set>
+	
+	<!-- vehicleMotorcycle storage -->
+	<set xpath="/lootcontainers/lootcontainer[@name='vehicleMotorcycle']/@size">10,6</set>
+
+	<!-- vehicle4x4Truck storage -->
+	<set xpath="/lootcontainers/lootcontainer[@name='vehicle4x4Truck']/@size">10,11</set>
+
+	<!-- vehicleGyrocopter storage -->
+	<set xpath="/lootcontainers/lootcontainer[@name='vehicleGyrocopter']/@size">10,7</set>
+	
+	<!-- JunkDrone storage -->
+	<set xpath="/lootcontainers/lootcontainer[@name='roboticDrone']/@size">8,4</set>
+	
+	<set xpath="/lootcontainers/lootgroup[@name='groupArmorParts01']/item[@name='resourceCloth']/@count">10,20</set>
+	
+	<set xpath="/lootcontainers/lootcontainer[@name='atmLoot']/item[@name='oldCash']/@count">1000,5000</set>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestHelmetLightSchematic']">
+		<item name="modTMHelmetLightSchematic" loot_prob_template="veryLow"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='schematicsModsAndGeneralT1']">
+		<item name="modTMHelmetLightSchematic" loot_prob_template="veryLow"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='modArmorT1']">
+		<item name="modTMHelmetLight" loot_prob_template="veryLow"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='prefabQuestLoot']">
+		<item name="modTMHelmetLight" loot_prob_template="veryLow"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestMiningHelmet']">
+		<item name="modTMHelmetLight" loot_prob_template="veryLow"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackReg04']">
+		<item name="modTMHelmetLight" loot_prob_template="veryLow"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackStrong04']">
+		<item name="modTMHelmetLight" loot_prob_template="veryLow"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackBoss04']">
+		<item name="modTMHelmetLight" loot_prob_template="veryLow"/>
+	</append>
+	
+	
+	<append xpath="/lootcontainers/lootgroup[@name='vehicleModSchematics01']">
+		<item name="modTMVehicleOffRoadHeadlightsHDSchematic"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='vehicleMods']">
+		<item name="modTMVehicleOffRoadHeadlightsHD" loot_prob_template="ProbT1Cap"/>
+	</append>
+	
+
+	<append xpath="/lootcontainers">
+
+		<lootgroup name="grouppaDuctGleSmall">
+			<item name="resourceDuctTape" count="1"/>
+			<item name="resourceGlue" count="1"/>
+		</lootgroup>
+		
+		<lootgroup name="grouppaDuctGleMedium">
+			<item name="resourceDuctTape" count="2"/>
+			<item name="resourceGlue" count="2"/>
+		</lootgroup>
+		
+		<lootgroup name="grouppaDuctGleLarge">
+			<item name="resourceDuctTape" count="4"/>
+			<item name="resourceGlue" count="4"/>
+		</lootgroup>
+	
+		<lootgroup name="grouppalletPolymerSmall" count="all">
+			<item name="resourceScrapPolymers" count="1,5"/>
+			<item name="resourcePaper" count="1,5"/>
+			<item group="grouppaDuctGleSmall" count="0,1" loot_prob_template="veryLowDelayed"/>
+		</lootgroup>
+		
+		<lootgroup name="grouppalletPolymerMedium" count="all">
+			<item name="resourceScrapPolymers" count="2,5"/>
+			<item name="resourcePaper" count="2,5"/>
+			<item group="grouppaDuctGleMedium" count="0,1" loot_prob_template="veryLowDelayed"/>
+		</lootgroup>
+		
+		<lootgroup name="grouppalletPolymerLarge" count="all">
+			<item name="resourceScrapPolymers" count="3,5"/>
+			<item name="resourcePaper" count="3,5"/>
+			<item group="grouppaDuctGleLarge" count="0,1" loot_prob_template="veryLowDelayed"/>
+		</lootgroup>
+		
+		<lootgroup name="booksAllScaledTM">
+			<item group="perkBooks" loot_prob_template="low"/>
+			<item group="schematicsModsAndGeneralCommon" loot_prob_template="low"/>
+			<item group="schematicsVehiclesCommon" loot_prob_template="low"/>
+			<item group="skillMagazines" loot_prob_template="low"/>
+		</lootgroup>
+		
+		<lootgroup name="grouppalletCardboard" count="all">
+			<item name="resourcePaper" count="30"/>
+			<item group="booksAllScaled" loot_prob_template="Low"/>
+		</lootgroup>
+		
+		<lootgroup name="groupAcidBarrel" count="all">
+			<item name="resourceAcid" count="1" loot_prob_template="low"/>
+			<item name="ammoGasCan" count="10,50"/>
+		</lootgroup>
+		
+		<lootgroup name="groupTMwineBarrel" count="all">
+			<item name="drinkJarBeer" count="1,3"/>
+			<item name="resourceCropHopsFlower" count="1,5"/>
+		</lootgroup>
+		
+		<lootgroup name="groupPalletTarpBase" count="all">
+			<item name="resourceRockSmall" count="50,100"/>
+			<item name="resourceCrushedSand" count="50,100"/>
+			<item name="resourceClayLump" count="50,100"/>
+			<item name="resourceCobblestones" count="50,100"/>
+			<item name="resourceWood" count="50,100"/>
+		</lootgroup>
+		
+		<lootgroup name="groupModTongo" count="1">
+			<item name="modTMBulletFire" loot_prob_template="veryLowDelayed"/>
+			<item name="modTMArrowFire" loot_prob_template="veryLowDelayed"/>
+			<item name="modTMArrowShock" loot_prob_template="veryLowDelayed"/>
+			<item name="modTMGunMeleeNiCdBattery" loot_prob_template="veryLowDelayed"/>
+		</lootgroup>
+		
+		<lootgroup name="groupModTongoSchematic" count="1">
+			<item name="modTMGunMeleeNiCdBatterySchematic" loot_prob_template="veryLowDelayed"/>
+			<item name="modTMBulletFireSchematic" loot_prob_template="veryLowDelayed"/>
+			<item name="modTMArrowFireSchematic" loot_prob_template="veryLowDelayed"/>
+			<item name="modTMArrowShockSchematic" loot_prob_template="veryLowDelayed"/>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackBossTongo" count="all">
+			<item group="groupAmmoLarge" count="2"/>
+			<item group="groupZpackBoss02" count="2"/>
+			<item group="groupZpackBoss03" count="1"/>
+			<item group="groupZpackBoss04" loot_prob_template="med" force_prob="true"/>
+			<item group="groupAmmoLarge" count="3"/>
+			<item group="groupZpackBoss02" count="2"/>
+			<item group="groupZpackBoss03" count="1"/>
+			<item group="groupZpackBoss04" loot_prob_template="med" force_prob="true"/>
+			<!--<item name="resourceBluePaper" count="30,50" loot_prob_template="med"/>-->
+			
+			<item group="groupModTongo" count="0,1" loot_prob_template="veryLow" force_prob="true"/>
+			<item group="groupModTongoSchematic" count="0,1" loot_prob_template="veryLow" force_prob="true"/>
+			
+			<conditional evaluator="client">
+				<if cond="event('christmas')">
+					<item group="groupHolidayGear" loot_prob_template="low" force_prob="true"/>
+				</if>
+			</conditional>
+			<item group="booksAllScaled" count="1" buffs="buffPerkBookwormSuccess">
+				<requirement class="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="@$perkBookwormChance"/>
+			</item>
+		</lootgroup>
+		
+		<lootcontainer name="palletCardboard" count="1" size="8,2" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="grouppalletCardboard"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMStorageXL" count="0" size="10,10" sound_open="UseActions/crate_steel_open" sound_close="UseActions/crate_steel_close" loot_quality_template="qualBaseTemplate">
+			<item name="cobweb" count="0"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMStorageDBXL" count="0" size="10,10" sound_open="UseActions/crate_steel_open" sound_close="UseActions/crate_steel_close" loot_quality_template="qualBaseTemplate">
+			<item name="cobweb" count="0"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMammoPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+			<item group="groupAmmoPileSmall"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMammoPileLarge" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+			<item group="groupAmmoPileLarge"/>
+		</lootcontainer>
+		
+		<lootcontainer name="PolymerBarrel" count="1" size="6,3" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate">>
+			<item name="drinkJarRiverWater" count="1,5"/>
+		</lootcontainer>
+		
+		<lootcontainer name="AcidBarrel" count="1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" loot_quality_template="qualBaseTemplate">
+			<item name="resourceAcid" count="0,1"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMWineBottle" count="1" size="6,1" sound_open="WineBottleOpen" sound_close="WineBottleClose" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item name="drinkJarRiverWater" count="1"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMcntToaster" count="1" size="6,1" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate">
+			<item name="foodShamSandwich" count="0,2"/>
+		</lootcontainer>
+		
+		<lootcontainer name="iceMachine" count="1,3" size="4,1" destroy_on_close="false" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualPlus1Template">
+			<item name="resourceSnowBall" count="10,50"/>
+			<item name="drinkJarRiverWater" count="1,5"/>
+		</lootcontainer>
+		
+		<lootcontainer name="palletPolymerSmall" count="1,2" size="6,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="grouppalletPolymerSmall"/>
+		</lootcontainer>
+		
+		<lootcontainer name="palletPolymerMedium" count="1,2" size="6,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="grouppalletPolymerMedium"/>
+		</lootcontainer>
+		
+		<lootcontainer name="palletPolymerLarge" count="1,2" size="6,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" destroy_on_close="true">
+			<item group="grouppalletPolymerLarge"/>
+		</lootcontainer>
+		
+		<lootcontainer name="WutilitySink" count="0,2" size="2,2" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualPlus1Template">
+			<item name="drinkJarBoiledWater" count="1,2" loot_prob_template="veryLow"/>
+			<item name="drinkJarRiverWater" count="1,2" loot_prob_template="low"/>
+			<item name="resourceMetalPipe" count="1,2" loot_prob_template="low"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMwineBarrel" count="1" size="6,1" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate">
+			<!--<item group="groupTMwineBarrel"/>-->
+			<item name="drinkJarBeer" count="1,2"/>
+			<item name="resourceCropHopsFlower" count="1,5"/>
+			<item name="drinkJarBoiledWater" count="1,2"/>
+			<item name="drinkJarRiverWater" count="1,2"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMparkingMeter" count="0,1" size="6,1" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate">
+			<item name="casinoCoin" count="500,1000" loot_prob_template="veryLow"/>
+			<item name="oldCash" count="500,10000" loot_prob_template="veryLow"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMsolarbank" count="0,2" size="2,2" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualPlus1Template">
+			<item  name="resourceElectricParts" count="1,3" loot_prob_template="high"/>
+			<item  name="solarCell" count="1" loot_prob_template="verylow"/>
+		</lootcontainer>
+		
+		<lootcontainer name="gasBarrelAcid" count="1,2" size="2,2" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" loot_quality_template="qualBaseTemplate">
+			<item name="ammoGasCan" count="10,50"/>
+			<item name="resourceAcid" count="1" loot_prob_template="verylow"/>
+		</lootcontainer>
+		
+		<lootcontainer name="gasBarrelAcidLarge" count="1,2" size="2,2" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" loot_quality_template="qualBaseTemplate">
+			<item name="ammoGasCan" count="50,100"/>
+			<item name="resourceAcid" count="2,4" loot_prob_template="verylow"/>
+		</lootcontainer>
+		
+		<lootcontainer name="palletTarpBase" size="3,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate">
+			<item group="groupPalletTarpBase"/>
+		</lootcontainer>
+		
+		<lootcontainer name="palletBagCowFeedBase" count="3" size="3,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate">
+			<item name="plantedAloe1" count="10"/>
+			<item name="plantedBlueberry1" count="10"/>
+			<item name="plantedChrysanthemum1" count="10"/>
+			<item name="plantedCoffee1" count="10"/>
+			<item name="plantedCorn1" count="10"/>
+			<item name="plantedCotton1" count="10"/>
+			<item name="plantedGoldenrod1" count="10"/>
+			<item name="plantedGraceCorn1" count="10"/>
+			<item name="plantedHop1" count="10"/>
+			<item name="plantedMushroom1" count="10"/>
+			<item name="plantedPotato1" count="10"/>
+			<item name="plantedPumpkin1" count="10"/>
+			<item name="plantedYucca1" count="10"/>
+			<item name="treePlantedMountainPine1m" count="10"/>
+			<item name="treePlantedOak1m" count="10"/>
+			<item name="questRewardFarmT1Bundle" count="10"/>
+			<!--<item name="resourceCompost" count="10"/>-->
+		</lootcontainer>
+		
+		<lootcontainer name="zTongo" count="1" size="6,4" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+			<item group="groupZpackBossTongo"/>
+		</lootcontainer>
+		
+	</append>
+	
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupAirDropT1Bundles']">
+		
+		<lootgroup name="groupQuestSuicide" count="1">
+			<item name="questsuicidearlene"/>
+			<item name="questsuicideburntelite"/>
+			<item name="questsuiciderancherelite"/>
+			<item name="questsuicidechuckelite"/>
+			<item name="questsuicidesuperkiker"/>
+			<item name="questsuicidesupercop"/>
+			<item name="questsuicidetom6k"/>
+			<item name="questsuicidegeneral"/>
+		</lootgroup>
+		
+	</insertBefore>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupAirDrop']">
+		<item group="groupQuestSuicide" count="1"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='BloodmoonHordeRewardGroupTM']">
+		<item group="groupQuestSuicide" count="1"/>
+		<!--<item name="resourceBluePaper" count="10,20"/>-->
+	</append>
+	
+
+</configs>

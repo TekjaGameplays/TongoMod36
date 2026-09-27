@@ -1,0 +1,30 @@
+<raiz>
+
+	<!-- NEW TIRE TO GET WHEEL AFTER DESTROY (FROM LEGACY VERSION) -->
+	<set xpath="/blocks/block[@name='decoCarTireSmallFlat']/drop[@name='resourceScrapPolymers']/@count">4,16</set>
+	<set xpath="/blocks/block[@name='decoCarTireFlat']/drop[@name='resourceScrapPolymers']/@count">6,20</set>
+	<set xpath="/blocks/block[@name='decoCarTireFlat']/drop[@name='resourceScrapPolymers']/@count">16,40</set>
+	<set xpath="/blocks/block[@name='decoCarTireFlat']/drop[@name='resourceScrapPolymers']/@count">6,20</set>
+
+	<append xpath="/blocks/block[@name='decoCarTireSmallFlat']">
+		<drop event="Destroy" name="vehicleWheels" count="1" prob="0.10" tag="oreWoodHarvest"/><!-- 0.10 <> 0.03 -->
+	</append>
+
+	<append xpath="/blocks/block[@name='decoCarTireFlat']">
+		<drop event="Destroy" name="vehicleWheels" count="1" prob="0.15" tag="oreWoodHarvest"/><!-- 0.20 <> 0.05 -->
+	</append>
+
+	<append xpath="/blocks/block[@name='decoCarTirePile']">
+		<drop event="Destroy" name="vehicleWheels" count="1" prob="0.15" tag="oreWoodHarvest"/><!-- 0.30 <> 0.10 -->
+	</append>
+
+	<append xpath="/blocks/block[@name='decoCarTirePile']">
+		<drop event="Destroy" name="vehicleWheels" count="1" prob="0.15" tag="oreWoodHarvest"/><!-- 0.20 <> 0.05 -->
+	</append>
+
+	<append xpath="/blocks">
+
+		
+	</append>
+	
+</raiz>

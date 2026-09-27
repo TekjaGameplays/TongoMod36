@@ -1,0 +1,30 @@
+<configs>
+	
+	<append xpath="/gameevents">
+	
+		<!-- spawn_crate_template -->		
+		<action_sequence name="AS_Bloodmoon_Horde_Reward">
+			<action class="AddItems">
+				<property name="added_items" value="cntShippingCrateBloodmoonHorde"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+			<action class="RemoveBuff">
+				<property name="phase" value="1" />
+				<property name="buff_name" value="buffARGiveHordeNightReward"/>
+			</action>
+			<action class="PlaySound">
+				<property name="sound" value="twitch_good_spawn" />
+				<property name="phase" value="1" />
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="AS_Horde_Night">
+			<action class="AddBuff">
+				<property name="phase" value="1" />
+				<property name="buff_name" value="buffARIsHordeNight" />
+			</action>
+		</action_sequence>
+		
+	</append>
+
+</configs>

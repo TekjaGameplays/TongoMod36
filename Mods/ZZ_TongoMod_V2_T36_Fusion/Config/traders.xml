@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	
+	<!-- NOT USED THIS TIME -->
+
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<!-- ALWAYS IN TRADERS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+		<item name="questLetterHardTM" count="1"/>
+	</append>
+
+	
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+		
+
+	
+</raiz>

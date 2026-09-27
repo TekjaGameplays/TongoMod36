@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	<!-- REMOVE FORGOTEN ELIXIR FROM TRADERS -->
+	<!--<remove xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']/item[@name='drinkJarGrandpasForgettingElixir']"/>-->
+	
+	<!-- REMOVE MAGAZINES FROM TRADERS -->
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='harvestingToolsSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='repairToolsSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='salvageToolsSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='knucklesSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='bladesSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='clubsSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='sledgehammersSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='spearsSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='bowsSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='handgunsSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='shotgunsSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='riflesSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='machineGunsSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='explosivesSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='roboticsSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='armorSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='medicalSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='foodSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='seedSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='electricianSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='trapsSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='workstationSkillMagazine']"/>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='skillMagazines']/item[@name='vehiclesSkillMagazine']"/>
+
+	<!-- REMOVE VANILLA YUCCA JUICE FROM TRADERS -->
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='groupDrinks']/item[@name='drinkJarYuccaJuice']"/>
+
+	<!-- INCLUDE ICE COFFEE IN TRADERS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupDrinks']">
+		<item name="drinkJarIceCoffeTM"/>
+	</append>
+
+	<!-- INCLUDE YUCCA JUICE CLASSIC IN TRADERS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupDrinks']">
+		<item name="drinkJarYuccaClassicTM"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
+		<item name="drinkJarYuccaClassicTMSchematic"/>
+	</append>
+
+	<!-- INCLUDE ROMULAN BEER IN TRADERS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupDrinksSpecial']">
+		<item name="drinkRomulanBeerTM"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
+		<item name="drinkRomulanBeerTMSchematic"/>
+	</append>
+
+	<!-- INCLUDE 7 DAYS CANDY IN TRADERS (and new candy) -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='foodCandy']">
+		<item name="foodCandy7DaysTM"/>
+		
+		<item name="foodCandyMinerBoostTM"/>
+		<item name="foodCandyDisassembleBoostTM"/>
+		<item name="foodCandyClubBoostTM"/>
+		<item name="foodCandySledgehammerBoostTM"/>
+		<item name="foodCandyKnifeBoostTM"/>
+		<item name="foodCandySpearBoostTM"/>
+		<item name="foodCandyPunchBoostTM"/>
+		<item name="foodCandyStunBoostTM"/>
+		<item name="foodCandyArcheryBoostTM"/>
+		<item name="foodCandyPistolBoostTM"/>
+		<item name="foodCandyShotgunBoostTM"/>
+		<item name="foodCandyGatlingBoostTM"/>
+		<item name="foodCandyRifleBoostTM"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
+		<item name="foodCandy7DaysTMSchematic"/>
+
+		<item name="foodCandyMinerBoostTMSchematic"/>
+		<item name="foodCandyDisassembleBoostTMSchematic"/>
+		<item name="foodCandyClubBoostTMSchematic"/>
+		<item name="foodCandySledgehammerBoostTMSchematic"/>
+		<item name="foodCandyKnifeBoostTMSchematic"/>
+		<item name="foodCandySpearBoostTMSchematic"/>
+		<item name="foodCandyPunchBoostTMSchematic"/>
+		<item name="foodCandyStunBoostTMSchematic"/>
+		<item name="foodCandyArcheryBoostTMSchematic"/>
+		<item name="foodCandyPistolBoostTMSchematic"/>
+		<item name="foodCandyShotgunBoostTMSchematic"/>
+		<item name="foodCandyGatlingBoostTMSchematic"/>
+		<item name="foodCandyRifleBoostTMSchematic"/>
+	</append>
+
+	<!-- INCLUDE OMELET IN TRADERS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='preparedFood']">
+		<item name="foodOmeletTM"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
+		<item name="foodOmeletTMSchematic"/>
+	</append>
+
+	<!-- INCLUDE OMELET POTATO IN TRADERS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='preparedFood']">
+		<item name="foodOmeletPotatoTM"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
+		<item name="foodOmeletPotatoTMSchematic"/>
+	</append>
+
+	<!-- INCLUDE TONGOMOD ITEMS TO TRADER -->
+
+	<!-- MODS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
+		<item name="modGunTriggerGroupOneTMSchematic" count="1"/>
+		<item name="modGunAttachmentRadTMSchematic" count="1"/>
+		<item name="modPowerBurnForestTMSchematic" count="1"/>
+		<item name="modPowerDesertTMSchematic" count="1"/>
+		<item name="modPowerSnowTMSchematic" count="1"/>
+		<item name="modPowerWastelandTMSchematic" count="1"/>
+		<item name="modGunGrapheneMagazineExtenderTMSchematic" count="1"/>
+		
+		<item name="modDefenseBurnForestTMSchematic" count="1"/>
+		<item name="modDefenseDesertTMSchematic" count="1"/>
+		<item name="modDefenseSnowTMSchematic" count="1"/>
+		<item name="modDefenseWastelandTMSchematic" count="1"/>
+		
+		<item name="modSniperwolfBraceletTMSchematic" count="1"/>
+		<item name="modRagnarBraceletTMSchematic" count="1"/>
+		<item name="modChopperBraceletTMSchematic" count="1"/>
+		<item name="modJordanBraceletTMSchematic" count="1"/>
+		<item name="modUchihaBraceletTMSchematic" count="1"/>
+		<!--<item name="modSonicShoesTMSchematic" count="1"/>-->
+		<item name="modSportBackpackTMSchematic" count="1"/>
+		<!--<item name="modMilitaryBackpackTMSchematic" count="1"/>-->
+		<!--<item name="modArmorPlatingGrapheneTMSchematic" count="1"/>-->
+	</append>
+
+	<!-- RARE BOOKS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']">
+		<!--<item name="modSilverBraceletTMSchematic" count="1" prob="0.75"/>-->
+		<!--<item name="modGoldBraceletTMSchematic" count="1" prob="0.50"/>-->
+		<!--<item name="modRubyBraceletTMSchematic" count="1" prob="0.15"/>-->
+		<!--<item name="modObserverHatTMSchematic" count="1" prob="0.25"/>-->
+		<!--<item name="modMilitaryTacticalBackpackTMSchematic" count="1" prob="0.50"/>-->
+		<!--<item name="modArmorPlatingGrapheneTMSchematic" count="1" prob="0.70"/>-->
+
+		<!--<item name="workingAutominerADVSchematic" count="1" prob="0.10"/>-->
+		<item name="meleeToolMegaBreakerTMSchematic" count="1" prob="0.30"/>
+		<item name="medicalFirstAidBandageTMSchematic" count="1" prob="0.30"/>
+		<item name="medicalFirstAidKitTMSchematic" count="1" prob="0.30"/>
+		<item name="meleeWpnMegaCutterTMSchematic" count="1" prob="0.30" />
+
+		<item name="toolBeakerTMSchematic" count="1" prob="0.60"/>
+		<item name="medicalAlcoholTMSchematic" count="1" prob="0.80"/>
+		<item name="resourceBiomassTMSchematic" count="1" prob="0.75"/>
+		<item name="resourceBioFuelTMSchematic" count="1" prob="0.50"/>
+		<item name="resourceCompostSchematic" count="1" prob="0.80"/>
+		<item name="resourceGrapheneTMSchematic" count="1" prob="0.10"/>
+
+		<item name="workingLibrosSchematic" count="1" prob="0.70"/>
+		<item name="workingDysmantleSchematic" count="1" prob="0.60"/>
+		<item name="workingSemillasSchematic" count="1" prob="0.80"/>
+		<item name="workingOvenSchematic" count="1" prob="0.80"/>
+		<item name="workingOchemiSchematic" count="1" prob="0.60"/>
+		<item name="workingAutominerT0Schematic" count="1" prob="0.80"/>
+
+		<item name="drinkJarYuccaClassicTMSchematic" ccount="1" prob="0.85"/>
+
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareMedicine']">
+		<item name="medicalFirstAidBandageTM" count="1,4" prob="0.75"/>
+		<item name="medicalFirstAidKitTM" count="1,2" prob="0.25"/>
+	</append>
+
+	<!-- WEAPONS T2 -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupRangedAll']">
+		<item name="gunBowRepeatCrossbowTM" count="1" prob="0.50" quality="1,6"/>
+		<item name="gunHandgunMillionaireTM" count="1" prob="0.50" quality="1,6"/>
+	</append>
+
+	<!-- WEAPONS T2 -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupMeleeAll']">
+		<item name="meleeWpnSpikedClub" count="1" prob="0.25" quality="1,6"/>
+		<item name="meleeWpnGrapheneSledgehammerTM" count="1" prob="0.25" quality="1,6"/>
+		<item name="meleeWpnGrapheneSpearTM" count="1" prob="0.25" quality="1,6"/>
+		<item name="meleeWpnGrapheneMacheteTM" count="1" prob="0.25" quality="1,6"/>
+		<item name="meleeWpnGrapheneKnucklesTM" count="1" prob="0.25" quality="1,6"/>
+	</append>
+
+	<!-- WEAPONS T3 -->
+
+
+
+	<!-- FOOD SUPLIES -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='foodSupplies']">
+		<item name="foodSugarTM" count="1,4"/>
+		<item name="foodCookingOilTM" count="1,4"/>
+		<item name="foodPastaBaseTM" count="1,4"/>
+		<item name="drinkJarYuccaClassicTM" count="1,2"/>
+		<item name="drinkJarIceCoffeTM" count="2,4"/>
+	</append>
+
+	<!-- WEAPONS T2 -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupRangedAll']">
+		<item name="gunBowRepeatCrossbowTM" count="1" prob="0.50" quality="1,6"/>
+		<item name="gunHandgunMillionaireTM" count="1" prob="0.50" quality="1,6"/>
+	</append>
+
+	<!-- WEAPONS T2 -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupMeleeAll']">
+		<item name="meleeWpnSpikedClub" count="1" prob="0.25" quality="1,6"/>
+		<item name="meleeWpnGrapheneSledgehammerTM" count="1" prob="0.25" quality="1,6"/>
+		<item name="meleeWpnGrapheneSpearTM" count="1" prob="0.25" quality="1,6"/>
+		<item name="meleeWpnGrapheneMacheteTM" count="1" prob="0.25" quality="1,6"/>
+		<item name="meleeWpnGrapheneKnucklesTM" count="1" prob="0.25" quality="1,6"/>
+	</append>
+
+	<!-- WEAPONS T3 -->
+
+
+
+	<!-- FOOD SUPLIES -->
+	<!--<append xpath="/traders/trader_item_groups/trader_item_group[@name='foodSupplies']">
+		<item name="foodSugarTM" count="1,4"/>
+		<item name="foodCookingOilTM" count="1,4"/>
+		<item name="foodPastaBaseTM" count="1,4"/>
+		<item name="drinkJarYuccaClassicTM" count="1,2"/>
+	</append>-->
+
+	<!-- PREPARED FOOD -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='preparedFood']">
+		<item name="foodPastaMushroomsTM" count="1,2"/>
+		<item name="foodStewBeefTM" count="1,2"/>
+		<item name="foodStewLambTM" count="1,2"/>
+		<item name="foodStewChickenTM" count="1,2"/>
+		<item name="foodStewChiliTM" count="1,2"/>
+		<item name="foodSoupMisoTM" count="1,2"/>
+		<item name="foodSoupStockTM" count="1,2"/>
+		<item name="foodSoupChickenTM" count="1,2"/>
+		<item name="foodPearsCakeTM" count="1,2"/>
+		<item name="foodPeasHamTM" count="1,2"/>
+		<item name="foodSalmonTacoTM" count="1,2"/>
+		<item name="foodTunaBreadTM" count="1,2"/>
+		<item name="foodPastaYuccaTM" count="1,2"/>
+		<item name="foodPastaPotatoTM" count="1,2"/>
+		<item name="foodPastaPumpkinTM" count="1,2"/>
+		<item name="foodSteakPotatoTM" count="1,2"/>
+		<item name="drinkJarYuccaClassicTM" count="1,2"/>
+		<item name="drinkJarIceCoffeTM" count="2,4"/>
+
+		<item name="foodCandyMinerBoostTM" count="1"/>
+		<item name="foodCandyDisassembleBoostTM" count="1"/>
+		<item name="foodCandyClubBoostTM" count="1"/>
+		<item name="foodCandySledgehammerBoostTM" count="1"/>
+		<item name="foodCandyKnifeBoostTM" count="1"/>
+		<item name="foodCandySpearBoostTM" count="1"/>
+		<item name="foodCandyPunchBoostTM" count="1"/>
+		<item name="foodCandyStunBoostTM" count="1"/>
+		<item name="foodCandyArcheryBoostTM" count="1"/>
+		<item name="foodCandyPistolBoostTM" count="1"/>
+		<item name="foodCandyShotgunBoostTM" count="1"/>
+		<item name="foodCandyGatlingBoostTM" count="1"/>
+		<item name="foodCandyRifleBoostTM" count="1"/>
+	</append>
+
+
+	<!-- GENERAL RESOURCES -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']">
+		<item name="resourceBluePaper" count="10,50"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']">
+		<item name="resourceCompost" count="1,10"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']">
+		<item name="resourcePellets" count="1,30"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']">
+		<item name="resourceGraphite" count="100,500"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='generalResources']">
+		<item name="resourceGrapheneTM" count="1,5"/>
+	</append>
+
+
+	<!-- TOOLS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='tools']">
+		<item name="meleeToolMegaBreakerTM" count="1" prob="0.4"/>
+		<item name="meleeWpnMegaCutterTM" count="1" prob="0.4" />
+	</append>
+
+	<!-- RARE TOOLS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']">
+		<item name="meleeToolMegaAugerTM" count="1" prob="0.20" quality="1,6"/>
+		<item name="meleeToolMegaChainsawTM" count="1" prob="0.20" quality="1,6"/>
+		<item name="meleeToolRepairMegaNailgunTM" count="1" prob="0.40" />
+		<item name="meleeToolSalvageMegaImpactDriverTM" count="1" prob="0.20" quality="1,6"/>
+	</append>
+
+	<!--<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']">
+		<item name="workingAutominerADV" count="1" prob="0.15"/>
+	</append>-->
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']">
+		<item name="itemToolKryptonite" count="1" prob="0.80"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']">
+		<item name="itemToolKryptonite" count="1" prob="0.80"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']">
+		<item name="itemToolFluxCapacitor" count="1" prob="0.80"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']">
+		<item name="itemToolLonginusSpear" count="1" prob="0.80"/>
+	</append>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareTools']">
+		<item name="itemToolSonicScrewdiver" count="1" prob="0.80"/>
+	</append>
+
+	<!-- MODS (TONGOMOD T1 ~ T2) -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorMods']">
+		<item name="modGunTriggerGroupOneTM"/>
+		<item name="modGunAttachmentRadTM"/>
+		<item name="modPowerBurnForestTM"/>
+		<item name="modPowerDesertTM"/>
+		<item name="modPowerSnowTM"/>
+		<item name="modPowerWastelandTM"/>
+		
+		<item name="modDefenseBurnForestTM"/>
+		<item name="modDefenseDesertTM"/>
+		<item name="modDefenseSnowTM"/>
+		<item name="modDefenseWastelandTM"/>
+		
+		<item name="modSniperwolfBraceletTM"/>
+		<item name="modRagnarBraceletTM"/>
+		<item name="modChopperBraceletTM"/>
+		<item name="modJordanBraceletTM"/>
+		<item name="modUchihaBraceletTM"/>
+		<item name="modSportBackpackTM"/>
+		<item name="modSilverBraceletTM"/>
+		<item name="modMilitaryBackpackTM"/>
+		<item name="modSonicShoesTM"/>
+		<item name="modArmorPlatingGrapheneTM"/>
+	</append>
+
+	<!-- ARMOR (LIGHT) -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorLight']">
+		<item name="armorClothHatGrapheneTM" mods="modArmorHelmetLight" mod_chance="1" quality="1,6"/>
+		<item name="armorClothJacketGrapheneTM" quality="1,6"/>
+		<item name="armorClothGlovesGrapheneTM" quality="1,6"/>
+		<item name="armorClothBootsGrapheneTM" quality="1,6"/>
+	</append>
+
+	<!-- ARMOR (HEAVY) -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorHeavy']">
+		<item name="armorGrapheneHelmetTM" mods="modArmorHelmetLight" mod_chance="1" quality="1,6"/>
+		<item name="armorGrapheneChestTM" quality="1,6"/>
+		<item name="armorGrapheneGlovesTM" quality="1,6"/>
+		<item name="armorGrapheneBootsTM" quality="1,6"/>
+	</append>
+
+	<!-- ALWAYS IN TRADERS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+		<item name="resourceBluePaper" count="10,50"/>
+		<item name="resourceGrapheneTM" count="3,20"/>
+		<item name="resourceAcid" count="1,5"/>
+		<item name="questLetterTM" count="1"/>
+		<item name="resourceFeather" count="200,500"/>
+		<item name="resourcePaper" count="200,500"/>
+	</append>
+
+
+	
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	
+	<!-- prueba de la maquina espendedora de clase (colocar aqui nuevas tablas de loot) -->
+
+	<append xpath="/traders/trader_item_groups">
+
+		<trader_item_group name="groupMeleeBattleMods">
+			<item name="modMeleeClubBurningShaft"/>
+			<item name="modMeleeClubBarbedWire"/>
+			<item name="modMeleeFortifyingGrip"/>
+			<item name="modMeleeClubMetalSpikes"/>
+			<item name="modMeleeErgonomicGrip"/>
+			<item name="modMeleeTemperedBlade"/>
+			<item name="modGunMeleeRadRemover"/>
+			<item name="modGunTriggerGroupOneTM"/>
+			<item name="modGunAttachmentRadTM"/>
+			<item name="modPowerBurnForestTM"/>
+			<item name="modPowerDesertTM"/>
+			<item name="modPowerSnowTM"/>
+			<item name="modPowerWastelandTM"/>
+			<item name="modDefenseBurnForestTM"/>
+			<item name="modDefenseDesertTM"/>
+			<item name="modDefenseSnowTM"/>
+			<item name="modDefenseWastelandTM"/>
+			<item name="modSniperwolfBraceletTM"/>
+			<item name="modRagnarBraceletTM"/>
+			<item name="modChopperBraceletTM"/>
+			<item name="modJordanBraceletTM"/>
+			<item name="modUchihaBraceletTM"/>
+			<item name="modSportBackpackTM"/>
+			<item name="modSilverBraceletTM"/>
+			<item name="modMilitaryBackpackTM"/>
+			<item name="modSonicShoesTM"/>
+			<item name="modArmorPlatingGrapheneTM"/>
+			<item name="modGunGrapheneMagazineExtenderTM"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupFarmerSeeds">
+			<item name="plantedGraceCorn1"/>
+			<item name="plantedBlueberry1"/>
+			<item name="plantedCorn1"/>
+			<item name="plantedMushroom1"/>
+			<item name="plantedYucca1"/>
+			<item name="plantedCotton1"/>
+			<item name="plantedCoffee1"/>
+			<item name="plantedGoldenrod1"/>
+			<item name="plantedAloe1"/>
+			<item name="plantedPotato1"/>
+			<item name="plantedChrysanthemum1"/>
+			<item name="plantedHop1"/>
+			<item name="plantedPumpkin1"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupFarmerCrops">
+			<item name="foodCropGraceCorn"/>
+			<item name="foodCropBlueberries"/>
+			<item name="foodCropCorn"/>
+			<item name="foodCropMushrooms"/>
+			<item name="foodCropYuccaFruit"/>
+			<item name="resourceCropCottonPlant"/>
+			<item name="resourceCropCoffeeBeans"/>
+			<item name="resourceCropGoldenrodPlant"/>
+			<item name="resourceCropAloeLeaf"/>
+			<item name="foodCropPotato"/>
+			<item name="resourceCropChrysanthemumPlant"/>
+			<item name="resourceCropHopsFlower"/>
+			<item name="foodCropPumpkin"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupChefVanillaSchematic">
+			<item name="foodGrilledMeatSchematic"/>
+			<item name="foodBaconAndEggsSchematic"/>
+			<item name="foodCanShamSchematic"/>
+			<item name="foodPumpkinPieSchematic"/>
+			<item name="foodBlueberryPieSchematic"/>
+			<item name="foodPumpkinBreadSchematic"/>
+			<item name="foodPumpkinCheesecakeSchematic"/>
+			<item name="foodVegetableStewSchematic"/>
+			<item name="foodMeatStewSchematic"/>
+			<item name="drinkYuccaJuiceSmoothieSchematic"/>
+			<!--<item name="drinkJarsSchematic"/>-->
+			<item name="foodSteakAndPotatoSchematic"/>
+			<item name="foodHoboStewSchematic"/>
+			<item name="foodFishTacosSchematic"/>
+			<item name="foodChiliDogSchematic"/>
+			<item name="foodShamChowderSchematic"/>
+			<item name="foodShepardsPieSchematic"/>
+			<item name="foodTunaFishGravyToastSchematic"/>
+			<item name="foodSpaghettiSchematic"/>
+			<item name="foodGumboStewSchematic"/>
+			<item name="drinkJarGrandpasMoonshineSchematic"/>
+			<item name="drinkJarGrandpasAwesomeSauceSchematic"/>
+			<item name="drinkJarGrandpasLearningElixirSchematic"/>
+
+			<item name="foodHoneyGlazedShamSchematic"/>
+			<item name="foodHoneyBrisketSchematic"/>
+			<item name="drinkJarHoneyTeaSchematic"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupChefVanillaFoods">
+			<item name="foodGrilledMeat"/>
+			<item name="foodBaconAndEggs"/>
+			<item name="foodCanSham"/>
+			<item name="foodPumpkinPie"/>
+			<item name="foodBlueberryPie"/>
+			<item name="foodPumpkinBread"/>
+			<item name="foodPumpkinCheesecake"/>
+			<item name="foodVegetableStew"/>
+			<item name="foodMeatStew"/>
+			<item name="drinkYuccaJuiceSmoothie"/>
+			<item name="drinkJarBeer"/>
+			<item name="foodSteakAndPotato"/>
+			<item name="foodHoboStew"/>
+			<item name="foodFishTacos"/>
+			<item name="foodChiliDog"/>
+			<item name="foodShamChowder"/>
+			<item name="foodShepardsPie"/>
+			<item name="foodTunaFishGravyToast"/>
+			<item name="foodSpaghetti"/>
+			<item name="foodGumboStew"/>
+			<item name="drinkJarGrandpasMoonshine"/>
+			<item name="drinkJarGrandpasAwesomeSauce"/>
+			<item name="drinkJarGrandpasLearningElixir"/>
+
+			<item name="foodHoneyGlazedSham"/>
+			<item name="foodHoneyBrisket"/>
+			<item name="drinkJarHoneyTea"/>
+			
+		</trader_item_group>
+
+		<trader_item_group name="groupChefTongoFoods">
+			<item name="foodSugarTM"/>
+			<item name="foodCookingOilTM"/>
+			<item name="foodPastaBaseTM"/>
+			<item name="foodPastaMushroomsTM"/>
+			<item name="foodStewBeefTM"/>
+			<item name="foodStewLambTM"/>
+			<item name="foodStewChickenTM"/>
+			<item name="foodStewChiliTM"/>
+			<item name="foodSoupMisoTM"/>
+			<item name="foodSoupStockTM"/>
+			<item name="foodSoupChickenTM"/>
+			<item name="foodPearsCakeTM"/>
+			<item name="foodPeasHamTM"/>
+			<item name="foodSalmonTacoTM"/>
+			<item name="foodTunaBreadTM"/>
+			<item name="foodExtraCatTM"/>
+			<item name="foodExtraDogTM"/>
+			<item name="foodPastaYuccaTM"/>
+			<item name="foodPastaPotatoTM"/>
+			<item name="foodPastaPumpkinTM"/>
+			<item name="foodSteakPotatoTM"/>
+			<item name="foodCandy7DaysTM" />
+			<item name="foodOmeletTM"/>
+			<item name="foodOmeletPotatoTM"/>
+			<item name="foodCandy7DaysTM"/>
+			<item name="drinkJarYuccaClassicTM"/>
+			<item name="drinkRomulanBeerTM"/>
+			<item name="drinkJarIceCoffeTM"/>
+
+			<item name="foodCandyMinerBoostTM"/>
+			<item name="foodCandyDisassembleBoostTM"/>
+			<item name="foodCandyClubBoostTM"/>
+			<item name="foodCandySledgehammerBoostTM"/>
+			<item name="foodCandyKnifeBoostTM"/>
+			<item name="foodCandySpearBoostTM"/>
+			<item name="foodCandyPunchBoostTM"/>
+			<item name="foodCandyStunBoostTM"/>
+			<item name="foodCandyArcheryBoostTM"/>
+			<item name="foodCandyPistolBoostTM"/>
+			<item name="foodCandyShotgunBoostTM"/>
+			<item name="foodCandyGatlingBoostTM"/>
+			<item name="foodCandyRifleBoostTM"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupMedicTongo">
+			<item name="resourceTallowTM"/>
+			<item name="resourceBiomassTM"/>
+			<item name="medicalAlcoholTM"/>
+			<item name="resourceBioFuelTM"/>
+			<item name="medicalFirstAidBandageTM"/>
+			<item name="medicalFirstAidKitTM"/>
+
+			<item name="foodCandyMinerBoostTM"/>
+			<item name="foodCandyDisassembleBoostTM"/>
+			<item name="foodCandyClubBoostTM"/>
+			<item name="foodCandySledgehammerBoostTM"/>
+			<item name="foodCandyKnifeBoostTM"/>
+			<item name="foodCandySpearBoostTM"/>
+			<item name="foodCandyPunchBoostTM"/>
+			<item name="foodCandyStunBoostTM"/>
+			<item name="foodCandyArcheryBoostTM"/>
+			<item name="foodCandyPistolBoostTM"/>
+			<item name="foodCandyShotgunBoostTM"/>
+			<item name="foodCandyGatlingBoostTM"/>
+			<item name="foodCandyRifleBoostTM"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupHunterBooks">
+			<item name="bookHuntingJournalBears"/>
+			<item name="bookHuntingJournalCoyotes"/>
+			<item name="bookHuntingJournalDeer"/>
+			<item name="bookHuntingJournalMountainLions"/>
+			<item name="bookHuntingJournalVultures"/>
+			<item name="bookHuntingJournalWolves"/>
+			<item name="bookHuntingJournalSelfDefense"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupConsumTongo">
+			<item name="resourceTallowTM"/>
+			<item name="foodCookingOilTM"/>
+			<item name="foodCornMeal"/>
+			<item name="resourceAnimalFat"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupFarmerTongo">
+			<item name="resourceTallowTM"/>
+			<item name="resourceAnimalFat"/>
+		</trader_item_group>
+
+		<!--<trader_item_group name="groupSeedTongo">
+			<item name="resourceTallowTM"/>
+			<item name="resourceAnimalFat"/>
+		</trader_item_group>-->
+
+		<trader_item_group name="groupVendingBuilder" count="1">
+			<item name="questRadial101"/>
+			<item name="questRadial102"/>
+			<item name="questRadial103"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupVendingFarmer" count="1">
+			<item name="questRadial104"/>
+			<item name="questRadial105"/>
+			<item name="questRadial106"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupVendingChef" count="1">
+			<item name="questRadial107"/>
+			<item name="questRadial108"/>
+			<item name="questRadial109"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupVendingHunter" count="1">
+			<item name="questRadial110"/>
+			<item name="questRadial111"/>
+			<item name="questRadial112"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupVendingMedic" count="1">
+			<item name="questRadial113"/>
+			<item name="questRadial114"/>
+			<item name="questRadial115"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupVendingMechanic" count="1">
+			<item name="questRadial116"/>
+			<item name="questRadial117"/>
+			<item name="questRadial118"/>
+		</trader_item_group>
+
+		<trader_item_group name="groupVendingSoldier" count="1">
+			<item name="questRadial119"/>
+			<item name="questRadial120"/>
+			<item name="questRadial121"/>
+		</trader_item_group>
+
+
+
+		
+
+		
+
+	</append>
+
+	<append xpath="/traders">
+
+		<!-- test -->
+		<trader_info id="30" reset_interval="1" override_buy_markup="3" allow_sell="false" >
+			<trader_items>
+				<item group="groupRangedAll" count="4,8"/>
+				<item group="groupMeleeAll" count="4,8"/>
+				<item group="groupAllAmmo" count="4,8"/>
+				<item group="groupMeleeBattleMods" count="4,8"/>
+			</trader_items>
+		</trader_info>
+
+		<!-- farmer -->
+		<trader_info id="31" reset_interval="1" override_buy_markup="3" allow_sell="false" >
+			<trader_items>
+				<item group="seeds" unique_only="true" count="20,100" />
+				<item group="groupFarmerSeeds" unique_only="true" count="8,10" />
+				<item group="groupFarmerCrops" unique_only="true" count="8,10" />
+
+				<item name="plantedAloe1" count="30,90" />
+				<item name="plantedBlueberry1" count="30,90" />
+				<item name="plantedChrysanthemum1" count="30,90" />
+				<item name="plantedCoffee1" count="30,90" />
+				<item name="plantedCorn1" count="30,90" />
+				<item name="plantedCotton1" count="30,90" />
+				<item name="plantedGoldenrod1" count="30,90" />
+				<item name="plantedHop1" count="30,90" />
+				<item name="plantedMushroom1" count="30,90" />
+				<item name="plantedPotato1" count="30,90" />
+				<item name="plantedYucca1" count="30,90" />
+				<item name="plantedPumpkin1" count="30,90" />
+				<item name="plantedGraceCorn1" count="30,90" />
+				
+				<item name="foodCropMushrooms" count="10,50" />
+				<item name="foodCropYuccaFruit" count="10,50" />
+				<item name="resourceCropCottonPlant" count="10,50" />
+				<item name="resourceCropCoffeeBeans" count="10,50" />
+				<item name="resourceCropGoldenrodPlant" count="10,50" />
+				<item name="resourceCropAloeLeaf" count="10,50" />
+				<item name="foodCropBlueberries" count="10,50" />
+				<item name="foodCropPotato" count="10,50" />
+				<item name="resourceCropChrysanthemumPlant" count="10,50" />
+				<item name="foodCropCorn" count="10,50" />
+				<item name="foodCropGraceCorn" count="10,50" />
+				<item name="resourceCropHopsFlower" count="10,50" />
+				<item name="foodCropPumpkin" count="10,50" />
+
+				<item group="foodSupplies" count="8,10" />
+				<item name="resourceWood" count="500,2000"/>
+				<item name="resourceNail" count="100,300"/>
+				<item name="foodHoney" count="1,3"/>
+				<item name="resourceBluePaper" count="20,50"/>
+				<item group="groupFarmerTongo" unique_only="true" count="15,25" />
+				<item group="groupConsumTongo" count="2,4" />
+				
+				<item group="groupVendingFarmer" count="1" />
+			</trader_items>
+		</trader_info>
+
+		<!-- chef -->
+		<trader_info id="32" reset_interval="1" override_buy_markup="3" allow_sell="false" >
+			<trader_items>
+				<item group="groupChefVanillaSchematic" unique_only="true" count="8,10" />
+				<item group="groupChefVanillaFoods" unique_only="true" count="8,10" />
+				<item group="groupChefTongoFoods" unique_only="true" count="8,10" />
+				<item group="preparedFood" unique_only="true" count="1,2" />
+				<item group="groupDrinks" unique_only="true" count="1,2" />
+				<item group="groupDrinksSpecial" unique_only="true" count="1,2" />
+				<item group="groupFoodAll" unique_only="true" count="1,2" />
+				<item group="cannedfood" unique_only="true" count="1,2" />
+				<item group="groupConsumTongo" unique_only="true" count="1,2" />
+				<item name="resourceBluePaper" count="20,50"/>
+
+				<item group="groupVendingChef" count="1" />
+			</trader_items>
+		</trader_info>
+
+		<!-- medic -->
+		<trader_info id="33" reset_interval="1" override_buy_markup="3" allow_sell="false" >
+			<trader_items>
+				<item group="foodCandy" count="8,10"/>
+				<item group="rareMedicine" count="8,10"/>
+				<item group="medicine" count="8,10"/>
+				<item group="groupMedicTongo" count="8,10"/>
+				<item name="resourceBluePaper" count="20,50"/>
+
+				<item group="groupVendingMedic" count="1"/>
+			</trader_items>
+		</trader_info>
+
+		<!-- hunter -->
+		<trader_info id="34" reset_interval="1" override_buy_markup="3" allow_sell="false" >
+			<trader_items>
+				<item group="groupArmorLight" count="8,10"/>
+				<item group="groupArmorMedium" count="8,10"/>
+				<item group="groupArmorHeavy" count="8,10"/>
+				<item group="groupHunterBooks" count="8,10"/>
+				<item group="schematicsModsCommon" count="8,10"/>
+				<item group="groupConsumTongo" count="2,4" />
+				<item name="resourceBluePaper" count="20,50"/>
+
+				<item group="groupVendingHunter" count="1" />
+			</trader_items>
+		</trader_info>
+
+		<!-- builder -->
+		<trader_info id="35" reset_interval="1" override_buy_markup="3" allow_sell="false" >
+			<trader_items>
+				<item group="constructionSupplies" count="8,10"/>
+				<item group="generalResources" count="8,10"/>
+				<item group="rareTools" count="8,10"/>
+				<item group="tools" count="8,10"/>
+				<item group="decorativeBlocks" count="8,10"/>
+				<item name="resourceBluePaper" count="20,50"/>
+
+				<item group="groupVendingBuilder" count="1"/>
+			</trader_items>
+		</trader_info>
+
+		<!-- mechanic -->
+		<trader_info id="36" reset_interval="1" override_buy_markup="3" allow_sell="false" >
+			<trader_items>
+				<item group="schematicsVehiclesMods" count="8,10"/>
+				<item group="generalResources" count="8,10"/>
+				<item group="groupVehicles" count="8,10"/>
+				<item group="traderElectrical" count="8,10"/>
+				<item name="resourceBluePaper" count="20,50"/>
+
+				<item group="groupVendingMechanic" count="1"/>
+			</trader_items>
+		</trader_info>
+
+		<!-- soldier -->
+		<trader_info id="37" reset_interval="1" override_buy_markup="3" allow_sell="false" >
+			<trader_items>
+				<item group="groupRangedAll" count="8,10"/>
+				<item group="groupMeleeAll" count="8,10"/>
+				<item group="groupAllAmmo" count="8,10"/>
+				<item group="groupMeleeBattleMods" count="8,10"/>
+				<item name="resourceBluePaper" count="20,50"/>
+
+				<item group="groupVendingSoldier" count="1"/>
+			</trader_items>
+		</trader_info>
+
+	</append>
+		
+	
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+	<!-- ALWAYS IN TRADERS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+		<item name="medicalRepellentBeeTM" count="1,5"/>
+	</append>
+	
+	<!-- ALWAYS IN TRADERS -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']">
+		<item name="medicalRepellentVultureTM" count="1,5"/>
+	</append>	
+		
+		
+
+	
+</raiz>

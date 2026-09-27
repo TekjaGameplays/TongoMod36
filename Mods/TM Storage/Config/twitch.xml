@@ -1,0 +1,158 @@
+<config>
+	<append xpath="/twitch">		
+
+		<action name="twitch_TM_Command" extends="twitch_toughZombie">
+			<property name="command" value="#spawn_tm_command" />
+			<property name="command_key" value="TwitchAction_SpawnTmArleneCommand" />
+			<property name="title_key" value="TwitchAction_SpawnTmArlene" />
+			<property name="description_key" value="TwitchAction_SpawnTmArleneDesc" />
+			<property name="start_gamestage" value="20" />
+			<property name="event_name" value="spawn_TM_Arlene" />
+			<property name="default_cost" value="500" />
+			<property name="cooldown" value="600" />
+			<property name="enabled" value="true" />
+			<cooldown_addition name="twitch_TM_Swarm" time="600" />
+		</action>		
+		
+		<action name="twitch_TM_Burn" extends="twitch_toughZombie">
+			<property name="command" value="#spawn_tm_burn" />
+			<property name="command_key" value="TwitchAction_SpawnTmBurnCommand" />
+			<property name="title_key" value="TwitchAction_SpawnTmBurn" />
+			<property name="description_key" value="TwitchAction_SpawnTmBurnDesc" />
+			<property name="start_gamestage" value="200" />
+			<property name="event_name" value="spawn_TM_Burn" />
+			<property name="default_cost" value="1800" />
+			<property name="cooldown" value="1800" />
+			<property name="enabled" value="true" />
+			<cooldown_addition name="twitch_TM_Lumberjack" time="1800" />
+			<cooldown_addition name="twitch_TM_General" time="1800" />
+			<cooldown_addition name="twitch_TM_Mutated" time="1800" />
+			<cooldown_addition name="twitch_TM_Wight" time="1800" />
+			<cooldown_addition name="twitch_TM_Plague" time="1800" />
+			<cooldown_addition name="twitch_TM_Frost" time="1800" />
+		</action>
+		
+		<action name="twitch_TM_Lumberjack" extends="twitch_toughZombie">
+			<property name="command" value="#spawn_tm_lumberjack" />
+			<property name="command_key" value="TwitchAction_SpawnTmLumberjackCommand" />
+			<property name="title_key" value="TwitchAction_SpawnTmLumberjack" />
+			<property name="description_key" value="TwitchAction_SpawnTmLumberjackDesc" />
+			<property name="start_gamestage" value="200" />
+			<property name="event_name" value="spawn_TM_Lumberjack" />
+			<property name="default_cost" value="1" />
+			<property name="cooldown" value="1800" />
+			<property name="enabled" value="true" />
+			<cooldown_addition name="twitch_TM_Burn" time="1800" />
+			<cooldown_addition name="twitch_TM_General" time="1800" />
+			<cooldown_addition name="twitch_TM_Mutated" time="1800" />
+			<cooldown_addition name="twitch_TM_Wight" time="1800" />
+			<cooldown_addition name="twitch_TM_Plague" time="1800" />
+			<cooldown_addition name="twitch_TM_Frost" time="1800" />
+		</action>	
+			
+		<action name="twitch_TM_General" extends="twitch_toughZombie">
+			<property name="command" value="#spawn_tm_general" />
+			<property name="command_key" value="TwitchAction_SpawnTmGeneralCommand" />
+			<property name="title_key" value="TwitchAction_SpawnTmGeneral" />
+			<property name="description_key" value="TwitchAction_SpawnTmGeneralDesc" />
+			<property name="start_gamestage" value="200" />
+			<property name="event_name" value="spawn_TM_General" />
+			<property name="default_cost" value="1800" />
+			<property name="cooldown" value="1800" />
+			<property name="enabled" value="true" />
+			<cooldown_addition name="twitch_TM_Burn" time="1800" />
+			<cooldown_addition name="twitch_TM_Lumberjack" time="1800" />
+			<cooldown_addition name="twitch_TM_Mutated" time="1800" />
+			<cooldown_addition name="twitch_TM_Wight" time="1800" />
+			<cooldown_addition name="twitch_TM_Plague" time="1800" />
+			<cooldown_addition name="twitch_TM_Frost" time="1800" />
+		</action>
+		
+		<action name="twitch_TM_Mutated" extends="twitch_toughZombie">
+			<property name="command" value="#spawn_tm_mutated" />
+			<property name="command_key" value="TwitchAction_SpawnTmMutatedCommand" />
+			<property name="title_key" value="TwitchAction_SpawnTmMutated" />
+			<property name="description_key" value="TwitchAction_SpawnTmMutatedDesc" />
+			<property name="start_gamestage" value="200" />
+			<property name="event_name" value="spawn_TM_Mutated" />
+			<property name="default_cost" value="1800" />
+			<property name="cooldown" value="1800" />
+			<property name="enabled" value="true" />
+			<cooldown_addition name="twitch_TM_Burn" time="1800" />
+			<cooldown_addition name="twitch_TM_Lumberjack" time="1800" />
+			<cooldown_addition name="twitch_TM_General" time="1800" />
+			<cooldown_addition name="twitch_TM_Wight" time="1800" />
+			<cooldown_addition name="twitch_TM_Plague" time="1800" />
+			<cooldown_addition name="twitch_TM_Frost" time="1800" />
+		</action>
+		
+		<action name="twitch_TM_Wight" extends="twitch_toughZombie">
+			<property name="command" value="#spawn_tm_mutated" />
+			<property name="command_key" value="TwitchAction_SpawnTmWightCommand" />
+			<property name="title_key" value="TwitchAction_SpawnTmWight" />
+			<property name="description_key" value="TwitchAction_SpawnTmWightDesc" />
+			<property name="start_gamestage" value="200" />
+			<property name="event_name" value="spawn_TM_Wight" />
+			<property name="default_cost" value="1800" />
+			<property name="cooldown" value="1800" />
+			<property name="enabled" value="true" />
+			<cooldown_addition name="twitch_TM_Burn" time="1800" />
+			<cooldown_addition name="twitch_TM_Lumberjack" time="1800" />
+			<cooldown_addition name="twitch_TM_General" time="1800" />
+			<cooldown_addition name="twitch_TM_Mutated" time="1800" />
+			<cooldown_addition name="twitch_TM_Plague" time="1800" />
+			<cooldown_addition name="twitch_TM_Frost" time="1800" />
+		</action>
+		
+		<action name="twitch_TM_Swarm" extends="twitch_normalZombie">
+			<property name="command" value="#spawn_tm_swarm" />
+			<property name="command_key" value="TwitchAction_SpawnTmSwarmCommand" />
+			<property name="title_key" value="TwitchAction_SpawnTmSwarm" />
+			<property name="description_key" value="TwitchAction_SpawnTmSwarmDesc" />
+			<property name="start_gamestage" value="20" />
+			<property name="event_name" value="spawn_TM_Swarm" />
+			<property name="default_cost" value="500" />
+			<property name="cooldown" value="600" />
+			<property name="enabled" value="true" />
+			<property name="random_group" value="spawns" />
+			<cooldown_addition name="twitch_TM_Command" time="600" />
+		</action>
+		
+		<action name="twitch_TM_Plague" extends="twitch_toughZombie">
+			<property name="command" value="#spawn_tm_plague" />
+			<property name="command_key" value="TwitchAction_SpawnTmPlagueCommand" />
+			<property name="title_key" value="TwitchAction_SpawnTmPlague" />
+			<property name="description_key" value="TwitchAction_SpawnTmPlagueDesc" />
+			<property name="start_gamestage" value="200" />
+			<property name="event_name" value="spawn_TM_Plague" />
+			<property name="default_cost" value="1800" />
+			<property name="cooldown" value="1800" />
+			<property name="enabled" value="true" />
+			<cooldown_addition name="twitch_TM_Burn" time="1800" />
+			<cooldown_addition name="twitch_TM_Lumberjack" time="1800" />
+			<cooldown_addition name="twitch_TM_General" time="1800" />
+			<cooldown_addition name="twitch_TM_Mutated" time="1800" />
+			<cooldown_addition name="twitch_TM_Wight" time="1800" />
+			<cooldown_addition name="twitch_TM_Frost" time="1800" />
+		</action>
+		
+		<action name="twitch_TM_Frost" extends="twitch_toughZombie">
+			<property name="command" value="#spawn_tm_frost" />
+			<property name="command_key" value="TwitchAction_SpawnTmFrostCommand" />
+			<property name="title_key" value="TwitchAction_SpawnTmFrost" />
+			<property name="description_key" value="TwitchAction_SpawnTmFrostDesc" />
+			<property name="start_gamestage" value="200" />
+			<property name="event_name" value="spawn_TM_Frost" />
+			<property name="default_cost" value="1800" />
+			<property name="cooldown" value="10" />
+			<property name="enabled" value="true" />
+			<cooldown_addition name="twitch_TM_Burn" time="1800" />
+			<cooldown_addition name="twitch_TM_Lumberjack" time="1800" />
+			<cooldown_addition name="twitch_TM_General" time="1800" />
+			<cooldown_addition name="twitch_TM_Mutated" time="1800" />
+			<cooldown_addition name="twitch_TM_Wight" time="1800" />
+			<cooldown_addition name="twitch_TM_Plague" time="1800" />
+		</action>
+		
+	</append>
+</config>

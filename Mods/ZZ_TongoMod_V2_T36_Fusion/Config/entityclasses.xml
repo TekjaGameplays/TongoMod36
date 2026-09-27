@@ -1,0 +1,2553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>-->
+
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneFireComand']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneElectricComand']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneIrradiationComand']/property[@name='Tags']/@value">zombieTM</set>
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieMiniArleneIrradiationComand']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMiniArleneElectricComand']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMiniArleneFireComand']/property[@name='Tags']/@value">zombieTM</set>
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntIrradiationElite']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntElectricElite']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntFireElite']/property[@name='Tags']/@value">zombieTM</set>
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedIrradiationElite']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedElectricElite']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedFireElite']/property[@name='Tags']/@value">zombieTM</set>
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieWightIrradiationElite']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightElectricElite']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFireElite']/property[@name='Tags']/@value">zombieTM</set>
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackIrradiationElite']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackElectricElite']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackFireElite']/property[@name='Tags']/@value">zombieTM</set>
+	
+	<set xpath="/entity_classes/entity_class[@name='animalZombieVultureElite']/property[@name='Tags']/@value">zombieTM</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherIrradiation']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherElectric']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherFire']/property[@name='Tags']/@value">zombieTM</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherIrradiationO']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherElectricO']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherFireO']/property[@name='Tags']/@value">zombieTM</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckIrradiation']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckElectric']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckFire']/property[@name='Tags']/@value">zombieTM</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckIrradiationO']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckElectricO']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckFireO']/property[@name='Tags']/@value">zombieTM</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopIrradiation']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopElectric']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopFire']/property[@name='Tags']/@value">zombieTM</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerIrradiation']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerElectric']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerFire']/property[@name='Tags']/@value">zombieTM</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerIrradiation']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerElectric']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerFire']/property[@name='Tags']/@value">zombieTM</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kIrradiation']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kElectric']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kFire']/property[@name='Tags']/@value">zombieTM</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kIrradiationO']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kElectricO']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kFireO']/property[@name='Tags']/@value">zombieTM</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalIrradiation']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalElectric']/property[@name='Tags']/@value">zombieTM</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalFire']/property[@name='Tags']/@value">zombieTM</set>
+
+	<!-- en revision -->
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='Tags']/@value">
+		entity,animal,zombie,zombieAnimal,hostile,wolf,perkAT05,animalFeral,zombieTM
+	</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='Tags']/@value">
+		entity,zombie,walker,allbiome,boss,special,coverWorthy,zombieTM
+	</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalInsectSwarm']/property[@name='Tags']/@value">
+		entity,hostile,noHead,zombieTM
+	</set>
+
+	<!--<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@name='Tags']/@value">axe,melee,light,tool,longShaft,repairTool,miningTool,attStrength,perkMiner69r,perkMotherLode,perkTheHuntsman,canHaveCosmetic,harvestingSkill,corpseRemoval,perkPRMinerTools</set>-->
+
+
+	<!--<set xpath="/entity_classes/entity_class[@name='animalDireWolfIrradiationElite']/property[@name='Tags']/@value">zombieTM</set>-->
+	<!--<set xpath="/entity_classes/entity_class[@name='animalDireWolfElectricElite']/property[@name='Tags']/@value">zombieTM</set>-->
+	<!--<set xpath="/entity_classes/entity_class[@name='animalDireWolfFireElite']/property[@name='Tags']/@value">zombieTM</set>-->
+
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieDemolitionIrradiationGeneral']/property[@name='Tags']/@value">zombieTM</set>-->
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieDemolitionElectricGeneral']/property[@name='Tags']/@value">zombieTM</set>-->
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieDemolitionFireGeneral']/property[@name='Tags']/@value">zombieTM</set>-->
+	
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieDemolitionIrradiationGeneralO']/property[@name='Tags']/@value">zombieTM</set>-->
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieDemolitionElectricGeneralO']/property[@name='Tags']/@value">zombieTM</set>-->
+	<!--<set xpath="/entity_classes/entity_class[@name='zombieDemolitionFireGeneralO']/property[@name='Tags']/@value">zombieTM</set>-->
+
+	<!--<set xpath="/entity_classes/entity_class[@name='animalInsectSwarmIrradiation']/property[@name='Tags']/@value">zombieTM</set>-->
+	<!--<set xpath="/entity_classes/entity_class[@name='animalInsectSwarmElectric']/property[@name='Tags']/@value">zombieTM</set>-->
+	<!--<set xpath="/entity_classes/entity_class[@name='animalInsectSwarmFire']/property[@name='Tags']/@value">zombieTM</set>-->
+
+	<!--<set xpath="/entity_classes/entity_class[@name='animalMiniWolfIrradiationElite']/property[@name='Tags']/@value">zombieTM</set>-->
+	<!--<set xpath="/entity_classes/entity_class[@name='animalMiniWolfElectricElite']/property[@name='Tags']/@value">zombieTM</set>-->
+	<!--<set xpath="/entity_classes/entity_class[@name='animalMiniWolfFireElite']/property[@name='Tags']/@value">zombieTM</set>-->
+	<!-- XXX -->
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	
+	
+	
+	
+
+
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneFireComand']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneFireComand']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneElectricComand']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneElectricComand']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneIrradiationComand']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieArleneIrradiationComand']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieMiniArleneFireComand']/property[@name='LootDropProb']/@value">.01</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMiniArleneFireComand']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMiniArleneElectricComand']/property[@name='LootDropProb']/@value">.01</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMiniArleneElectricComand']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMiniArleneIrradiationComand']/property[@name='LootDropProb']/@value">.01</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMiniArleneIrradiationComand']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntFireElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntFireElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntElectricElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntElectricElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntIrradiationElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBurntIrradiationElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedFireElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedFireElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedElectricElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedElectricElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedIrradiationElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMutatedIrradiationElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFireElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFireElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightElectricElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightElectricElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightIrradiationElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightIrradiationElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackFireElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackFireElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackElectricElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackElectricElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackIrradiationElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieLumberjackIrradiationElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalZombieVultureElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='animalZombieVultureElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolfFireElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolfFireElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolfElectricElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolfElectricElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolfIrradiationElite']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='animalDireWolfIrradiationElite']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherFire']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherElectric']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherElectric']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherIrradiation']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherFireO']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherFireO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherElectricO']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherElectricO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherIrradiationO']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieRancherIrradiationO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckFire']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckElectric']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckElectric']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckIrradiation']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckFireO']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckFireO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckElectricO']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckElectricO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckIrradiationO']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieChuckIrradiationO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopFire']/property[@name='LootDropProb']/@value">.05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerBoss</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopElectric']/property[@name='LootDropProb']/@value">.05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopElectric']/property[@name='LootDropEntityClass']/@value">EntityLootContainerBoss</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopIrradiation']/property[@name='LootDropProb']/@value">.05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperCopIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerBoss</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerFire']/property[@name='LootDropProb']/@value">.05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerBoss</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerElectric']/property[@name='LootDropProb']/@value">.05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerElectric']/property[@name='LootDropEntityClass']/@value">EntityLootContainerBoss</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerIrradiation']/property[@name='LootDropProb']/@value">.05</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSuperBikerIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerBoss</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerFire']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerElectric']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerElectric']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerIrradiation']/property[@name='LootDropProb']/@value">.1</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerRegular</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kFire']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kElectric']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kElectric']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kIrradiation']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kFireO']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kFireO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kElectricO']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kElectricO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kIrradiationO']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieTomClar6kIrradiationO']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalFire']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalFire']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalElectric']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalElectric']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalIrradiation']/property[@name='LootDropProb']/@value">.15</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalIrradiation']/property[@name='LootDropEntityClass']/@value">EntityLootContainerStrong</set>
+
+
+
+	<append xpath="/entity_classes/entity_class[@name='playerMale']/effect_group">
+
+		<!-- remove TM buff  -->
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffTwitchRadiationTM">
+			<requirement name="HoldingItemHasTags" tags="aidKitTM"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffTwitchShockedTM">
+			<requirement name="HoldingItemHasTags" tags="aidKitTM"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffTwitchBurnTM">
+			<requirement name="HoldingItemHasTags" tags="aidKitTM"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffTwitchRadiationTM6k">
+			<requirement name="HoldingItemHasTags" tags="aidKitTM"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffTwitchShockedTM6K">
+			<requirement name="HoldingItemHasTags" tags="aidKitTM"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffTwitchBurnTM6K">
+			<requirement name="HoldingItemHasTags" tags="aidKitTM"/>
+		</triggered_effect>
+
+	</append>
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	
+	<!-- *** NEW SKILLS FROM SPECIAL ZOMBIES -->
+
+	<!-- arlene -->
+	<append xpath="/entity_classes/entity_class[@name='zombieArleneIrradiationComand']">
+		<effect_group name="Hard">
+			<!-- skill arlene (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffSpawnArleneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnArleneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieArleneElectricComand']">
+		<effect_group name="Hard">
+			<!-- skill arlene (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffSpawnArleneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnArleneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieArleneFireComand']">
+		<effect_group name="Hard">
+			<!-- skill arlene (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffSpawnArleneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnArleneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- arlene mini -->
+	<append xpath="/entity_classes/entity_class[@name='zombieMiniArleneIrradiationComand']">
+		<effect_group name="Hard">
+			<!-- skill arlene mini (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnArleneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="70"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMiniArleneElectricComand']">
+		<effect_group name="Hard">
+			<!-- skill arlene mini (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnArleneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="70"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMiniArleneFireComand']">
+		<effect_group name="Hard">
+			<!-- skill arlene mini (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnArleneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="70"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+	
+	<!-- burn -->
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntIrradiationElite']">
+		<effect_group name="Normal">
+			<!-- skill burn (normal) -->
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffHeatStrokeTM">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Hard">
+			<!-- skill burn (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHordeDogsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHordeDogsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntElectricElite']">
+		<effect_group name="Normal">
+			<!-- skill burn (normal) -->
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffHeatStrokeTM">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Hard">
+			<!-- skill burn (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHordeDogsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHordeDogsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntFireElite']">
+		<effect_group name="Normal">
+			<!-- skill burn (normal) -->
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffHeatStrokeTM">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Hard">
+			<!-- skill burn (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHordeDogsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHordeDogsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- mutated -->
+	<append xpath="/entity_classes/entity_class[@name='zombieMutatedIrradiationElite']">
+		<effect_group name="Hard">
+			<!-- skill mutated (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHeadshotOnlyTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHeadshotOnlyTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="90"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMutatedElectricElite']">
+		<effect_group name="Hard">
+			<!-- skill mutated (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHeadshotOnlyTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHeadshotOnlyTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="90"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMutatedFireElite']">
+		<effect_group name="Hard">
+			<!-- skill mutated (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHeadshotOnlyTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHeadshotOnlyTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="90"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- wright -->
+	<append xpath="/entity_classes/entity_class[@name='zombieWightIrradiationElite']">
+		<effect_group name="Normal">
+			<!-- skill wight (normal) -->
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffNewbieTM">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Hard">
+			<!-- skill wight (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffShieldEnemiesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffShieldEnemiesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieWightElectricElite']">
+		<effect_group name="Normal">
+			<!-- skill wight (normal) -->
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffNewbieTM">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Hard">
+			<!-- skill wight (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffShieldEnemiesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffShieldEnemiesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieWightFireElite']">
+		<effect_group name="Normal">
+			<!-- skill wight (normal) -->
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffNewbieTM">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Hard">
+			<!-- skill wight (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffShieldEnemiesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffShieldEnemiesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- lumberjack -->
+	<append xpath="/entity_classes/entity_class[@name='zombieLumberjackIrradiationElite']">
+		<effect_group name="normal">
+			<!-- lumberjack (normal) -->
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffResfriadoTM">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Hard">
+			<!-- skill lumberjack (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHardSpikeGrapheneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHardSpikeGrapheneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieLumberjackElectricElite']">
+		<effect_group name="normal">
+			<!-- lumberjack (normal) -->
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffResfriadoTM">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Hard">
+			<!-- skill lumberjack (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHardSpikeGrapheneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHardSpikeGrapheneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieLumberjackFireElite']">
+		<effect_group name="normal">
+			<!-- lumberjack (normal) -->
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffResfriadoTM">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+			</triggered_effect>
+		</effect_group>
+		<effect_group name="Hard">
+			<!-- skill lumberjack (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHardSpikeGrapheneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHardSpikeGrapheneTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- vulture -->
+	<append xpath="/entity_classes/entity_class[@name='animalZombieVultureElite']">
+		<effect_group name="Hard">
+			<!-- skill vulture (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffFogVultureTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="90"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffFogVultureTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="90"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- rancher -->
+	<append xpath="/entity_classes/entity_class[@name='zombieRancherIrradiation']">
+		<effect_group name="Hard">
+			<!-- skill rancher (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffCactiTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffCactiTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieRancherElectric']">
+		<effect_group name="Hard">
+			<!-- skill rancher (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffCactiTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffCactiTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieRancherFire']">
+		<effect_group name="Hard">
+			<!-- skill rancher (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffCactiTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffCactiTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- rancher (horde) -->
+	<append xpath="/entity_classes/entity_class[@name='zombieRancherIrradiationO']">
+		<effect_group name="Hard">
+			<!-- skill rancher "horde" (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="3"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffCactiTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieRancherElectricO']">
+		<effect_group name="Hard">
+			<!-- skill rancher "horde" (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="3"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffCactiTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieRancherFireO']">
+		<effect_group name="Hard">
+			<!-- skill rancher "horde" (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="3"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffCactiTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- chunk -->
+	<append xpath="/entity_classes/entity_class[@name='zombieChuckIrradiation']">
+		<effect_group name="Hard">
+			<!-- skill chuck (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffSlow">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="twitch_buffSlow">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieChuckElectric']">
+		<effect_group name="Hard">
+			<!-- skill chuck (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffSlow">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="twitch_buffSlow">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieChuckFire']">
+		<effect_group name="Hard">
+			<!-- skill chuck (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffSlow">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="twitch_buffSlow">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- chunk (horde) -->
+	<append xpath="/entity_classes/entity_class[@name='zombieChuckIrradiationO']">
+		<effect_group name="Hard">
+			<!-- skill chuck "horde" (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="3"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="twitch_buffSlow">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieChuckElectricO']">
+		<effect_group name="Hard">
+			<!-- skill chuck "horde" (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="3"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="twitch_buffSlow">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieChuckFireO']">
+		<effect_group name="Hard">
+			<!-- skill chuck "horde" (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="3"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="twitch_buffSlow">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- cop -->
+	<append xpath="/entity_classes/entity_class[@name='zombieSuperCopIrradiation']">
+		<effect_group name="Hard">
+			<!-- skill cop (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffDegradeWeaponsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffDegradeWeaponsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSuperCopElectric']">
+		<effect_group name="Hard">
+			<!-- skill cop (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffDegradeWeaponsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffDegradeWeaponsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSuperCopFire']">
+		<effect_group name="Hard">
+			<!-- skill cop (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffDegradeWeaponsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffDegradeWeaponsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- biker -->
+	<append xpath="/entity_classes/entity_class[@name='zombieSuperBikerIrradiation']">
+        <!-- skill biker (hard) -->
+		<effect_group name="Hard">
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="120"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value="10"> <!-- +1000% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSuperBikerElectric']">
+        <!-- skill biker (hard) -->
+		<effect_group name="Hard">
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="120"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value="10"> <!-- +1000% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSuperBikerFire']">
+		<!-- skill biker (hard) -->
+		<effect_group name="Hard">
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="120"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value="10"> <!-- +1000% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- screamer -->
+	<append xpath="/entity_classes/entity_class[@name='zombieScreamerIrradiation']">	
+		<effect_group name="Hard">
+			<!-- skill screamer (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffScoutScreamerTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffScoutScreamerTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieScreamerElectric']">
+		<effect_group name="Hard">
+			<!-- skill screamer (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffScoutScreamerTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffScoutScreamerTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieScreamerFire']">
+		<effect_group name="Hard">
+			<!-- skill screamer (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffScoutScreamerTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffScoutScreamerTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- tom6k -->
+	<append xpath="/entity_classes/entity_class[@name='zombieTomClar6kIrradiation']">
+		<effect_group name="Hard">
+			<!-- bad loot "dont work on server" (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffCrappyLootTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="GTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- skill tom (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffSpawnMinesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnMinesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieTomClar6kElectric']">
+		<effect_group name="Hard">
+			<!-- bad loot "dont work on server" (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffCrappyLootTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="GTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- skill tom (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffSpawnMinesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnMinesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieTomClar6kFire']">
+		<effect_group name="Hard">
+			<!-- bad loot "dont work on server" (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffCrappyLootTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="GTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- skill tom (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffSpawnMinesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnMinesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- tom6k (horde) -->
+	<append xpath="/entity_classes/entity_class[@name='zombieTomClar6kIrradiationO']">
+		<effect_group name="Hard">
+			<!-- skill tom "horde" (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnMinesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieTomClar6kElectricO']">
+		<effect_group name="Hard">
+			<!-- skill tom "horde" (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnMinesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieTomClar6kFireO']">
+		<effect_group name="Hard">
+			<!-- skill tom "horde" (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnMinesTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- spider -->
+	<append xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalIrradiation']">
+		<effect_group name="Hard">
+			<!-- skill spider (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffDegradeWeaponsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalElectric']">
+<effect_group name="Hard">
+			<!-- skill spider (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffDegradeWeaponsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSpiderInfernalFire']">
+<effect_group name="Hard">
+			<!-- skill spider (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="twitch_buffClumsyRunner">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!--<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffDegradeWeaponsTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- wolf -->
+	<append xpath="/entity_classes/entity_class[@name='animalDireWolfIrradiationElite']">
+		<effect_group name="Hard">
+			<!-- skill wolf (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffSpawnMiniwolf3TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnMiniwolf3TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='animalDireWolfElectricElite']">
+		<effect_group name="Hard">
+			<!-- skill wolf (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffSpawnMiniwolf3TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnMiniwolf3TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='animalDireWolfFireElite']">
+		<effect_group name="Hard">
+			<!-- skill wolf (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffSpawnMiniwolf3TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnMiniwolf3TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- wolf mini -->
+	<append xpath="/entity_classes/entity_class[@name='animalMiniWolfIrradiationElite']">
+		<effect_group name="Hard">
+			<!-- skill wolf mini (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffSpawnMiniwolf1TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnMiniwolf1TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='animalMiniWolfElectricElite']">
+		<effect_group name="Hard">
+			<!-- skill wolf mini (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffSpawnMiniwolf1TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnMiniwolf1TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='animalMiniWolfFireElite']">
+		<effect_group name="Hard">
+			<!-- skill wolf mini (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffSpawnMiniwolf1TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffSpawnMiniwolf1TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<!--<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="60"> --><!-- +20% --><!--
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>-->
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- demolition -->
+	<append xpath="/entity_classes/entity_class[@name='zombieDemolitionIrradiationGeneral']">
+		<effect_group name="Hard">
+			<!-- skill demolition (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHardBurnC4TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHardBurnC4TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72">  <!-- +20% --> 
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieDemolitionElectricGeneral']">
+		<effect_group name="Hard">
+			<!-- skill demolition (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHardBurnC4TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHardBurnC4TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72">  <!-- +20% --> 
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieDemolitionFireGeneral']">
+		<effect_group name="Hard">
+			<!-- skill demolition (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHardBurnC4TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHardBurnC4TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72">  <!-- +20% --> 
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<!-- demolition (horde) -->
+	<append xpath="/entity_classes/entity_class[@name='zombieDemolitionIrradiationGeneralO']">
+		<effect_group name="Hard">
+			<!-- skill demolition (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHardBurnC4TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHardBurnC4TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72">  <!-- +20% --> 
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieDemolitionElectricGeneralO']">
+		<effect_group name="Hard">
+			<!-- skill demolition (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHardBurnC4TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHardBurnC4TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72">  <!-- +20% --> 
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieDemolitionFireGeneralO']">
+		<effect_group name="Hard">
+			<!-- skill demolition (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" tags="player" buff="buffHardBurnC4TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffHardBurnC4TM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="80"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- regeneration extra (hard) -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="72">  <!-- +20% --> 
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+			<!-- damage extra entity (hard) -->
+			<passive_effect name="EntityDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- damage extra block (hard) -->
+			<passive_effect name="BlockDamage" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- speed extra (hard) -->
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"> <!-- +20% -->
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</passive_effect>
+			<!-- reward extra (hard) -->
+			<triggered_effect trigger="onSelfDied" action="AddBuff" target="other" tags="player" buff="buffExtraRewardTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffHardZombieTM"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+	
+	
+
+
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+	
+</raiz>

@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	
+	<!--<append xpath="/item_modifiers/item_modifier[@name='modVehicleStorage']"> <property name="UnlockedBy" value="modVehicleStorageSchematic"/> </append>-->
+	<!--<append xpath="/item_modifiers/item_modifier[@name='modVehicleStorage']"> <property name="Group" value="Mods,Moddet"/> </append>-->
+
+
+	
+	
+	<!-- CHANGED MOD CIGAR -->
+	<remove xpath="/item_modifiers/item_modifier[@name='modArmorCigar']"/>
+	<append xpath="/item_modifiers">
+		<item_modifier name="modArmorCigar" installable_tags="armorHead" modifier_tags="cigar" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="apparelCigar"/>
+			<property name="DisplayType" value="clothingCigar"/>
+			<property name="UnlockedBy" value="perkUrbanCombatCigar"/>
+			<property name="TraderStageTemplate" value="modsTier2"/>
+			<property name="Material" value="Mplants"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="BarteringBuying" operation="base_add" value=".1"/>
+				<passive_effect name="BarteringSelling" operation="base_add" value=".1"/>
+			</effect_group>
+
+			<effect_group>
+				<!--<display_value name="dAttributeLevel" value="1,1,1,1,1,1" tier="1,2,3,4,5,6"/>-->
+				<display_value name="dBarteringBuying" value=".1" />
+			</effect_group>
+		</item_modifier>
+	</append>
+
+	<!-- CHANGED MOD ARMOR TREASURE HUNTER -->
+	<remove xpath="/item_modifiers/item_modifier[@name='modArmorTreasureHunter']"/>
+	<append xpath="/item_modifiers">
+		<item_modifier name="modArmorTreasureHunter" installable_tags="armorHead" modifier_tags="attributeBoost" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<!--<property name="CustomIcon" value="modArmorTreasureHunter"/>-->
+			<property name="UnlockedBy" value="modArmorTreasureHunterSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier2"/>
+			<property name="Material" value="Mleather"/>
+			<!--<property name="Material" value="Msteel"/>-->
+			<!--<property name="EconomicValue" value="1000"/>-->
+
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="LootStage" operation="base_add" value="5"/>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".1"/>
+				<passive_effect name="TreasureBlocksPerReduction" operation="base_add" value="-1"/>
+				<display_value name="dTreasureBlocksPerReduction" value="-1"/>
+				<display_value name="dPlayerExpGain" value=".1"/>
+			</effect_group>
+		</item_modifier>
+	</append>
+
+	<!-- CHANGED MOD ARMOR NIGHT VISION -->
+	<remove xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']"/>
+	<append xpath="/item_modifiers">
+		<item_modifier name="modArmorNightVision" installable_tags="armorHead" modifier_tags="nightVision" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modArmorNightVisionSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier2"/>
+			<property name="Material" value="Mleather"/>
+
+			<effect_group tiered="false">
+				<requirement name="IsLocalPlayer"/>
+				<triggered_effect trigger="onSelfItemActivate" action="ModifyScreenEffect" effect_name="NightVision" intensity="1" fade="0"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="ModifyScreenEffect" effect_name="NightVision" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="ModifyScreenEffect" effect_name="NightVision" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfItemActivate" action="PlaySound" silent_on_equip="true" target="self" sound="flashlight_toggle" play_in_head="false"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="PlaySound" silent_on_equip="true" target="self" sound="flashlight_toggle" play_in_head="false"/>
+			</effect_group>
+		</item_modifier>
+	</append>
+
+	<!-- CHANGED MOD QUAD STORAGE POCKET -->
+	<remove xpath="/item_modifiers/item_modifier[@name='modArmorQuadStoragePocket']"/>
+	<append xpath="/item_modifiers">
+		<item_modifier name="modArmorQuadStoragePocket" installable_tags="armor" modifier_tags="carryweight4" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modArmorQuadStoragePocketSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+			<property name="DisplayType" value="modCarryCapacity"/>
+			<property name="Material" value="Mleather"/>
+			<property name="Group" value="Mods,Moddet"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="4"/>
+				<display_value name="dCarryCapacity" value="4"/>
+			</effect_group>
+		</item_modifier>
+	</append>
+	
+	<!-- NEW MODS LIST -->
+	<append xpath="/item_modifiers">
+
+	<!-- RAGNAR BRACELET (INCREASE STAMINA 20% AND UNLOCK 2 INVENTORY SLOTS) -->
+	<item_modifier name="modRagnarBraceletTM" installable_tags="armorHands" modifier_tags="hand01" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="UnlockedBy" value="modRagnarBraceletTMSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+		<property name="Material" value="Mleather"/>
+		<property name="Group" value="Mods,Moddet"/>
+		
+		<property name="DescriptionKey" value="modRagnarBraceletTMDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>	
+		<property name="EconomicValue" value="1000"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="StaminaMax" operation="base_add" value="20"/>
+			<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		</effect_group>
+	</item_modifier>
+		
+	<!-- SNIPER WOLF BRACELET MOD (INCREASE WEAPON HANDLING BY 15%) -->
+	<item_modifier name="modSniperwolfBraceletTM" installable_tags="armorHands" modifier_tags="hand02" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="UnlockedBy" value="modSniperwolfBraceletTMSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+		<property name="Material" value="Mleather"/>
+		<property name="Group" value="Mods,Moddet"/>
+		
+		<property name="DescriptionKey" value="modSniperwolfBraceletTMDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="EconomicValue" value="1000"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.35"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.35"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.25"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.25"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".15"/>
+		</effect_group>
+	</item_modifier>
+		
+	<!-- UCHIHA BRACELET (REDUCE CRAFTING TIME 15%) -->
+	<item_modifier name="modUchihaBraceletTM" installable_tags="armorHands" modifier_tags="hand03" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="UnlockedBy" value="modUchihaBraceletTMSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+		<property name="Material" value="Mleather"/>
+		<property name="Group" value="Mods,Moddet"/>
+		
+		<property name="DescriptionKey" value="modUchihaBraceletTMDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="EconomicValue" value="1000"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="CraftingTime" operation="perc_add" value="-.15"/>
+		</effect_group>
+	</item_modifier>
+	
+	<!-- CHOPPER BRACELET (INCREASE PHYSICAL DAMAGE AND MAX HEALTH BY 10) -->
+	<item_modifier name="modChopperBraceletTM" installable_tags="armorHands" modifier_tags="hand04" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="UnlockedBy" value="modChopperBraceletTMSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+		<property name="Material" value="Mleather"/>
+		<property name="Group" value="Mods,Moddet"/>
+		
+		<property name="DescriptionKey" value="modChopperBraceletTMDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="EconomicValue" value="1000"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="1"/>
+			<passive_effect name="HealthMax" operation="base_add" value="10"/>
+		</effect_group>
+	</item_modifier>
+	
+	<!-- JORDAN BRACELET (RECOVER STAMINA WITH RUNNING OR WALKING) -->
+	<item_modifier name="modJordanBraceletTM" installable_tags="armorHands" modifier_tags="hand05" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="UnlockedBy" value="modJordanBraceletTMSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+		<property name="Material" value="Mleather"/>
+		<property name="Group" value="Mods,Moddet"/>
+
+		<property name="DescriptionKey" value="modJordanBraceletTMDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="EconomicValue" value="1000"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="Mobility" operation="perc_add" value=".03"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value=".21" tags="walking"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value=".15" tags="running"/>
+			<display_value name="dStaminaChangeOT" value=".15"/>
+		</effect_group>
+	</item_modifier>
+		
+	<!-- SILVER BRACELET (INCREASE LOOT STAGE BY 15) -->
+	<item_modifier name="modSilverBraceletTM" installable_tags="armorHands" modifier_tags="misc" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modSilverBraceletTM"/>
+		<property name="UnlockedBy" value="modSilverBraceletTMSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier2"/>
+		
+		<property name="Material" value="Mleather"/>
+		<property name="Group" value="Mods,Moddet"/>		
+		<property name="DescriptionKey" value="modSilverBraceletTMDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="EconomicValue" value="10000"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="LootStage" operation="base_add" value="15"/>
+		</effect_group>
+	</item_modifier>
+		
+	<!-- GOLD BRACELET (INCREASE LOOT STAGE BY 30) -->
+	<item_modifier name="modGoldBraceletTM" installable_tags="armorHands" modifier_tags="misc" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modGoldBraceletTM"/>
+		<property name="UnlockedBy" value="modGoldBraceletTMSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier2"/>
+
+		<property name="Material" value="Mleather"/>
+		<property name="Group" value="Mods,Moddet"/>
+		<property name="DescriptionKey" value="modGoldBraceletTMDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="EconomicValue" value="20000"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="LootStage" operation="base_add" value="30"/>
+		</effect_group>
+	</item_modifier>
+			
+	<!-- RUBY BRACELET (INCREASE LOOT STAGE BY 50) -->
+	<item_modifier name="modRubyBraceletTM" installable_tags="armorHands" modifier_tags="misc" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modRubyBraceletTM"/>
+		<property name="UnlockedBy" value="modRubyBraceletTMSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier3"/>
+
+		<property name="Material" value="Mleather"/>
+		<property name="Group" value="Mods,Moddet"/>
+		<property name="DescriptionKey" value="modRubyBraceletTMDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>	
+		<property name="EconomicValue" value="80000"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="LootStage" operation="base_add" value="50"/>
+		</effect_group>
+	</item_modifier>
+		
+	<!-- OBSERVER HAT (INCREASE LOOT STAGE BY 15) -->
+	<item_modifier name="modObserverHatTM" installable_tags="head" modifier_tags="stealth" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modObserverHatTM"/>
+		<property name="UnlockedBy" value="modObserverHatTMSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier3"/>
+
+		<property name="Material" value="Mleather"/>
+		<property name="Group" value="Mods,Moddet"/>
+		<property name="DescriptionKey" value="modObserverHatTMDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="EconomicValue" value="50000"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="LootStage" operation="base_add" value="15"/>
+		</effect_group>
+	</item_modifier>
+		
+	<!-- SONIC SHOES (INCREASE RUN SPEED BY 20%, REDUCE STAMINA COST 20%) -->
+	<item_modifier name="modSonicShoesTM" installable_tags="armorFeet" modifier_tags="misc" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modSonicShoesTM"/>
+		<property name="UnlockedBy" value="modSonicShoesTMSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier3"/>
+
+		<property name="Material" value="Mleather"/>
+		<property name="Group" value="Mods,Moddet"/>
+		<property name="DescriptionKey" value="modSonicShoesTMDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="EconomicValue" value="10000"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="RunSpeed" operation="perc_add" value=".2"/>
+			<display_value name="dRunSpeed" value=".2"/>
+		</effect_group>
+		<effect_group tiered="false">
+		    <passive_effect name="StaminaChangeOT" operation="perc_add" value=".2" tags="running"/>
+		    <display_value name="dStaminaRegen" value=".2"/>
+		</effect_group>
+	</item_modifier>
+		
+	<!-- SPORT BACKPACK (INCREASE CARRY CAPACITY BY 5) -->
+	<item_modifier name="modSportBackpackTM" installable_tags="armor" modifier_tags="carryweight" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modSportBackpackTM"/>
+		<property name="UnlockedBy" value="modSportBackpackTMSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
+
+		<property name="Material" value="Mleather"/>
+		<property name="Group" value="Mods,Moddet"/>
+		<property name="DescriptionKey" value="modSportBackpackTMDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="EconomicValue" value="1000"/>
+
+		<property name="DisplayType" value="modCarryCapacity"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="CarryCapacity" operation="base_add" value="5"/>
+			<display_value name="dCarryCapacity" value="5"/>
+		</effect_group>
+	</item_modifier>
+		
+	<!-- MILITARY BACKPACK (INCREASE CARRY CAPACITY BY 8) -->
+	<item_modifier name="modMilitaryBackpackTM" installable_tags="armor" modifier_tags="carryweight" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modMilitaryBackpackTM"/>
+		<property name="UnlockedBy" value="modMilitaryBackpackTMSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier2"/>
+
+		<property name="Material" value="Mleather"/>
+		<property name="Group" value="Mods,Moddet"/>
+		<property name="DescriptionKey" value="modMilitaryBackpackTMDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="EconomicValue" value="2000"/>
+
+		<property name="DisplayType" value="modCarryCapacity"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="CarryCapacity" operation="base_add" value="8"/>
+			<display_value name="dCarryCapacity" value="8"/>
+		</effect_group>
+	</item_modifier>
+		
+	<!-- MILITARY TACTICAL BACKPACK (INCREASE CARRY CAPACITY BY 12) -->
+	<item_modifier name="modMilitaryTacticalBackpackTM" installable_tags="armor" modifier_tags="carryweight" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modMilitaryTacticalBackpackTM"/>
+		<property name="UnlockedBy" value="modMilitaryTacticalBackpackTMSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier3"/>
+
+		<property name="Material" value="Mleather"/>
+		<property name="Group" value="Mods,Moddet"/>
+		<property name="DescriptionKey" value="modMilitaryTacticalBackpackTMDesc"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="EconomicValue" value="5000"/>
+
+		<property name="DisplayType" value="modCarryCapacity"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="CarryCapacity" operation="base_add" value="12"/>
+			<display_value name="dCarryCapacity" value="12"/>
+		</effect_group>
+	</item_modifier>
+
+		<!-- PLATING GRAPHENE (INCREASE ARMOR +4) -->
+		<item_modifier name="modArmorPlatingGrapheneTM" installable_tags="armor" modifier_tags="resistance" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modArmorPlatingGrapheneTM"/>
+			<property name="UnlockedBy" value="modArmorPlatingGrapheneTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+
+			<property name="Material" value="Mleather"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modArmorPlatingGrapheneTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<property name="DisplayType" value="modArmor"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="4"/>
+			</effect_group>
+		</item_modifier>
+
+		<!-- trigger group 1x1 -->
+		<item_modifier name="modGunTriggerGroupOneTM" installable_tags="gun" modifier_tags="rangedOne" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modGunTriggerGroupOneTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+
+			<property name="Material" value="Mmetal"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modGunTriggerGroupOneTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<effect_group tiered="false">
+
+				<!-- only one shot every 3 seconds -->
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_set" value=".1"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_set" value=".05"/>
+
+				<!-- incrase handling -->
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.35"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.35"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.25"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.25"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".15"/>
+
+				<!-- incrase damage -->
+				<passive_effect name="EntityDamage" operation="perc_add" value="3.3"/>
+				
+			</effect_group>
+			
+		</item_modifier>
+
+		<!-- mod power general -->
+		<item_modifier name="modGunAttachmentRadTM" installable_tags="ranged" modifier_tags="booster" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modGunAttachmentRadTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+
+			<property name="Material" value="Mmetal"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modGunAttachmentRadTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<!-- incrase damage vanilla + 5% -->
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="gun"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
+			</effect_group>
+
+			<!-- incrase damage tongo + 15% -->
+			<effect_group tiered="false">
+				<requirement name="HoldingItemHasTags" tags="perkRangedWeapons"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5"/>
+			</effect_group>
+			
+		</item_modifier>
+
+		<!-- mod power burn forest -->
+		<item_modifier name="modPowerBurnForestTM" installable_tags="weapon,tool" modifier_tags="extraDamage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modPowerBurnForestTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+
+			<property name="Material" value="Mmetal"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modPowerBurnForestTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<!-- incrase damage in burn forest biome + 30% -->
+			<effect_group tiered="false">
+				<requirement name="InBiome" biome="9"/> <!-- burnt_forest -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".7"/>
+			</effect_group>
+
+		</item_modifier>
+
+		<!-- mod power desert -->
+		<item_modifier name="modPowerDesertTM" installable_tags="weapon,tool" modifier_tags="extraDamage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modPowerDesertTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+
+			<property name="Material" value="Mmetal"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modPowerDesertTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<!-- incrase damage in desert biome + 30% -->
+			<effect_group tiered="false">
+				<requirement name="InBiome" biome="5"/> <!-- desert -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".7"/>
+			</effect_group>
+
+		</item_modifier>
+
+		<!-- mod power snow -->
+		<item_modifier name="modPowerSnowTM" installable_tags="weapon,tool" modifier_tags="extraDamage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modPowerSnowTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+
+			<property name="Material" value="Mmetal"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modPowerSnowTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<!-- incrase damage in snow biome + 30% -->
+			<effect_group tiered="false">
+				<requirement name="InBiome" biome="1"/> <!-- snow -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".7"/>
+			</effect_group>
+
+		</item_modifier>
+
+		<!-- mod power wasteland -->
+		<item_modifier name="modPowerWastelandTM" installable_tags="weapon,tool" modifier_tags="extraDamage" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modGunTriggerGroupOneTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+
+			<property name="Material" value="Mmetal"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modPowerWastelandTMSchematic"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<!-- incrase damage in wasteland biome + 30% -->
+			<effect_group tiered="false">
+				<requirement name="InBiome" biome="8"/> <!-- wasteland -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".7"/>
+			</effect_group>
+
+		</item_modifier>
+
+		<!-- mod defense burn forest (increase armor +3) -->
+		<item_modifier name="modDefenseBurnForestTM" installable_tags="armor" modifier_tags="extraResistance" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modDefenseBurnForestTM"/>
+			<property name="UnlockedBy" value="modDefenseBurnForestTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+
+			<property name="Material" value="Mleather"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modDefenseBurnForestTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<property name="DisplayType" value="modArmor"/>
+
+			<!-- incrase damage in burn forest biome + 3 -->
+			<effect_group tiered="false">
+				<requirement name="InBiome" biome="9"/> <!-- burnt_forest -->
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="3"/>
+			</effect_group>
+		</item_modifier>
+		
+		<!-- mod defense desert (increase armor +3) -->
+		<item_modifier name="modDefenseDesertTM" installable_tags="armor" modifier_tags="extraResistance" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modDefenseDesertTM"/>
+			<property name="UnlockedBy" value="modDefenseDesertTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+
+			<property name="Material" value="Mleather"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modDefenseDesertTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<property name="DisplayType" value="modArmor"/>
+
+			<!-- incrase damage in desert + 3 -->
+			<effect_group tiered="false">
+				<requirement name="InBiome" biome="5"/> <!-- desert -->
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="3"/>
+			</effect_group>
+		</item_modifier>
+
+		<!-- mod defense snow (increase armor +3) -->
+		<item_modifier name="modDefenseSnowTM" installable_tags="armor" modifier_tags="extraResistance" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modDefenseSnowTM"/>
+			<property name="UnlockedBy" value="modDefenseSnowTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+
+			<property name="Material" value="Mleather"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modDefenseSnowTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<property name="DisplayType" value="modArmor"/>
+
+			<!-- incrase damage in snow + 3 -->
+			<effect_group tiered="false">
+				<requirement name="InBiome" biome="1"/> <!-- snow -->
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="3"/>
+			</effect_group>
+		</item_modifier>
+
+		<!-- mod defense wasteland (increase armor +3) -->
+		<item_modifier name="modDefenseWastelandTM" installable_tags="armor" modifier_tags="extraResistance" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modDefenseWastelandTM"/>
+			<property name="UnlockedBy" value="modDefenseWastelandTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+
+			<property name="Material" value="Mleather"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modDefenseWastelandTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<property name="DisplayType" value="modArmor"/>
+
+			<!-- incrase damage in burn wasteland + 3 -->
+			<effect_group tiered="false">
+				<requirement name="InBiome" biome="8"/> <!-- wasteland -->
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="3"/>
+			</effect_group>
+		</item_modifier>
+
+
+	
+
+
+
+		<!-- graphene magazine extended -->
+		<item_modifier name="modGunGrapheneMagazineExtenderTM" installable_tags="magazine,turretRanged" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="modGunGrapheneMagazineExtenderTM"/>
+			<property name="UnlockedBy" value="modGunGrapheneMagazineExtenderTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+
+			<property name="Material" value="Mmetal"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modGunGrapheneMagazineExtenderTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<!-- increase magazine extender -->
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="perc_add" value="7"/>
+				<!--<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.25"/>-->
+			</effect_group>
+		</item_modifier>
+
+
+
+
+
+
+		<!-- test -->
+		<!--<item_modifier name="modMinerTrainingGlovesTM" installable_tags="armorHands" modifier_tags="hand05" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modMinerTrainingGlovesTMSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+			<property name="Material" value="Mleather"/>
+			<property name="Group" value="Mods,Moddet"/>
+
+			<property name="DescriptionKey" value="modMinerTrainingGlovesTMDesc"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+
+			<effect_group tiered="false">
+				<passive_effect name="CVarLogValue" operation="base_set" value="4" cvar="PR_MinerXP_Bonus"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".25"/>
+			</effect_group>
+		</item_modifier>-->
+		
+
+		
+			
+
+		
+		
+		
+		
+		
+		
+		
+	</append>
+	
+	
+</raiz>
+
+	
+

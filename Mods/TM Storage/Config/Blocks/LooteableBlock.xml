@@ -1,0 +1,220 @@
+<configs>
+	
+	<append xpath="/blocks/block[@name='cntBarrelAcidSingle00']/property[@class='CompositeFeatures']">
+		<property class="TEFeatureStorage">
+			<property name="LootList" value="gasBarrelAcid"/>
+		</property>
+	</append>
+	
+	<set xpath="blocks/block[@name='cntBarrelAcidQuadA']/property[@class='CompositeFeatures']/property[@class='TEFeatureStorage']/property[@name='LootList']/@value">gasBarrelAcidLarge</set>
+	<set xpath="blocks/block[@name='cntBarrelAcidQuadB']/property[@class='CompositeFeatures']/property[@class='TEFeatureStorage']/property[@name='LootList']/@value">gasBarrelAcidLarge</set>
+	
+	<append xpath="/blocks/block[@name='decoWineBottle']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="TMWineBottle"/>
+			</property>
+		</property>		
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntBarrelPlasticSingle00']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="PolymerBarrel"/>
+			</property>
+		</property>	
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntIceMachine']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="iceMachine"/>
+			</property>
+		</property>	
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntToaster']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="TMcntToaster"/>
+			</property>
+		</property>	
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletBrownBoxesTile']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="palletPolymerLarge"/>
+			</property>
+		</property>	
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletBrownBoxesLoose']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="palletPolymerMedium"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletBrownBoxesTopSmall']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="palletPolymerSmall"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletBrownBoxesBase']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="palletPolymerLarge"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletBrownBoxesTop']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="palletPolymerMedium"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletCompressedCardboard']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="palletCardboard"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntStoreElectronicsPalletTvFallen']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="mopowerShelves"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='utilitySink']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="WutilitySink"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='pedestalSink']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="WutilitySink"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='wallMountSinkCommercial']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="WutilitySink"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='counterMountedSinkCommercial']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="WutilitySink"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='drinkingfountainSingle']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="WutilitySink"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='sinkKitchen']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="WutilitySink"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='wineBarrel']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="TMwineBarrel"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='parkingMeter']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="TMparkingMeter"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntCollapsedSolarbank']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="TMsolarbank"/>
+			</property>
+		</property>
+		<drop event="Harvest" name="solarbank" count="0,1" prob="0.5" tag="salvageHarvest"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletTarpBaseWhite']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="palletTarpBase"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='palletBagCowFeedBaseFull']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="palletBagCowFeedBase"/>
+			</property>
+		</property>
+	</append>
+	
+	<append xpath="/blocks/block[@name='fireHydrant']">
+		<property name="Class" value="CompositeTileEntity" />
+		<property class="CompositeFeatures">
+			<property class="TEFeatureStorage">
+				<property name="LootList" value="WutilitySink"/>
+			</property>
+		</property>
+	</append>
+
+</configs>

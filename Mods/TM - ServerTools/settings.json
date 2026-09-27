@@ -1,0 +1,62 @@
+{
+  "ChatColor": "[FFCC00]",
+  "ServerName": "[TM - ST]",
+  "Debug": false,
+  "AutoBackup": {
+    "Enabled": false,
+    "Delay": "30",
+    "BackupsLimit": 10,
+    "ChatColor": "[00FF00]",
+    "ShowMessage": false
+  },
+  "AutoSaveWorld": {
+    "Enabled": false,
+    "Delay": "60",
+    "ChatColor": "[00FF00]",
+    "ShowMessage": false
+  },
+  "BloodMoon": {
+    "Enabled": true,
+    "Delay": "60",
+    "ChatColor": "[FF0000]"
+  },
+  "BloodMoonReward": {
+    "Enabled": true,
+    "ChatColorRW": "[00FF00]",
+    "ChatColorDead": "[FF0000]"
+  },
+  "ScoutHorde": {
+    "Enabled": true,
+    "MinDelay": "30",
+    "MaxDelay": "60",
+    "Day": 10,
+    "ChatColor": "[FFC300]",
+    "MinPlayerLevel": 10,
+    "GameStages": [
+      {
+        "Min": 1,
+        "Max": 49,
+        "eventn": "tm_horde_gs1|tm_horde_gs1_1"
+      },
+      {
+        "Min": 50,
+        "Max": 199,
+        "eventn": "tm_horde_gs50|tm_horde_gs50_50"
+      },
+      {
+        "Min": 200,
+        "Max": 299,
+        "eventn": "tm_horde_gs200"
+      },
+      {
+        "Min": 300,
+        "Max": 99999,
+        "eventn": "tm_horde_gs300"
+      }
+    ]
+  },
+  "SoundMachiene": {
+    "Enabled": false,
+    "Delay": "20"
+  }
+}

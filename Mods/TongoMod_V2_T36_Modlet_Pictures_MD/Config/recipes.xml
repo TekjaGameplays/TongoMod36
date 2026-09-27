@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	
+	<!-- recipes painting-->
+
+	<append xpath="/recipes">
+
+		<recipe name="GamePicturesVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting" craft_time = "5">
+			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaint" count="5"/>
+		</recipe>
+
+	</append>
+		
+
+	
+</raiz>

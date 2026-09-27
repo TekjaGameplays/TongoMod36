@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	
+	<!-- new quest types -->
+
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<append xpath="/quests">
+
+		<!-- group quest hard next (arlene,screamer, arlene horde, demolition horde) -->
+		<quest id="questRadialHard1">
+			<property name="name_key" value="quest_radial_hard1_name"/>
+			<property name="subtitle_key" value="quest_radial_hard1_subtitle"/>
+			<property name="description_key" value="quest_radial_hard1_desc"/>
+			<property name="offer_key" value="quest_radial_hard1_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="3"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="zombieArleneIrradiationComand,zombieArleneElectricComand,zombieArleneFireComand" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward low (choices x3) -->
+			<reward type="Exp" value="800"/>
+			<reward type="Item" id="casinoCoin" value="1600"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinFirstTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperFirstTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestYellowSackFirstTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackFirstTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemFirstTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="10"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupPalletBagFertilizerBaseFull" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<quest id="questRadialHard2">
+			<property name="name_key" value="quest_radial_hard2_name"/>
+			<property name="subtitle_key" value="quest_radial_hard2_subtitle"/>
+			<property name="description_key" value="quest_radial_hard2_desc"/>
+			<property name="offer_key" value="quest_radial_hard2_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="3"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="zombieScreamerIrradiation,zombieScreamerElectric,zombieScreamerFire" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward low (choices x3) -->
+			<reward type="Exp" value="800"/>
+			<reward type="Item" id="casinoCoin" value="1600"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinFirstTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperFirstTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestYellowSackFirstTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackFirstTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemFirstTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="10"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupPalletBagFertilizerBaseFull" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<quest id="questRadialHard3">
+			<property name="name_key" value="quest_radial_hard3_name"/>
+			<property name="subtitle_key" value="quest_radial_hard3_subtitle"/>
+			<property name="description_key" value="quest_radial_hard3_desc"/>
+			<property name="offer_key" value="quest_radial_hard3_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="zombieMiniArleneIrradiationComand,zombieMiniArleneElectricComand,zombieMiniArleneFireComand" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward low (choices x3) -->
+			<reward type="Exp" value="800"/>
+			<reward type="Item" id="casinoCoin" value="1600"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinFirstTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperFirstTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestYellowSackFirstTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackFirstTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemFirstTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="10"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupPalletBagFertilizerBaseFull" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<quest id="questRadialHard4">
+			<property name="name_key" value="quest_radial_hard4_name"/>
+			<property name="subtitle_key" value="quest_radial_hard4_subtitle"/>
+			<property name="description_key" value="quest_radial_hard4_desc"/>
+			<property name="offer_key" value="quest_radial_hard4_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="4"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="zombieDemolitionIrradiationGeneralO,zombieDemolitionElectricGeneralO,zombieDemolitionFireGeneralO" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward mid (choices x4) -->
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestRedSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSkillPointSecondTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupToolsWeaponsArmorModsHardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<!-- group quest hard next (burnt, tom6k, wolf, vulture, rancher, lumberjack, chuck, mutated, wight) -->
+		<quest id="questRadialHard5">
+			<property name="name_key" value="quest_radial_hard5_name"/>
+			<property name="subtitle_key" value="quest_radial_hard5_subtitle"/>
+			<property name="description_key" value="quest_radial_hard5_desc"/>
+			<property name="offer_key" value="quest_radial_hard5_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="4"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="zombieBurntIrradiationElite,zombieBurntElectricElite,zombieBurntFireElite" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward mid (choices x4) -->
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestRedSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSkillPointSecondTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupToolsWeaponsArmorModsHardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<quest id="questRadialHard6">
+			<property name="name_key" value="quest_radial_hard6_name"/>
+			<property name="subtitle_key" value="quest_radial_hard6_subtitle"/>
+			<property name="description_key" value="quest_radial_hard6_desc"/>
+			<property name="offer_key" value="quest_radial_hard6_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="4"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="zombieTomClar6kIrradiation,zombieTomClar6kElectric,zombieTomClar6kFire" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward mid (choices x4) -->
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestRedSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSkillPointSecondTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupToolsWeaponsArmorModsHardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<quest id="questRadialHard7">
+			<property name="name_key" value="quest_radial_hard7_name"/>
+			<property name="subtitle_key" value="quest_radial_hard7_subtitle"/>
+			<property name="description_key" value="quest_radial_hard7_desc"/>
+			<property name="offer_key" value="quest_radial_hard7_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="4"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="animalDireWolfIrradiationElite,animalDireWolfElectricElite,animalDireWolfFireElite" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward mid (choices x4) -->
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestRedSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSkillPointSecondTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupToolsWeaponsArmorModsHardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<quest id="questRadialHard8">
+			<property name="name_key" value="quest_radial_hard8_name"/>
+			<property name="subtitle_key" value="quest_radial_hard8_subtitle"/>
+			<property name="description_key" value="quest_radial_hard8_desc"/>
+			<property name="offer_key" value="quest_radial_hard8_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="4"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="animalZombieVultureElite" value="5" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward mid (choices x4) -->
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestRedSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSkillPointSecondTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupToolsWeaponsArmorModsHardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<quest id="questRadialHard9">
+			<property name="name_key" value="quest_radial_hard9_name"/>
+			<property name="subtitle_key" value="quest_radial_hard9_subtitle"/>
+			<property name="description_key" value="quest_radial_hard9_desc"/>
+			<property name="offer_key" value="quest_radial_hard9_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="4"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="zombieRancherIrradiation,zombieRancherElectric,zombieRancherFire" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward mid (choices x4) -->
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestRedSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSkillPointSecondTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupToolsWeaponsArmorModsHardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<quest id="questRadialHard10">
+			<property name="name_key" value="quest_radial_hard10_name"/>
+			<property name="subtitle_key" value="quest_radial_hard10_subtitle"/>
+			<property name="description_key" value="quest_radial_hard10_desc"/>
+			<property name="offer_key" value="quest_radial_hard10_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="4"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="zombieLumberjackIrradiationElite,zombieLumberjackElectricElite,zombieLumberjackFireElite" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward mid (choices x4) -->
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestRedSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSkillPointSecondTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupToolsWeaponsArmorModsHardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<quest id="questRadialHard11">
+			<property name="name_key" value="quest_radial_hard11_name"/>
+			<property name="subtitle_key" value="quest_radial_hard11_subtitle"/>
+			<property name="description_key" value="quest_radial_hard11_desc"/>
+			<property name="offer_key" value="quest_radial_hard11_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="4"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="zombieChuckIrradiation,zombieChuckElectric,zombieChuckFire" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward mid (choices x4) -->
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestRedSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSkillPointSecondTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupToolsWeaponsArmorModsHardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<quest id="questRadialHard12">
+			<property name="name_key" value="quest_radial_hard12_name"/>
+			<property name="subtitle_key" value="quest_radial_hard12_subtitle"/>
+			<property name="description_key" value="quest_radial_hard12_desc"/>
+			<property name="offer_key" value="quest_radial_hard12_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="4"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="zombieMutatedIrradiationElite,zombieMutatedElectricElite,zombieMutatedFireElite" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward mid (choices x4) -->
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestRedSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSkillPointSecondTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupToolsWeaponsArmorModsHardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<quest id="questRadialHard13">
+			<property name="name_key" value="quest_radial_hard13_name"/>
+			<property name="subtitle_key" value="quest_radial_hard13_subtitle"/>
+			<property name="description_key" value="quest_radial_hard13_desc"/>
+			<property name="offer_key" value="quest_radial_hard13_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="4"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="zombieWightIrradiationElite,zombieWightElectricElite,zombieWightFireElite" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward mid (choices x4) -->
+			<reward type="Exp" value="1600"/>
+			<reward type="Item" id="casinoCoin" value="3200"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestRedSackSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemSecondTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSkillPointSecondTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupToolsWeaponsArmorModsHardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<!-- group quest hard mega (cop, biker) -->
+		<quest id="questRadialHard14">
+			<property name="name_key" value="quest_radial_hard14_name"/>
+			<property name="subtitle_key" value="quest_radial_hard14_subtitle"/>
+			<property name="description_key" value="quest_radial_hard14_desc"/>
+			<property name="offer_key" value="quest_radial_hard14_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="zombieSuperCopIrradiation,zombieSuperCopElectric,zombieSuperCopFire" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward high (choices x5) -->
+			<reward type="Exp" value="3200"/>
+			<reward type="Item" id="casinoCoin" value="6400"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinThirdTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperThirdTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackThirdTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestRedSackThirdTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemThirdTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSkillPointThirdTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupToolsWeaponsArmorModsHardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+		<quest id="questRadialHard15">
+			<property name="name_key" value="quest_radial_hard15_name"/>
+			<property name="subtitle_key" value="quest_radial_hard15_subtitle"/>
+			<property name="description_key" value="quest_radial_hard15_desc"/>
+			<property name="offer_key" value="quest_radial_hard15_offer"/>
+			<property name="icon" value="ui_game_symbol_letter_hard"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="shareable" value="false"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_radialx_complete"/>
+
+			<objective type="EntityKill" id="zombieSuperBikerIrradiation,zombieSuperBikerElectric,zombieSuperBikerFire" value="10" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<!-- reward high (choices x5) -->
+			<reward type="Exp" value="3200"/>
+			<reward type="Item" id="casinoCoin" value="6400"/>
+
+			<reward type="LootItem" id="groupQuestcasinoCoinThirdTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBluePaperThirdTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBlueSackThirdTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestRedSackThirdTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestBookSchemThirdTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSkillPointThirdTM" ischosen="true" value="1"/>
+
+			<reward type="LootItem" id="groupQuimicsHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupBooksHardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupShematicshardTM" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupToolsWeaponsArmorModsHardTM" ischosen="true" value="1"/>
+			<!-- xxx -->
+			
+		</quest>
+
+
+
+
+	</append>
+
+	
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+		
+
+	
+</raiz>

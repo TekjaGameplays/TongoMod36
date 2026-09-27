@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raiz>
+	<append xpath="/controls">
+
+		<tongo_recipe_stack>
+			<rect controller="RecipeStack" width="65" height="65" collider_scale="1.1">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="68" height="68" color="[black]" type="sliced" fillcenter="false"/>
+				<sprite name="background" color="[mediumGrey]" type="sliced" style="press" on_hover="true"/>
+				<sprite depth="1" name="itemIcon" width="58" height="58" atlas="ItemIconAtlas" sprite="" pos="0,-5" pivot="topleft" foregroundlayer="true"/>
+				<sprite depth="4" name="lockIcon" width="21" height="21" sprite="ui_game_symbol_hammer" pos="2,-2" visible="false" foregroundlayer="true"/>
+				<label depth="4" name="count" pos="4,-42" width="58" height="21" text="Test" font_size="21" justify="right" effect="outline" />
+				<label depth="4" name="timer" pos="34,-38" width="60" height="21" font_size="21" justify="center" pivot="center" color="[beige]"/>
+				<sprite depth="2" name="overlay" width="60" height="60" color="32,32,32,128" type="sliced"/>
+				<sprite depth="3" name="cancel" sprite="ui_game_symbol_x" width="60" height="60" color="255,0,0,0" type="sliced" visible="false" foregroundlayer="true"/>
+			</rect>
+		</tongo_recipe_stack>
+		
+	</append>
+		
+
+</raiz>

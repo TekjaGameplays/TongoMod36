@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<raiz>
+	<Name value="TongoMod_Moddlet_Tire_Wheels_Around_World"/>
+	<DisplayName value="TongoMod 3.6" />
+	<Description value="Get wheels from tires around de world in TongoMod"/>
+	<Author value="Tekja" />
+	<Version value="3.6" />
+	<Website value=" " />
+	<SkipWithAntiCheat value="false" />
+</raiz>

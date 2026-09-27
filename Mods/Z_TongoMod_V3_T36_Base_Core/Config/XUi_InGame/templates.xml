@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	<!-- probando a redefinir las plantillas -->
+	<append xpath="/templates">
+
+		<skill_next>
+			<rect depth="2" width="645" height="46" controller="SkillEntry" style="press, hover, scroll" enabled_color="[iconColor]" disabled_color="[disabledLabelColor]" row_color="[darkGrey]" hover_color="[mediumGrey]" sound="[recipe_click]" sound_play_on_hover="[default_hover]">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="647" height="48" color="[black]" type="sliced" fillcenter="false" />
+
+				<sprite depth="1" color="{rowstatecolor}" sprite="{rowstatesprite}" width="644"  height="45" type="sliced" />
+
+				<sprite depth="1" name="bg" color="255,0,0,180" type="sliced" width="240" height="100" pos="-50,0" visible="{iscrafting}"/>
+
+				<sprite depth="2" name="groupIcon" sprite="{groupicon}" style="icon32px" pos="6, -3" color="{statuscolor}" foregroundlayer="true"/>
+				<label width="386" name="groupName" pos="44,-20" pivot="left" depth="2" text="{groupname}" color="{statuscolor}"/>
+
+				<sprite depth="2" pos="486,-19" sprite="ui_game_symbol_lock" visible="{islocked}" style="icon32px" pivot="center" color="{statuscolor}" foregroundlayer="true"/>
+				<label width="125" pos="486,-20" depth="2" text="{grouplevel}" visible="{isnotlocked}" pivot="center" justify="center" color="{statuscolor}"/>
+
+				<sprite depth="2" pos="593,-19" sprite="ui_game_symbol_check" visible="{cannotpurchase}" style="icon32px" pivot="center" color="{statuscolor}" foregroundlayer="true" />
+				<label width="90" pos="593,-20" depth="2" text="{grouppointcost}" visible="{canpurchase}" pivot="center" justify="center" color="{statuscolor}"/>
+			</rect>
+
+			
+		</skill_next>
+
+	</append>
+
+
+	
+</raiz>

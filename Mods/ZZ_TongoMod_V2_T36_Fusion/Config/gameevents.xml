@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<append xpath="/gameevents">
+
+		<!-- remove al zombies TM -->
+		<action_sequence name="removeZombieTM">
+			<property name="allow_user_trigger" value="false" />
+			<property name="action_type" value="Game" />
+
+			<action class="RemoveEntities" />
+		</action_sequence>
+		
+	</append>
+
+	<!-- add objects (test) -->
+	<append xpath="/gameevents">
+		<action_sequence name="HardRewardTM">
+			<action class="AddItems">
+				<requirement class="RandomRoll">
+					<property name="min_max" value="0,100"/>
+					<property name="operation" value="LTE"/>
+					<property name="value" value="100"/>
+				</requirement>
+				<property name="added_items" value="resourceBeeswax"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+	</append>
+
+	
+	<append xpath="/gameevents">
+
+		<!-- spawn test -->
+		<action_sequence name="spawn_test_TM">
+			<property name="allow_user_trigger" value="false" />
+			<property name="category" value="twitch_actions" />
+
+			<action class="SpawnEntity">
+				<property name="entity_names" value="animalMiniWolfIrradiationElite,animalMiniWolfElectricElite,animalMiniWolfFireElite" param1="zombiename" />
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="party_addition" value="2" param1="partyaddition" />
+				<property name="air_spawn" value="false" param1="airspawn" />
+				<property name="ignore_multiplier" value="true" param1="ignoremultiplier" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="twitch_bad_spawn" />
+				<property name="phase" value="1" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="wolfalert" param1="alertsound" />
+				<property name="phase" value="1" />
+			</action>
+		</action_sequence>
+
+		<!-- party test -->
+		<action_sequence name="event_test_buff">
+			<action class="AddBuff">
+				<property name="phase" value="1" />
+				<property name="buff_name" value="buffIsOnFiret" param1="addbuff" />
+				<property name="target_group" value="party" />
+			</action>
+		</action_sequence>
+
+		<!-- spawn arlene -->
+		<action_sequence name="spawn_arlene_TM">
+			<property name="allow_user_trigger" value="false" />
+			<property name="category" value="twitch_actions" />
+
+			<action class="SpawnEntity">
+				<property name="entity_names" value="zombieArleneFireComand,zombieArleneElectricComand,zombieArleneIrradiationComand" param1="zombiename" />
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="party_addition" value="2" param1="partyaddition" />
+				<property name="air_spawn" value="false" param1="airspawn" />
+				<property name="ignore_multiplier" value="true" param1="ignoremultiplier" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="twitch_bad_spawn" />
+				<property name="phase" value="1" />
+			</action>
+		</action_sequence>
+
+		<!-- spawn arlene mini -->
+		<action_sequence name="spawn_arlene_mini_TM">
+			<property name="allow_user_trigger" value="false" />
+			<property name="category" value="twitch_actions" />
+
+			<action class="SpawnEntity">
+				<property name="entity_names" value="zombieMiniArleneFireComand,zombieMiniArleneElectricComand,zombieMiniArleneIrradiationComand" param1="zombiename" />
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="party_addition" value="2" param1="partyaddition" />
+				<property name="air_spawn" value="false" param1="airspawn" />
+				<property name="ignore_multiplier" value="true" param1="ignoremultiplier" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="twitch_bad_spawn" />
+				<property name="phase" value="1" />
+			</action>
+
+		</action_sequence>
+
+		<!-- spawn screamer -->
+		<action_sequence name="spawn_screamer_TM">
+			<property name="allow_user_trigger" value="false" />
+			<property name="category" value="twitch_actions" />
+
+			<action class="SpawnEntity">
+				<property name="entity_names" value="zombieScreamerIrradiation,zombieScreamerElectric,zombieScreamerFire" param1="zombiename" />
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="party_addition" value="2" param1="partyaddition" />
+				<property name="air_spawn" value="false" param1="airspawn" />
+				<property name="ignore_multiplier" value="true" param1="ignoremultiplier" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="twitch_bad_spawn" />
+				<property name="phase" value="1" />
+			</action>
+		</action_sequence>
+
+		<!-- spawn graphene spikes -->
+		<action_sequence name="action_block_spikes_TM">
+			<requirement class="InVehicle">
+				<property name="invert" value="true" />
+			</requirement>
+
+			<action class="BlockReplaceAttack">
+				<property name="phase" value="1" />
+				<property name="inner_offset" value="1" />
+				<property name="min_offset" value="-5,-3,-5" />
+				<property name="max_offset" value="5,5,5" />
+				<property name="spacing" value="0" />
+				<property name="safe_allowed" value="false" />
+				<property name="random_chance" value=".4" />
+				<property name="block_to" value="hardSpikeGrapheneTM" />
+				<property name="block_tags" value="air,twitchReplace" />
+				<property name="time_alive" value="30" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="twitch_event_blocks_add" />
+				<property name="phase" value="2" />
+			</action>
+		</action_sequence>
+
+		<!-- spawn miniwolf x1 -->
+		<action_sequence name="spawn_miniwolf1_TM">
+			<property name="allow_user_trigger" value="false" />
+			<property name="category" value="twitch_actions" />
+
+			<action class="SpawnEntity">
+				<property name="entity_names" value="animalMiniWolfIrradiationElite,animalMiniWolfElectricElite,animalMiniWolfFireElite" param1="zombiename" />
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="party_addition" value="2" param1="partyaddition" />
+				<property name="air_spawn" value="false" param1="airspawn" />
+				<property name="ignore_multiplier" value="true" param1="ignoremultiplier" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="twitch_bad_spawn" />
+				<property name="phase" value="1" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="wolfalert" param1="alertsound" />
+				<property name="phase" value="1" />
+			</action>
+		</action_sequence>
+
+		<!-- spawn miniwolf x3 -->
+		<action_sequence name="spawn_miniwolf3_TM">
+			<property name="allow_user_trigger" value="false" />
+			<property name="category" value="twitch_actions" />
+
+			<action class="SpawnEntity">
+				<property name="entity_names" value="animalMiniWolfIrradiationElite,animalMiniWolfElectricElite,animalMiniWolfFireElite" param1="zombiename" />
+				<property name="spawn_count" value="3" param1="spawncount" />
+				<property name="party_addition" value="2" param1="partyaddition" />
+				<property name="air_spawn" value="false" param1="airspawn" />
+				<property name="ignore_multiplier" value="true" param1="ignoremultiplier" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="twitch_bad_spawn" />
+				<property name="phase" value="1" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="wolfalert" param1="alertsound" />
+				<property name="phase" value="1" />
+			</action>
+		</action_sequence>
+
+		<!-- spawn spider -->
+		<action_sequence name="spawn_spider_TM">
+			<property name="allow_user_trigger" value="false" />
+			<property name="category" value="twitch_actions" />
+
+			<action class="SpawnEntity">
+				<property name="entity_names" value="zombieSpiderInfernalIrradiation,zombieSpiderInfernalElectric,zombieSpiderInfernalFire" param1="zombiename" />
+				<property name="spawn_count" value="1" param1="spawncount" />
+				<property name="party_addition" value="2" param1="partyaddition" />
+				<property name="air_spawn" value="false" param1="airspawn" />
+				<property name="ignore_multiplier" value="true" param1="ignoremultiplier" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="twitch_bad_spawn" />
+				<property name="phase" value="1" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="wolfalert" param1="alertsound" />
+				<property name="phase" value="1" />
+			</action>
+		</action_sequence>
+
+		<!-- spawn land mines TM -->
+		<action_sequence name="action_land_mines_TM">
+			<requirement class="InVehicle">
+				<property name="invert" value="true" />
+			</requirement>
+
+			<action class="BlockReplaceAttack">
+				<property name="phase" value="1" />
+				<property name="inner_offset" value="1" />
+				<property name="min_offset" value="-5,-3,-5" />
+				<property name="max_offset" value="5,5,5" />
+				<property name="spacing" value="0" />
+				<property name="safe_allowed" value="false" />
+				<property name="random_chance" value=".5" />
+				<property name="block_to" value="mineCandyTinTwitch" />
+				<property name="block_tags" value="air,twitchReplace" />
+				<property name="time_alive" value="30" />
+				<property name="remove_sound" value="twitch_event_blocks_remove" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="twitch_event_blocks_add" />
+				<property name="phase" value="2" />
+			</action>
+		</action_sequence>
+
+		<!-- action bucket head TM -->
+		<action_sequence name="action_bucket_heads_TM">
+			<property name="category" value="twitch_actions" />
+
+			<action class="AddPartyToGroup">
+				<property name="phase" value="0" />
+				<property name="group_name" value="party" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="twitch_bad_buff" param1="twitchsound" />
+				<property name="phase" value="1" />
+				<property name="inside_head" value="true" />
+				<property name="target_group" value="party" />
+			</action>
+
+			<action class="PlaySound">
+				<property name="sound" value="twitch_buckethead" param1="buffsound" />
+				<property name="phase" value="1" />
+				<property name="inside_head" value="true" />
+				<property name="target_group" value="party" />
+				<property name="delay" value="1.7" param1="buffsounddelay" />
+			</action>
+
+			<action class="SetEventFlag">
+				<property name="event_flag" value="BucketHead" />
+				<property name="enable" value="true" />
+				<property name="duration" value="60" />
+				<property name="phase" value="2" />
+			</action>
+		</action_sequence>
+
+		<!-- even dogs TM -->
+		<action_sequence name="event_dogs_TM" template="spawn_group_event">
+			<variable name="zombiename" value="animalZombieDog" />
+			<variable name="spawncount" value="3" />
+			<variable name="alertsound" value="zombiedogalert" />
+			<variable name="gamestage_extra1" value="50" />
+			<variable name="spawncount_extra1" value="1" />
+			<variable name="gamestage_extra2" value="150" />
+			<variable name="spawncount_extra2" value="2" />
+		</action_sequence>
+
+		<!-- screamer scout horde TM-->
+		<action_sequence name="action_screamer_scout_TM">
+			<property name="allow_user_trigger" value="false" />
+			<property name="category" value="twitch_actions" />
+
+			<action class="SpawnEntity">
+				<property name="entity_names" value="zombieArleneFireComand,zombieArleneElectricComand,zombieArleneIrradiationComand,zombieMiniArleneIrradiationComand,zombieMiniArleneElectricComand,zombieMiniArleneFireComand,zombieSpiderInfernalFire,zombieSpiderInfernalElectric,zombieSpiderInfernalIrradiation,zombieTomClar6kIrradiation,zombieTomClar6kElectric,zombieTomClar6kFire,zombieDemolitionIrradiationGeneral,zombieDemolitionElectricGeneral,zombieDemolitionFireGeneral" param1="zombiename" />
+				<property name="spawn_count" value="3" param1="spawncount" />
+				<property name="party_addition" value="2" param1="partyaddition" />
+				<property name="air_spawn" value="false" param1="airspawn" />
+				<property name="ignore_multiplier" value="true" param1="ignoremultiplier" />
+
+				<property name="safe_spawn" value="true"/>
+				<property name="min_distance" value="10"/>
+				<property name="max_distance" value="20"/>
+				<property name="spawn_type" value="WanderingHorde"/>
+			</action>
+		</action_sequence>
+
+
+	</append>
+	
+	
+</raiz>

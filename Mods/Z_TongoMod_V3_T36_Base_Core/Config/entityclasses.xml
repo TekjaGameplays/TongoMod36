@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	<!-- * ADD STARTED PACK FOR TONGOMOD -->
+	<!--<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">quest_start_tongomod,groupQuestStarterPackTMBundle</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']/@value">quest_start_tongomod,groupQuestStarterPackTMBundle</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']/@value">quest_start_tongomod,groupQuestStarterPackTMBundle</set>-->
+
+	
+
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@class='ItemsOnEnterGame']/property[@name='GameModeSurvival']/@value">quest_start_tongomod,groupQuestStarterPackTMBundle</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@class='ItemsOnEnterGame']/property[@name='GameModeSurvivalSP']/@value">quest_start_tongomod,groupQuestStarterPackTMBundle</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@class='ItemsOnEnterGame']/property[@name='GameModeSurvivalMP']/@value">quest_start_tongomod,groupQuestStarterPackTMBundle</set>
+
+
+	<!--<append xpath="/entity_classes/entity_class[@name='playerMale']">
+		<property class="ItemsOnEnterGame">
+			<property name="GameModeSurvival" value="quest_start_tongomod,groupQuestStarterPackTMBundle"/>
+			<property name="GameModeSurvivalSP" value="quest_start_tongomod,groupQuestStarterPackTMBundle"/>
+			<property name="GameModeSurvivalMP" value="quest_start_tongomod,groupQuestStarterPackTMBundle"/>
+		</property>
+	</append>-->
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<append xpath="/entity_classes/entity_class[@name='playerMale']/effect_group">
+		<!-- Le ponemos el monitor invisible al jugador al spawnear -->
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="buffWetnessMonitor"/>
+		<triggered_effect trigger="onSelfRespawn" action="AddBuff" buff="buffWetnessMonitor"/>
+	</append>
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	
+	<!-- add buff scratch to zombieTemplate -->
+	<append xpath="/entity_classes/entity_class[contains(@name, 'zombieTemplate')]">
+		<effect_group name="PR_InfectionLogic">
+
+			<!-- condition to apply (20%) -->
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffScratchTM">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+				<requirement name="HasBuff" target="other" buff="buffScratchTM" invert="true"/>
+				<requirement name="HasBuff" target="other" buff="buffInfectionMain" invert="true"/>
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+			</triggered_effect>
+
+			<!-- hit reduces time for scratch (double time 30 = 60 seg) -->
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="PR_ProgressionTimer" operation="add" value="30">
+				<requirement name="HasBuff" target="other" buff="buffScratchTM"/>
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+			</triggered_effect>
+
+		</effect_group>
+	</append>
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+
+	<!-- CHANGED LOOT PROB. AND TYPE FOR ANY ZOMBIE -->
+	<!--<append xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']">
+		<property name="TestProperty" value="123"/>
+	</append>-->
+
+	<append xpath="/entity_classes/entity_class[@name='zombieArlene']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+	
+	<append xpath="/entity_classes/entity_class[@name='zombieArleneFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMarlene']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMarleneFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMarleneRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieDarlene']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieDarleneFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieDarleneRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombiePartyGirl']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombiePartyGirlFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombiePartyGirlRadiated']">
+		<property name="LootDropProb" value=".5"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieNurse']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieNurseFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieNurseRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieJoe']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieJoeFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieJoeRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSteve']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSteveFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSteveRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieTomClark']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieTomClarkFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieTomClarkRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBusinessMan']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBusinessManFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBusinessManRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBurnt']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBurntRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieRancher']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieRancherFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieRancherRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieChuck']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieChuckFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieChuckRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSpider']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSpiderRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBoe']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBoeFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBoeRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieJoe']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieJoeFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieJoeRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMoe']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMoeFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMoeRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmat']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmatFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmatRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieJanitor']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieJanitorFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieJanitorRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieInmate']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieInmateFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieInmateRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieLab']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieLabFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieLabRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieYo']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieYoFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieYoRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBiker']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBikerFeral']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBikerRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieLumberjack']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieLumberjackFeral']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieLumberjackRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieFemaleFat']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieFemaleFatFeral']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiianFeral']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBowler']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBowlerFeral']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieBowlerRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieFatCop']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSkateboarder']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSkateboarderFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSkateboarderRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSoldier']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSoldierFeral']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieScreamer']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMutated']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMutatedFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieMutatedRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieWightFeral']">
+		<property name="LootDropProb" value=".03"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieWightRadiated']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieDemolition']">
+		<property name="LootDropProb" value=".05"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSteveCrawler']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='zombieSteveCrawlerFeral']">
+		<property name="LootDropProb" value=".02"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerRegular"/>
+	</append>
+	
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='LootDropProb']"/>
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='LootDropEntityClass']"/>
+
+	<remove xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='LootDropProb']"/>
+	<remove xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='LootDropEntityClass']"/>
+
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBoar']/property[@name='LootDropProb']"/>
+	<remove xpath="/entity_classes/entity_class[@name='animalZombieBoar']/property[@name='LootDropEntityClass']"/>
+
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<!-- * CHICKEN BIG & SLOW -->
+	<append xpath="/entity_classes/entity_class[@name='animalChicken']">
+		<property name="SizeScale" value="1.4"/>
+	</append>
+	<set xpath="/entity_classes/entity_class[@name='animalChicken']/property[@name='MoveSpeedPanic']/@value">0.8</set>
+
+	<!-- * RABBIT BIG & SLOW -->
+	<append xpath="/entity_classes/entity_class[@name='animalRabbit']">
+		<property name="SizeScale" value="1.4"/>
+	</append>
+	<set xpath="/entity_classes/entity_class[@name='animalRabbit']/property[@name='MoveSpeedPanic']/@value">0.8</set>
+	
+	
+	<!-- test var for legay progression -->
+	<append xpath="/entity_classes/entity_class[@name='playerMale']/effect_group">
+		<triggered_effect trigger="onSelfEnteredGame" action="AddCVar" cvar="PR_StoneTools_Lvl" value="1"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="AddCVar" cvar="PR_StoneTools_XP" value="0"/>
+	</append>
+
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+	<append xpath="/entity_classes/entity_class[@name='playerMale']/effect_group">
+		
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="coffeeCounterTM" operation="add" value="1">
+			<requirement name="HoldingItemHasTags" tags="iceCoffe"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffCoffeeRushTM">
+			<requirement name="CVarCompare" cvar="coffeeCounterTM" operation="GTE" value="15"/>
+			<requirement name="HasBuff" buff="buffCoffeeRushTM" invert="true"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="coffeeCounterTM" operation="set" value="0">
+			<requirement name="CVarCompare" cvar="coffeeCounterTM" operation="GTE" value="15"/>
+			<requirement name="HasBuff" buff="buffCoffeeRushTM"/>
+		</triggered_effect>
+				
+
+		<!-- start CVar for legacy hybrid progression system -->
+		
+		<!-- all lvl start at 1 -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_MinerTools_Lvl" operation="set" value="1">
+			<requirement name="CVarCompare" cvar="PR_MinerTools_Lvl" operation="LTE" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_DisassembleTools_Lvl" operation="set" value="1">
+			<requirement name="CVarCompare" cvar="PR_DisassembleTools_Lvl" operation="LTE" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_ClubMelee_Lvl" operation="set" value="1">
+			<requirement name="CVarCompare" cvar="PR_ClubMelee_Lvl" operation="LTE" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_Sledgehammer_Lvl" operation="set" value="1">
+			<requirement name="CVarCompare" cvar="PR_Sledgehammer_Lvl" operation="LTE" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_KnifeMelee_Lvl" operation="set" value="1">
+			<requirement name="CVarCompare" cvar="PR_KnifeMelee_Lvl" operation="LTE" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_SpearMelee_Lvl" operation="set" value="1">
+			<requirement name="CVarCompare" cvar="PR_SpearMelee_Lvl" operation="LTE" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_PunchMelee_Lvl" operation="set" value="1">
+			<requirement name="CVarCompare" cvar="PR_PunchMelee_Lvl" operation="LTE" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_StunMelee_Lvl" operation="set" value="1">
+			<requirement name="CVarCompare" cvar="PR_StunMelee_Lvl" operation="LTE" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_ArcheryRanged_Lvl" operation="set" value="1">
+			<requirement name="CVarCompare" cvar="PR_ArcheryRanged_Lvl" operation="LTE" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_PistolRanged_Lvl" operation="set" value="1">
+			<requirement name="CVarCompare" cvar="PR_PistolRanged_Lvl" operation="LTE" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_ShotgunRanged_Lvl" operation="set" value="1">
+			<requirement name="CVarCompare" cvar="PR_ShotgunRanged_Lvl" operation="LTE" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_GatlingRanged_Lvl" operation="set" value="1">
+			<requirement name="CVarCompare" cvar="PR_GatlingRanged_Lvl" operation="LTE" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_RifleRanged_Lvl" operation="set" value="1">
+			<requirement name="CVarCompare" cvar="PR_RifleRanged_Lvl" operation="LTE" value="0"/>
+		</triggered_effect>
+		
+		<!-- multiply base for next lv -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_XP_Mult" operation="set" value="1.018"/>
+
+		<!-- start cvars for MinerTools -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_MinerTools_LvlNextAdd" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_MinerTools_LvlNextTotal" operation="set" value="20"/>
+
+		<!-- start cvars for DisassembleTools -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_DisassembleTools_LvlNextAdd" operation="set" value="15"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_DisassembleTools_LvlNextTotal" operation="set" value="15"/>
+
+		<!-- start cvars for ClubMelee -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_ClubMelee_LvlNextAdd" operation="set" value="15"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_ClubMelee_LvlNextTotal" operation="set" value="15"/>
+
+		<!-- start cvars for SledgehammerMelee -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_Sledgehammer_LvlNextAdd" operation="set" value="15"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_Sledgehammer_LvlNextTotal" operation="set" value="15"/>
+
+		<!-- start cvars for KnifeMelee -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_KnifeMelee_LvlNextAdd" operation="set" value="15"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_KnifeMelee_LvlNextTotal" operation="set" value="15"/>
+
+		<!-- start cvars for SpearMelee -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_SpearMelee_LvlNextAdd" operation="set" value="15"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_SpearMelee_LvlNextTotal" operation="set" value="15"/>
+
+		<!-- start cvars for PunchMelee -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_PunchMelee_LvlNextAdd" operation="set" value="15"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_PunchMelee_LvlNextTotal" operation="set" value="15"/>
+
+		<!-- start cvars for StunMelee -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_StunMelee_LvlNextAdd" operation="set" value="15"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_StunMelee_LvlNextTotal" operation="set" value="15"/>
+
+		<!-- start cvars for ArcheryRanged -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_ArcheryRanged_LvlNextAdd" operation="set" value="12"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_ArcheryRanged_LvlNextTotal" operation="set" value="12"/>
+
+		<!-- start cvars for PistolRanged -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_PistolRanged_LvlNextAdd" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_PistolRanged_LvlNextTotal" operation="set" value="20"/>
+
+		<!-- start cvars for ShotgunRanged -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_ShotgunRanged_LvlNextAdd" operation="set" value="18"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_ShotgunRanged_LvlNextTotal" operation="set" value="18"/>
+
+		<!-- start cvars for GatlingRanged -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_GatlingRanged_LvlNextAdd" operation="set" value="100"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_GatlingRanged_LvlNextTotal" operation="set" value="100"/>
+
+		<!-- start cvars for RifleRanged -->
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_RifleRanged_LvlNextAdd" operation="set" value="18"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="PR_RifleRanged_LvlNextTotal" operation="set" value="18"/>
+
+		
+		<!-- XXXXX -->
+
+		<!-- MinerTools actions for updated windows and CVars-->
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_MinerTools_UI_Fill" operation="set" value="@PR_MinerTools_XP"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_MinerTools_UI_Fill" operation="divide" value="@PR_MinerTools_LvlNextTotal">
+			<requirement name="CVarCompare" cvar="PR_MinerTools_LvlNextTotal" operation="GT" value="0"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="perkPRMinerTools" operation="set" value="@PR_MinerTools_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_MinerTools_LvlNextTotal" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_MinerTools_LvlNextTotal" operation="multiply" value="@PR_MinerTools_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Miner_Damage_Bonus" operation="set" value="@PR_MinerTools_Lvl"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Miner_Damage_Bonus" operation="multiply" value="0.01"/>
+
+		<passive_effect name="BlockDamage" operation="perc_add" value="@PR_Miner_Damage_Bonus">
+			<requirement name="HoldingItemHasTags" tags="perkPRMinerTools"/>
+			<requirement name="CVarCompare" cvar="PR_Miner_Damage_Bonus" operation="GT" value="0"/>
+		</passive_effect>
+
+		<!-- DisassembleTools actions for updated windows and CVars-->
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_DisassembleTools_UI_Fill" operation="set" value="@PR_DisassembleTools_XP"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_DisassembleTools_UI_Fill" operation="divide" value="@PR_DisassembleTools_LvlNextTotal">
+			<requirement name="CVarCompare" cvar="PR_DisassembleTools_LvlNextTotal" operation="GT" value="0"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="perkPRDisassembleTools" operation="set" value="@PR_DisassembleTools_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_DisassembleTools_LvlNextTotal" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_DisassembleTools_LvlNextTotal" operation="multiply" value="@PR_DisassembleTools_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Disassemble_Damage_Bonus" operation="set" value="@PR_DisassembleTools_Lvl"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Disassemble_Damage_Bonus" operation="multiply" value="0.01"/>
+
+		<passive_effect name="BlockDamage" operation="perc_add" value="@PR_Disassemble_Damage_Bonus">
+			<requirement name="HoldingItemHasTags" tags="perkPRDisassembleTools"/>
+			<requirement name="CVarCompare" cvar="PR_Disassemble_Damage_Bonus" operation="GT" value="0"/>
+		</passive_effect>
+
+		<!-- ClubMelee actions for updated windows and CVars-->
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_ClubMelee_UI_Fill" operation="set" value="@PR_ClubMelee_XP"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_ClubMelee_UI_Fill" operation="divide" value="@PR_ClubMelee_LvlNextTotal">
+			<requirement name="CVarCompare" cvar="PR_ClubMelee_LvlNextTotal" operation="GT" value="0"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="perkPRClubMelee" operation="set" value="@PR_ClubMelee_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_ClubMelee_LvlNextTotal" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_ClubMelee_LvlNextTotal" operation="multiply" value="@PR_ClubMelee_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Club_Damage_Bonus" operation="set" value="@PR_ClubMelee_Lvl"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Club_Damage_Bonus" operation="multiply" value="0.01"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="@PR_Club_Damage_Bonus">
+			<requirement name="HoldingItemHasTags" tags="perkPRClubMelee"/>
+			<requirement name="CVarCompare" cvar="PR_Club_Damage_Bonus" operation="GT" value="0"/>
+		</passive_effect>
+
+		<!-- SledgehammerMelee actions for updated windows and CVars-->
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_SledgehammerMelee_UI_Fill" operation="set" value="@PR_SledgehammerMelee_XP"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_SledgehammerMelee_UI_Fill" operation="divide" value="@PR_SledgehammerMelee_LvlNextTotal">
+			<requirement name="CVarCompare" cvar="PR_SledgehammerMelee_LvlNextTotal" operation="GT" value="0"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="perkPRSledgehammerMelee" operation="set" value="@PR_SledgehammerMelee_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_SledgehammerMelee_LvlNextTotal" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_SledgehammerMelee_LvlNextTotal" operation="multiply" value="@PR_SledgehammerMelee_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Sledgehammer_Damage_Bonus" operation="set" value="@PR_SledgehammerMelee_Lvl"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Sledgehammer_Damage_Bonus" operation="multiply" value="0.01"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="@PR_Sledgehammer_Damage_Bonus">
+			<requirement name="HoldingItemHasTags" tags="perkPRSledgehammerMelee"/>
+			<requirement name="CVarCompare" cvar="PR_Sledgehammer_Damage_Bonus" operation="GT" value="0"/>
+		</passive_effect>
+		
+		<!-- KnifeMelee actions for updated windows and CVars-->
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_KnifeMelee_UI_Fill" operation="set" value="@PR_KnifeMelee_XP"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_KnifeMelee_UI_Fill" operation="divide" value="@PR_KnifeMelee_LvlNextTotal">
+			<requirement name="CVarCompare" cvar="PR_KnifeMelee_LvlNextTotal" operation="GT" value="0"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="perkPRKnifeMelee" operation="set" value="@PR_KnifeMelee_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_KnifeMelee_LvlNextTotal" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_KnifeMelee_LvlNextTotal" operation="multiply" value="@PR_KnifeMelee_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Knife_Damage_Bonus" operation="set" value="@PR_KnifeMelee_Lvl"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Knife_Damage_Bonus" operation="multiply" value="0.01"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="@PR_Knife_Damage_Bonus">
+			<requirement name="HoldingItemHasTags" tags="perkPRKnifeMelee"/>
+			<requirement name="CVarCompare" cvar="PR_Knife_Damage_Bonus" operation="GT" value="0"/>
+		</passive_effect>
+
+		<!-- SpearMelee actions for updated windows and CVars-->
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_SpearMelee_UI_Fill" operation="set" value="@PR_SpearMelee_XP"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_SpearMelee_UI_Fill" operation="divide" value="@PR_SpearMelee_LvlNextTotal">
+			<requirement name="CVarCompare" cvar="PR_SpearMelee_LvlNextTotal" operation="GT" value="0"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="perkPRSpearMelee" operation="set" value="@PR_SpearMelee_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_SpearMelee_LvlNextTotal" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_SpearMelee_LvlNextTotal" operation="multiply" value="@PR_SpearMelee_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Spear_Damage_Bonus" operation="set" value="@PR_SpearMelee_Lvl"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Spear_Damage_Bonus" operation="multiply" value="0.01"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="@PR_Spear_Damage_Bonus">
+			<requirement name="HoldingItemHasTags" tags="perkPRSpearMelee"/>
+			<requirement name="CVarCompare" cvar="PR_Spear_Damage_Bonus" operation="GT" value="0"/>
+		</passive_effect>
+
+		<!-- PunchMelee actions for updated windows and CVars-->
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_PunchMelee_UI_Fill" operation="set" value="@PR_PunchMelee_XP"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_PunchMelee_UI_Fill" operation="divide" value="@PR_PunchMelee_LvlNextTotal">
+			<requirement name="CVarCompare" cvar="PR_PunchMelee_LvlNextTotal" operation="GT" value="0"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="perkPRPunchMelee" operation="set" value="@PR_PunchMelee_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_PunchMelee_LvlNextTotal" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_PunchMelee_LvlNextTotal" operation="multiply" value="@PR_PunchMelee_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Punch_Damage_Bonus" operation="set" value="@PR_PunchMelee_Lvl"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Punch_Damage_Bonus" operation="multiply" value="0.01"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="@PR_Punch_Damage_Bonus">
+			<requirement name="HoldingItemHasTags" tags="perkPRPunchMelee"/>
+			<requirement name="CVarCompare" cvar="PR_Punch_Damage_Bonus" operation="GT" value="0"/>
+		</passive_effect>
+
+		<!-- StunMelee actions for updated windows and CVars-->
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_StunMelee_UI_Fill" operation="set" value="@PR_StunMelee_XP"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_StunMelee_UI_Fill" operation="divide" value="@PR_StunMelee_LvlNextTotal">
+			<requirement name="CVarCompare" cvar="PR_StunMelee_LvlNextTotal" operation="GT" value="0"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="perkPRStunMelee" operation="set" value="@PR_StunMelee_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_StunMelee_LvlNextTotal" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_StunMelee_LvlNextTotal" operation="multiply" value="@PR_StunMelee_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Stun_Damage_Bonus" operation="set" value="@PR_StunMelee_Lvl"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Stun_Damage_Bonus" operation="multiply" value="0.01"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="@PR_Stun_Damage_Bonus">
+			<requirement name="HoldingItemHasTags" tags="perkPRStunMelee"/>
+			<requirement name="CVarCompare" cvar="PR_Stun_Damage_Bonus" operation="GT" value="0"/>
+		</passive_effect>
+
+		<!-- ArcheryRanged actions for updated windows and CVars-->
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_ArcheryRanged_UI_Fill" operation="set" value="@PR_ArcheryRanged_XP"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_ArcheryRanged_UI_Fill" operation="divide" value="@PR_ArcheryRanged_LvlNextTotal">
+			<requirement name="CVarCompare" cvar="PR_ArcheryRanged_LvlNextTotal" operation="GT" value="0"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="perkPRArcheryRanged" operation="set" value="@PR_ArcheryRanged_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_ArcheryRanged_LvlNextTotal" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_ArcheryRanged_LvlNextTotal" operation="multiply" value="@PR_ArcheryRanged_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Archery_Damage_Bonus" operation="set" value="@PR_ArcheryRanged_Lvl"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Archery_Damage_Bonus" operation="multiply" value="0.01"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="@PR_Archery_Damage_Bonus">
+			<requirement name="HoldingItemHasTags" tags="perkPRArcheryRanged"/>
+			<requirement name="CVarCompare" cvar="PR_Archery_Damage_Bonus" operation="GT" value="0"/>
+		</passive_effect>
+
+		<!-- PistolRanged actions for updated windows and CVars-->
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_PistolRanged_UI_Fill" operation="set" value="@PR_PistolRanged_XP"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_PistolRanged_UI_Fill" operation="divide" value="@PR_PistolRanged_LvlNextTotal">
+			<requirement name="CVarCompare" cvar="PR_PistolRanged_LvlNextTotal" operation="GT" value="0"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="perkPRPistolRanged" operation="set" value="@PR_PistolRanged_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_PistolRanged_LvlNextTotal" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_PistolRanged_LvlNextTotal" operation="multiply" value="@PR_PistolRanged_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Pistol_Damage_Bonus" operation="set" value="@PR_PistolRanged_Lvl"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Pistol_Damage_Bonus" operation="multiply" value="0.01"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="@PR_Pistol_Damage_Bonus">
+			<requirement name="HoldingItemHasTags" tags="perkPRPistolRanged"/>
+			<requirement name="CVarCompare" cvar="PR_Pistol_Damage_Bonus" operation="GT" value="0"/>
+		</passive_effect>
+
+		<!-- ShotgunRanged actions for updated windows and CVars-->
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_ShotgunRanged_UI_Fill" operation="set" value="@PR_ShotgunRanged_XP"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_ShotgunRanged_UI_Fill" operation="divide" value="@PR_ShotgunRanged_LvlNextTotal">
+			<requirement name="CVarCompare" cvar="PR_ShotgunRanged_LvlNextTotal" operation="GT" value="0"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="perkPRShotgunRanged" operation="set" value="@PR_ShotgunRanged_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_ShotgunRanged_LvlNextTotal" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_ShotgunRanged_LvlNextTotal" operation="multiply" value="@PR_ShotgunRanged_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Shotgun_Damage_Bonus" operation="set" value="@PR_ShotgunRanged_Lvl"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Shotgun_Damage_Bonus" operation="multiply" value="0.01"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="@PR_Shotgun_Damage_Bonus">
+			<requirement name="HoldingItemHasTags" tags="perkPRShotgunRanged"/>
+			<requirement name="CVarCompare" cvar="PR_Shotgun_Damage_Bonus" operation="GT" value="0"/>
+		</passive_effect>
+
+		<!-- GatlingRanged actions for updated windows and CVars-->
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_GatlingRanged_UI_Fill" operation="set" value="@PR_GatlingRanged_XP"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_GatlingRanged_UI_Fill" operation="divide" value="@PR_GatlingRanged_LvlNextTotal">
+			<requirement name="CVarCompare" cvar="PR_GatlingRanged_LvlNextTotal" operation="GT" value="0"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="perkPRGatlingRanged" operation="set" value="@PR_GatlingRanged_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_GatlingRanged_LvlNextTotal" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_GatlingRanged_LvlNextTotal" operation="multiply" value="@PR_GatlingRanged_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Gatling_Damage_Bonus" operation="set" value="@PR_GatlingRanged_Lvl"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Gatling_Damage_Bonus" operation="multiply" value="0.01"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="@PR_Gatling_Damage_Bonus">
+			<requirement name="HoldingItemHasTags" tags="perkPRGatlingRanged"/>
+			<requirement name="CVarCompare" cvar="PR_Gatling_Damage_Bonus" operation="GT" value="0"/>
+		</passive_effect>
+
+		<!-- RifleRanged actions for updated windows and CVars-->
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_RifleRanged_UI_Fill" operation="set" value="@PR_RifleRanged_XP"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_RifleRanged_UI_Fill" operation="divide" value="@PR_RifleRanged_LvlNextTotal">
+			<requirement name="CVarCompare" cvar="PR_RifleRanged_LvlNextTotal" operation="GT" value="0"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="perkPRRifleRanged" operation="set" value="@PR_RifleRanged_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_RifleRanged_LvlNextTotal" operation="set" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_RifleRanged_LvlNextTotal" operation="multiply" value="@PR_RifleRanged_Lvl"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Rifle_Damage_Bonus" operation="set" value="@PR_RifleRanged_Lvl"/>
+		<triggered_effect trigger="onSelfPrimaryActionUpdate" action="ModifyCVar" cvar="PR_Rifle_Damage_Bonus" operation="multiply" value="0.01"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="@PR_Rifle_Damage_Bonus">
+			<requirement name="HoldingItemHasTags" tags="perkPRRifleRanged"/>
+			<requirement name="CVarCompare" cvar="PR_Rifle_Damage_Bonus" operation="GT" value="0"/>
+		</passive_effect>
+		
+		<!-- XXXXX -->
+
+		
+		
+	</append>
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	
+</raiz>

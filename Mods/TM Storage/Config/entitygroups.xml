@@ -1,0 +1,487 @@
+<configs>
+
+	<!-- SCOUT HORDE -->
+	<append xpath="/entitygroups/entitygroup[starts-with(@name, 'scoutHorde')]">
+		<e n="zombieArleneIrradiationComand" />
+		<e n="zombieArleneElectricComand" />
+		<e n="zombieArleneFireComand" />
+	</append>
+	
+	<!--
+	<append xpath="/entitygroups/entitygroup[starts-with(@name, 'scoutHorde')]/e[contains(@n, 'zombieScreamer')]">
+		<e n="zombieScreamerIrradiation" />
+		<e n="zombieScreamerElectric" />
+		<e n="zombieScreamerFire" />
+	</append>
+	-->
+	
+	<!-- FERAL -->
+	<append xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStage')]">
+		<e n="zombieMiniArleneIrradiationComand" />
+		<e n="zombieMiniArleneElectricComand" />
+		<e n="zombieMiniArleneFireComand" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStageGS')]/e[contains(@n, 'zombieDemolition')]">
+		<e n="zombieDemolitionIrradiationGeneralO" p="0.15" />
+		<e n="zombieDemolitionElectricGeneralO" p="0.15" />
+		<e n="zombieDemolitionFireGeneralO" p="0.15" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStageGS')]/e[contains(@n, 'zombieRancher')]">
+		<e n="zombieRancherIrradiationO" p="0.05" />
+		<e n="zombieRancherElectricO" p="0.05" />
+		<e n="zombieRancherFireO" p="0.05" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStageGS')]/e[contains(@n, 'zombieChuck')]">
+		<e n="zombieChuckIrradiationO" p="0.05" />
+		<e n="zombieChuckElectricO" p="0.05" />
+		<e n="zombieChuckFireO" p="0.05" />
+	</append>
+	
+	<!-- WANDERIN -->
+	<!--
+	<append xpath="/entitygroups/entitygroup[starts-with(@name, 'wanderingHordeStageGS')]">
+		<e n="zombieArleneIrradiationComand" />
+		<e n="zombieArleneElectricComand" />
+		<e n="zombieArleneFireComand" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[starts-with(@name, 'FwanderingHordeStageGS')]">
+		<e n="zombieArleneIrradiationComand" />
+		<e n="zombieArleneElectricComand" />
+		<e n="zombieArleneFireComand" />
+	</append>
+	-->
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesNight']" >
+		<e n="zombieArleneIrradiationComand" />
+		<e n="zombieArleneElectricComand" />
+		<e n="zombieArleneFireComand" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntown']" >
+		<e n="zombieArleneIrradiationComand" />
+		<e n="zombieArleneElectricComand" />
+		<e n="zombieArleneFireComand" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntownNight']" >
+		<e n="zombieArleneIrradiationComand" />
+		<e n="zombieArleneElectricComand" />
+		<e n="zombieArleneFireComand" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesDowntown']" >
+		<e n="zombieArleneIrradiationComand" />
+		<e n="zombieArleneElectricComand" />
+		<e n="zombieArleneFireComand" />
+		<e n="zombieDemolitionIrradiationGeneral" />
+		<e n="zombieDemolitionElectricGeneral" />
+		<e n="zombieDemolitionFireGeneral" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']" >
+		<e n="zombieArleneIrradiationComand" />
+		<e n="zombieArleneElectricComand" />
+		<e n="zombieArleneFireComand" />
+	</append>
+	
+
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']" >
+		<e n="zombieArleneIrradiationComand" p="80" />
+		<e n="zombieArleneElectricComand" p="80" />
+		<e n="zombieArleneFireComand" p="80" />
+		<e n="zombieMutatedIrradiationElite" p="80" />
+		<e n="zombieMutatedElectricElite" p="80" />
+		<e n="zombieMutatedFireElite" p="80" />
+		<e n="zombieWightIrradiationElite" p="80" />
+		<e n="zombieWightElectricElite" p="80" />
+		<e n="zombieWightFireElite" p="80" />
+		<e n="zombieDemolitionIrradiationGeneral" p="20" />
+		<e n="zombieDemolitionElectricGeneral" p="20" />
+		<e n="zombieDemolitionFireGeneral" p="20" />
+		<e n="zombieSuperCopIrradiation" p="20" />
+		<e n="zombieSuperCopElectric" p="20" />
+		<e n="zombieSuperCopFire" p="20" />
+		<e n="zombieSuperBikerIrradiation" p="20" />
+		<e n="zombieSuperBikerElectric" p="20" />
+		<e n="zombieSuperBikerFire" p="20" />
+	</append>
+	
+	<!-- FIN REVISAR -->
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesSnow']" > 
+		<e n="zombieArleneIrradiationComand" />
+		<e n="zombieArleneElectricComand" />
+		<e n="zombieArleneFireComand" />
+		<e n="zombieLumberjackIrradiationElite" />
+		<e n="zombieLumberjackElectricElite" />
+		<e n="zombieLumberjackFireElite" />
+		<e n="zombieChuckIrradiation" />
+		<e n="zombieChuckElectric" />
+		<e n="zombieChuckFire" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesSnowNight']" > 
+		<e n="zombieArleneIrradiationComand" />
+		<e n="zombieArleneElectricComand" />
+		<e n="zombieArleneFireComand" />
+		<e n="zombieLumberjackIrradiationElite" />
+		<e n="zombieLumberjackElectricElite" />
+		<e n="zombieLumberjackFireElite" />
+		<e n="zombieChuckIrradiation" />
+		<e n="zombieChuckElectric" />
+		<e n="zombieChuckFire" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesBurntForest']" > 
+		<e n="zombieArleneIrradiationComand" />
+		<e n="zombieArleneElectricComand" />
+		<e n="zombieArleneFireComand" />
+		<e n="zombieBurntIrradiationElite" />
+		<e n="zombieBurntElectricElite" />
+		<e n="zombieBurntFireElite" />
+		<e n="zombieTomClar6kIrradiation" />
+		<e n="zombieTomClar6kElectric" />
+		<e n="zombieTomClar6kFire" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesBurntForestNight']" > 
+		<e n="zombieArleneIrradiationComand" />
+		<e n="zombieArleneElectricComand" />
+		<e n="zombieArleneFireComand" />
+		<e n="zombieBurntIrradiationElite" />
+		<e n="zombieBurntElectricElite" />
+		<e n="zombieBurntFireElite" />
+		<e n="zombieTomClar6kIrradiation" />
+		<e n="zombieTomClar6kElectric" />
+		<e n="zombieTomClar6kFire" />
+	</append>
+	
+	
+	<!-- MUTATED -->	
+	<append xpath="/entitygroups/entitygroup[@name='ZombieFeralRadiatedGroup']" > 
+		<e n="zombieMutatedIrradiationElite" />
+		<e n="zombieMutatedElectricElite" />
+		<e n="zombieMutatedFireElite" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombieBadassGroup']" > 
+		<e n="zombieMutatedIrradiationElite" />
+		<e n="zombieMutatedElectricElite" />
+		<e n="zombieMutatedFireElite" />
+	</append>
+	
+	
+	<!-- WIGHT -->	
+	<append xpath="/entitygroups/entitygroup[@name='ZombieFeralRadiatedGroup']" > 
+		<e n="zombieWightIrradiationElite" />
+		<e n="zombieWightElectricElite" />
+		<e n="zombieWightFireElite" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombieBadassGroup']" > 
+		<e n="zombieWightIrradiationElite" />
+		<e n="zombieWightElectricElite" />
+		<e n="zombieWightFireElite" />
+	</append>
+	
+	
+	<!-- LUMBERJACK -->	
+	<append xpath="/entitygroups/entitygroup[@name='ZombieFeralRadiatedGroup']" > 
+		<e n="zombieLumberjackIrradiationElite" />
+		<e n="zombieLumberjackElectricElite" />
+		<e n="zombieLumberjackFireElite" />
+	</append>
+
+
+	<!-- VULTURE, DIRE & CHICKEN-->
+
+	
+	<!-- PLAGUE -->
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesDesert']" > 
+		<e n="zombieRancherIrradiation" />
+		<e n="zombieRancherElectric" />
+		<e n="zombieRancherFire" />
+	</append>
+	
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesDesertNight']" > 
+		<e n="zombieRancherIrradiation" />
+		<e n="zombieRancherElectric" />
+		<e n="zombieRancherFire" />
+	</append>
+	
+	
+	<!-- Police Car Hordes -->
+	<append xpath="/entitygroups/entitygroup[starts-with(@name, 'policeCarHordeStageGS')]">
+		<e n="zombieArleneIrradiationComand" />
+		<e n="zombieArleneElectricComand" />
+		<e n="zombieArleneFireComand" />
+		<e n="zombieDemolitionIrradiationGeneral" />
+		<e n="zombieDemolitionElectricGeneral" />
+		<e n="zombieDemolitionFireGeneral" />
+	</append>
+	
+	<append xpath="/entitygroups">
+	
+		<entitygroup name="zombieArleneIrradiationComand">
+			<e n="zombieArleneIrradiationComand" />
+		</entitygroup>
+		<entitygroup name="zombieArleneElectricComand">
+			<e n="zombieArleneElectricComand" />
+		</entitygroup>
+		<entitygroup name="zombieArleneFireComand">
+			<e n="zombieArleneFireComand" />
+		</entitygroup>
+		
+		<entitygroup name="zombieMiniArleneIrradiationComand">
+			<e n="zombieMiniArleneIrradiationComand" />
+		</entitygroup>
+		<entitygroup name="zombieMiniArleneElectricComand">
+			<e n="zombieMiniArleneElectricComand" />
+		</entitygroup>
+		<entitygroup name="zombieMiniArleneFireComand">
+			<e n="zombieMiniArleneFireComand" />
+		</entitygroup>
+		
+		<entitygroup name="zombieBurntIrradiationElite">
+			<e n="zombieBurntIrradiationElite" />
+		</entitygroup>
+		<entitygroup name="zombieBurntElectricElite">
+			<e n="zombieBurntElectricElite" />
+		</entitygroup>
+		<entitygroup name="zombieBurntFireElite">
+			<e n="zombieBurntFireElite" />
+		</entitygroup>
+		
+		<entitygroup name="zombieMutatedIrradiationElite">
+			<e n="zombieMutatedIrradiationElite" />
+		</entitygroup>
+		<entitygroup name="zombieMutatedElectricElite">
+			<e n="zombieMutatedElectricElite" />
+		</entitygroup>
+		<entitygroup name="zombieMutatedFireElite">
+			<e n="zombieMutatedFireElite" />
+		</entitygroup>
+		
+		<entitygroup name="zombieWightIrradiationElite">
+			<e n="zombieWightIrradiationElite" />
+		</entitygroup>
+		<entitygroup name="zombieWightElectricElite">
+			<e n="zombieWightElectricElite" />
+		</entitygroup>
+		<entitygroup name="zombieWightFireElite">
+			<e n="zombieWightFireElite" />
+		</entitygroup>
+		
+		<entitygroup name="zombieLumberjackIrradiationElite">
+			<e n="zombieLumberjackIrradiationElite" />
+		</entitygroup>
+		<entitygroup name="zombieLumberjackElectricElite">
+			<e n="zombieLumberjackElectricElite" />
+		</entitygroup>
+		<entitygroup name="zombieLumberjackFireElite">
+			<e n="zombieLumberjackFireElite" />
+		</entitygroup>
+		
+		<entitygroup name="animalZombieVultureElite">
+			<e n="animalZombieVultureElite" />
+		</entitygroup>	
+		
+		<entitygroup name="animalDireWolfIrradiationElite">
+			<e n="animalDireWolfIrradiationElite" />
+		</entitygroup>
+		<entitygroup name="animalDireWolfElectricElite">
+			<e n="animalDireWolfElectricElite" />
+		</entitygroup>
+		<entitygroup name="animalDireWolfFireElite">
+			<e n="animalDireWolfFireElite" />
+		</entitygroup>
+		
+		
+		<entitygroup name="animalMiniWolfIrradiationElite">
+			<e n="animalMiniWolfIrradiationElite" />
+		</entitygroup>
+		<entitygroup name="animalMiniWolfElectricElite">
+			<e n="animalMiniWolfElectricElite" />
+		</entitygroup>
+		<entitygroup name="animalMiniWolfFireElite">
+			<e n="animalMiniWolfFireElite" />
+		</entitygroup>
+		
+		<entitygroup name="zombieDemolitionIrradiationGeneral">
+			<e n="zombieDemolitionIrradiationGeneral" />
+		</entitygroup>
+		<entitygroup name="zombieDemolitionElectricGeneral">
+			<e n="zombieDemolitionElectricGeneral" />
+		</entitygroup>
+		<entitygroup name="zombieDemolitionFireGeneral">
+			<e n="zombieDemolitionFireGeneral" />
+		</entitygroup>
+		
+		<entitygroup name="zombieDemolitionIrradiationGeneralO">
+			<e n="zombieDemolitionIrradiationGeneralO" />
+		</entitygroup>
+		<entitygroup name="zombieDemolitionElectricGeneralO">
+			<e n="zombieDemolitionElectricGeneralO" />
+		</entitygroup>
+		<entitygroup name="zombieDemolitionFireGeneralO">
+			<e n="zombieDemolitionFireGeneralO" />
+		</entitygroup>
+		
+		<entitygroup name="zombieRancherIrradiation">
+			<e n="zombieRancherIrradiation" />
+		</entitygroup>
+		<entitygroup name="zombieRancherElectric">
+			<e n="zombieRancherElectric" />
+		</entitygroup>
+		<entitygroup name="zombieRancherFire">
+			<e n="zombieRancherFire" />
+		</entitygroup>
+		
+		<entitygroup name="zombieRancherIrradiationO">
+			<e n="zombieRancherIrradiationO" />
+		</entitygroup>
+		<entitygroup name="zombieRancherElectricO">
+			<e n="zombieRancherElectricO" />
+		</entitygroup>
+		<entitygroup name="zombieRancherFireO">
+			<e n="zombieRancherFireO" />
+		</entitygroup>
+		
+		<entitygroup name="zombieChuckIrradiation">
+			<e n="zombieChuckIrradiation" />
+		</entitygroup>
+		<entitygroup name="zombieChuckElectric">
+			<e n="zombieChuckElectric" />
+		</entitygroup>
+		<entitygroup name="zombieChuckFire">
+			<e n="zombieChuckFire" />
+		</entitygroup>
+		
+		<entitygroup name="zombieChuckIrradiationO">
+			<e n="zombieChuckIrradiationO" />
+		</entitygroup>
+		<entitygroup name="zombieChuckElectricO">
+			<e n="zombieChuckElectricO" />
+		</entitygroup>
+		<entitygroup name="zombieChuckFireO">
+			<e n="zombieChuckFireO" />
+		</entitygroup>
+		
+		<entitygroup name="zombieSuperCopIrradiation">
+			<e n="zombieSuperCopIrradiation" />
+		</entitygroup>
+		<entitygroup name="zombieSuperCopElectric">
+			<e n="zombieSuperCopElectric" />
+		</entitygroup>
+		<entitygroup name="zombieSuperCopFire">
+			<e n="zombieSuperCopFire" />
+		</entitygroup>
+		
+		<entitygroup name="zombieSuperBikerIrradiation">
+			<e n="zombieSuperBikerIrradiation" />
+		</entitygroup>
+		<entitygroup name="zombieSuperBikerElectric">
+			<e n="zombieSuperBikerElectric" />
+		</entitygroup>
+		<entitygroup name="zombieSuperBikerFire">
+			<e n="zombieSuperBikerFire" />
+		</entitygroup>
+		
+		<entitygroup name="zombieScreamerIrradiation">
+			<e n="zombieScreamerIrradiation" />
+		</entitygroup>
+		<entitygroup name="zombieScreamerElectric">
+			<e n="zombieScreamerElectric" />
+		</entitygroup>
+		<entitygroup name="zombieScreamerFire">
+			<e n="zombieScreamerFire" />
+		</entitygroup>
+		
+		<entitygroup name="zombieTomClar6kIrradiation">
+			<e n="zombieTomClar6kIrradiation" />
+		</entitygroup>
+		<entitygroup name="zombieTomClar6kElectric">
+			<e n="zombieTomClar6kElectric" />
+		</entitygroup>
+		<entitygroup name="zombieTomClar6kFire">
+			<e n="zombieTomClar6kFire" />
+		</entitygroup>
+		
+		<entitygroup name="zombieTomClar6kIrradiationO">
+			<e n="zombieTomClar6kIrradiationO" />
+		</entitygroup>
+		<entitygroup name="zombieTomClar6kElectricO">
+			<e n="zombieTomClar6kElectricO" />
+		</entitygroup>
+		<entitygroup name="zombieTomClar6kFireO">
+			<e n="zombieTomClar6kFireO" />
+		</entitygroup>
+		
+		<entitygroup name="zombieSpiderInfernalIrradiation">
+			<e n="zombieSpiderInfernalIrradiation" />
+		</entitygroup>
+		<entitygroup name="zombieSpiderInfernalElectric">
+			<e n="zombieSpiderInfernalElectric" />
+		</entitygroup>
+		<entitygroup name="zombieSpiderInfernalFire">
+			<e n="zombieSpiderInfernalFire" />
+		</entitygroup>
+		
+		<entitygroup name="TMHordeStageGS1">
+			<e n="zombieArleneElectricComand" />
+			<e n="zombieSpiderInfernalElectric" />
+			<e n="zombieScreamerElectric" />
+			<e n="zombieArleneFireComand" />
+			<e n="zombieSpiderInfernalFire" />
+			<e n="zombieScreamerFire" />
+			<e n="zombieArleneIrradiationComand" />
+			<e n="zombieSpiderInfernalIrradiation" />
+			<e n="zombieScreamerIrradiation" />
+		</entitygroup>
+		
+		<entitygroup name="TMHordeStageGS9999">
+			<e n="zombieBurntIrradiationElite" />
+			<e n="zombieMutatedIrradiationElite" />
+			<e n="zombieWightIrradiationElite" />
+			<e n="zombieLumberjackIrradiationElite" />
+			<e n="animalDireWolfIrradiationElite" />
+			<e n="zombieDemolitionIrradiationGeneral" />
+			<e n="zombieRancherIrradiation" />
+			<e n="zombieChuckIrradiation" />
+			<e n="zombieSuperCopIrradiation" />
+			<e n="zombieSuperBikerIrradiation" />
+			<e n="zombieTomClar6kIrradiation" />
+			<e n="zombieSpiderInfernalIrradiation" />
+			<e n="zombieBurntElectricElite" />
+			<e n="zombieMutatedElectricElite" />
+			<e n="zombieWightElectricElite" />
+			<e n="zombieLumberjackElectricElite" />
+			<e n="animalDireWolfElectricElite" />
+			<e n="zombieDemolitionElectricGeneral" />
+			<e n="zombieRancherElectric" />
+			<e n="zombieChuckElectric" />
+			<e n="zombieSuperCopElectric" />
+			<e n="zombieSuperBikerElectric" />
+			<e n="zombieTomClar6kElectric" />
+			<e n="zombieSpiderInfernalElectric" />
+			<e n="animalZombieVultureElite" />
+			<e n="zombieBurntFireElite" />
+			<e n="zombieWightFireElite" />
+			<e n="zombieLumberjackFireElite" />
+			<e n="animalDireWolfFireElite" />
+			<e n="zombieDemolitionFireGeneral" />
+			<e n="zombieRancherFire" />
+			<e n="zombieChuckFire" />
+			<e n="zombieSuperCopFire" />
+			<e n="zombieSuperBikerFire" />
+			<e n="zombieTomClar6kFire" />		
+			<e n="zombieSpiderInfernalFire" />
+		</entitygroup>
+	
+	</append>
+	
+</configs>

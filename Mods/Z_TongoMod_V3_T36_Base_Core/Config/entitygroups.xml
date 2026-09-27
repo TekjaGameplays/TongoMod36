@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	<!-- ADD MORE ANIMALS TO SPAWN FOR TONGOMOD -->
+
+	<append xpath="/entitygroups">
+
+		<!-- *** WILD_GAME_FOREST -->
+		<entitygroup name="WildGameForest">
+			<!--animalRabbit, 30
+			animalChicken, 30
+			animalDoe, 15
+			animalStag, 15
+			animalBoar, 5
+			animalCoyote, 5-->
+			<!--animalRabbit, 8
+			animalChicken,8
+			animalDoe, 4
+			animalStag,4
+			animalBoar, 2
+			animalCoyote, 2
+			none, 72-->
+			animalRabbit, 8
+			animalChicken,8
+			animalDoe, 3
+			animalStag,3
+			animalBoar, 4
+			animalCoyote, 4
+			none, 70
+
+			<!-- TM ANIMALS -->
+			<!--animalChickenHostileIrradiationElite, 4
+			animalChickenHostileElectricElite, 4
+			animalChickenHostileFireElite, 4-->
+		</entitygroup>
+
+		<!-- *** WILD_GAME_FOREST_NIGHT -->
+		<entitygroup name="WildGameForestNight">
+			<!--animalRabbit, 30
+			animalChicken, 30
+			animalDoe, 15
+			animalStag, 15
+			animalBoar, 5
+			animalCoyote, 5-->
+			<!--animalRabbit, 8
+			animalChicken,8
+			animalDoe, 4
+			animalStag,4
+			animalBoar, 2
+			animalCoyote, 2
+			none, 72-->
+			animalRabbit, 8
+			animalChicken,8
+			animalDoe, 3
+			animalStag,3
+			animalBoar, 4
+			animalCoyote, 4
+			none, 70
+
+			<!-- TM ANIMALS -->
+			<!--animalChickenHostileIrradiationElite, 4
+			animalChickenHostileElectricElite, 4
+			animalChickenHostileFireElite, 4-->
+		</entitygroup>
+
+		<!-- *** ENEMY_ANIMAL_FOREST -->
+		<entitygroup name="EnemyAnimalsForest">
+			animalSnake, 80
+			animalCoyote, 20
+		</entitygroup>
+
+		<!-- *** ENEMY_ANIMAL_BURNT_FOREST_ANY -->
+		<entitygroup name="EnemyAnimalsBurntForestAny">
+			animalSnake, 20
+			animalZombieVulture, 10
+			animalBoar, 10
+			animalCoyote, 10
+			none, 50
+		</entitygroup>
+
+		<!-- *** ENEMY_ANIMAL_BURNT_FOREST_NIGHT -->
+		<entitygroup name="EnemyAnimalsBurntForestNight">
+			animalSnake, 20
+			animalZombieVulture, 10
+			animalBoar, 10
+			animalCoyote, 10
+			none, 50
+		</entitygroup>
+
+		<!-- *** ENEMY_ANIMAL_DESERT -->
+		<entitygroup name="EnemyAnimalsDesert">
+			animalCoyote, 20
+			animalZombieVulture, 10
+			animalSnake, 20
+			none, 50
+			<!-- TM ANIMALS -->
+			<!--animalZombieVultureElite, 7
+			animalDireWolfIrradiationElite, 7
+			animalDireWolfElectricElite, 7
+			animalDireWolfFireElite, 7-->
+		</entitygroup>
+
+		<!-- *** ENEMY_ANIMAL_DESERT_NIGHT-->
+		<entitygroup name="EnemyAnimalsDesertNight">
+			animalCoyote, 20
+			animalZombieVulture, 10
+			animalSnake, 20
+			none, 50
+			<!-- TM ANIMALS -->
+			<!--animalZombieVultureElite, 7
+			animalDireWolfIrradiationElite, 7
+			animalDireWolfElectricElite, 7
+			animalDireWolfFireElite, 7-->
+		</entitygroup>
+
+		<!-- *** ENEMY_ANIMAL_SNOW-->
+		<entitygroup name="EnemyAnimalsSnow">
+			animalMountainLion, 20
+			animalWolf, 15
+			animalBear, 10
+			animalBearSmall, 5
+			none, 50
+		</entitygroup>
+
+		<!-- *** ENEMY_ANIMAL_SNOW_NIGHT -->
+		<entitygroup name="EnemyAnimalsSnowNight">
+			animalMountainLion, 20
+			animalWolf, 15
+			animalBear, 10
+			animalBearSmall, 5
+			none, 50
+		</entitygroup>
+
+		<!-- *** ENEMY_ANIMAL_WASTELAND -->
+		<entitygroup name="EnemyAnimalsWasteland">
+			animalSnake, 5
+			animalZombieVulture, 5
+			animalZombieDog, 10
+			animalDireWolf, 5
+			animalZombieBear, 10
+		</entitygroup>
+
+		<!-- *** ENEMY_ANIMAL_WASTELAND_NIGHT -->
+
+
+		<!-- *** BIOME_ZOMBIES_WASTELAND_GROUP -->
+		<entitygroup name="ZombiesWasteland">
+			zombieMutated, 4
+			zombieSpider, 2
+			zombieBoe
+			zombieJoe
+			zombieSteve
+			zombieTomClark
+			zombieMoe
+			zombieYo
+			zombieBusinessMan
+			zombieArlene
+			zombieDarlene
+			zombieMarlene
+			zombieNurse
+			zombieSteveCrawler
+			zombieFemaleFat, 2
+			zombieFatCop, 4
+			zombieBurnt, 2
+			zombieMaleHazmat, 2
+			zombieFatHawaiian, 2
+			zombieBowler, .1
+			zombieSoldier, 2
+			zombieWightFeral, 4
+			animalZombieBear, 4
+			animalDireWolf, 2
+		</entitygroup>
+
+
+		<!-- *** BIOME_ZOMBIES_WASTELAND_DOWNTOWN_GROUP -->
+		<entitygroup name="ZombiesWastelandDowntown">
+			zombieMutated, 4
+			zombieMutatedFeral, 2
+			zombieSpider, 2
+			zombieSpiderFeral
+			zombieBurnt, 2
+			zombieBurntFeral
+			zombieMaleHazmat, 2
+			zombieMaleHazmatFeral
+			zombieBoe
+			zombieBoeFeral, .5
+			zombieJoe
+			zombieJoeFeral, .5
+			zombieSteve
+			zombieSteveFeral, .5
+			zombieTomClark
+			zombieTomClarkFeral, .5
+			zombieMoe
+			zombieMoeFeral, .5
+			zombieYo
+			zombieYoFeral, .5
+			zombieBusinessMan, 2
+			zombieBusinessManFeral
+			zombieArlene
+			zombieArleneFeral, .5
+			zombieDarlene
+			zombieDarleneFeral, .5
+			zombieMarlene
+			zombieMarleneFeral, .5
+			zombieNurse
+			zombieNurseFeral, .5
+			zombiePartyGirl
+			zombiePartyGirlFeral, .5
+			zombieFatHawaiian
+			zombieFatHawaiianFeral, .5
+			zombieBowler, .1
+			zombieBowlerFeral, .1
+			zombieSteveCrawlerFeral, .5
+			zombieFatCop, 2
+			zombieFatCopFeral, 4
+			zombieSoldier
+			zombieSoldierFeral, .5
+			zombieDemolition, .05
+			animalZombieDog, .8
+			zombieWightFeral, 4
+			animalZombieBear, 4
+			animalDireWolf, 2
+		</entitygroup>
+
+		
+
+	</append>
+
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<!-- no sirve, independientemente del zombi que haga spawn, seguira teniendo las propiedades de invocacion -->
+	<!-- tampoco sirve vaciarlo o eliminarlo, cascada roja en la consola cuando llama a scout y no encuentra -->
+	<!--<append xpath="/entitygroups">
+
+		<entitygroup name="ZombieScouts">
+			zombieArlene
+		</entitygroup>
+		<entitygroup name="ZombieScoutsFeral">
+			zombieArleneFeral
+		</entitygroup>
+		<entitygroup name="ZombieScoutsRadiated">
+			zombieArleneRadiated
+		</entitygroup>
+		
+	</append>-->
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	
+</raiz>

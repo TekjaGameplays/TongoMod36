@@ -1,0 +1,42 @@
+<configs>
+	<append xpath="/buffs">
+		
+		<buff name="buffHNight" name_key="buffARHordeNightRewardName" description_key="buffARHordeNightRewardDesc" tooltip_key="buffARHordeNightRewardTooltip" icon="ui_game_symbol_treasure" icon_color="0,128,0" remove_on_death="true" icon_blink="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group />
+		</buff>
+		
+		<buff name="buffARHordeNightRewardCompleteText" name_key="buffARHordeNightRewardCompleteName" tooltip_key="buffARHordeNightRewardCompleteTooltip" description_key="buffARHordeNightRewardCompleteDesc" icon="ui_game_symbol_treasure" icon_color="0,128,0">
+			<stack_type value="ignore"/>
+			<duration value="5"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="twitch_celebrate" play_in_head="true" delay="0" />				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHNight" />
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffARGiveHordeNightReward" />
+			</effect_group>
+		</buff>
+		
+		<buff name="buffARGiveHordeNightReward" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffARHordeNightRewardCompleteText" />
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffARGiveHordeNightReward" />
+			</effect_group>
+		</buff>
+		
+		<buff name="buffARGiveHordeNightRewardDead" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>				
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="attribute_loser" play_in_head="true" delay="0" />				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHNight" />
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffARGiveHordeNightRewardDead" />
+			</effect_group>
+		</buff>
+		
+	</append>
+</configs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	
+	<!-- NOT USED THIS TIME -->
+
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<append xpath="/blocks/block[@name='cntShippingBoxWorldTM']">
+		<!--<property name="Model" value="@:Entities/LootContainers/shippingCratePrefab.prefab"/>--> <!-- caja base de 7 days vanilla -->
+		<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMAbandoneBoxPrefab"/> <!-- caja del TM -->
+	</append>
+
+
+
+
+	<append xpath="/blocks">
+
+		<!-- * GRAPHENE TIER 5 (spawn)-->
+
+		<block name="hardSpikeGrapheneTM">
+			<property name="Extends" value="trapSpikesGrapheneBigT5TM" />
+			<property name="CreativeMode" value="None" />
+			<property name="CustomIcon" value="trapSpikesScrapIronMaster" />
+			<property name="CustomIconTint" value="6441A5" />
+			<property name="IsTemporaryBlock" value="true" />
+			<property name="DamageType" value="Special" />
+			<dropextendsoff />
+			<drop event="Destroy" count="0" />
+		</block>
+
+
+	</append>
+	
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	
+</raiz>

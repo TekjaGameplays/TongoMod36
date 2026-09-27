@@ -1,0 +1,27 @@
+<raiz>
+	<!-- INCREASE INVENTORY SIZE -->
+	<!--<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity'][@value='27']/@value">36</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize'][@value='45']/@value">84</set>
+
+
+	<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar=".carryCapacityBase" operation="set" value="27"/>
+
+
+	<effect_group>
+
+	
+	</effect_group>-->
+
+	<!--<append xpath="/entity_classes/entity_class[@name='playerMale']/effect_group">
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar=".carryCapacityBase" operation="set" value="36"/>
+		<passive_effect name="BagSize" operation="base_set" value="84"/> --><!-- number of slots on the inventory UI --><!--
+
+	</append>-->
+
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity' and @operation='base_set']/@value">36</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize' and @operation='base_set']/@value">84</set>
+
+	<!--<set xpath="/entity_classes/entity_class[@name='playerFemale']/effect_group/passive_effect[@name='CarryCapacity' and @operation='base_set']/@value">34</set>-->
+
+
+</raiz>

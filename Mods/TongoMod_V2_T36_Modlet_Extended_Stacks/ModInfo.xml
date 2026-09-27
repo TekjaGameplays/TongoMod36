@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<raiz>
+	<Name value="TongoMod_Modlet_Extended_Stacks"/>
+	<DisplayName value="TongoMod 3.6" />
+	<Description value="Great stacks for meds, ammo, food, etc... in TongoMod"/>
+	<Author value="Tekja" />
+	<Version value="3.6" />
+	<Website value=" " />
+	<SkipWithAntiCheat value="false" />
+</raiz>

@@ -1,0 +1,54 @@
+<raiz>
+
+
+	<!-- NEW WINDOW FOR 3 INPUT AND OUTPUT IN VANILLA FORGE -->
+	
+	<!--<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">windowTongoForgeInput</set>-->
+
+	<!--<remove xpath="/xui/ruleset/window_group[@name='workstation_forge']/@name">windowForgeInput</remove>-->
+	<!--<append xpath="/xui/ruleset/window_group[@name='workstation_forge']/@name">windowTongoForgeInput</append>-->
+
+	<!--<remove xpath="/xui[@window_group='workstation_forge']"/>-->
+
+	<!--<append xpath="/xui">
+
+		<window_group name="workstation_forge" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultselected="bp.content">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsForge" />
+			<window name="windowFuel" />
+			<window name="windowTongoForgeInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+	</append>-->
+
+
+	<remove xpath="/xui/window_group[@name='workstation_forge']/window"/>
+	<append xpath="/xui/window_group[@name='workstation_forge']">
+		<window name="windowCraftingList"/>
+		<window name="craftingInfoPanel"/>
+		<window name="windowCraftingQueue"/>
+		<window name="windowToolsForge" />
+		<window name="windowFuel" />
+		<window name="windowTongoForgeInput" />
+		<window name="windowOutput" />
+		<window name="windowNonPagingHeader" />
+	</append>
+
+
+	<!--<window_group name="workstation_forge" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true" defaultselected="bp.content">
+		<window name="windowCraftingList"/>
+		<window name="craftingInfoPanel"/>
+		<window name="windowCraftingQueue"/>
+		<window name="windowToolsForge" />
+		<window name="windowFuel" />
+		<window name="windowForgeInput" />
+		<window name="windowOutput" />
+		<window name="windowNonPagingHeader" />
+	</window_group>-->
+
+	
+</raiz>

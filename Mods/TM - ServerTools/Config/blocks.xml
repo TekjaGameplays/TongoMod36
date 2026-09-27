@@ -1,0 +1,33 @@
+<configs>	
+	
+	<append xpath="/blocks">
+	
+		<block name="cntLootCrateBloodmoonHorde">
+			<property name="Extends" value="cntLootCrateBookstore"/>
+			<property class="CompositeFeatures">
+				<property class="TEFeatureStorage">
+					<property name="LootList" value="BloodmoonHordeRewardTM" />
+				</property>
+			</property>
+			<property name="CustomIcon" value="cntLootCrateBookstore"/>
+			<property name="SortOrder2" value="0107"/>
+			<property name="Tags" value="perkBookworm"/>
+		</block>
+		
+		<block name="cntShippingCrateBloodmoonHorde">
+			<property name="DescriptionKey" value="cntShippingCrateGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/TMServer.unity3d?TMBloodMoonHordePrefab"/>
+			<property name="Material" value="Mwood_regular"/>
+			<property name="Path" value="solid"/>
+			<drop event="Destroy" count="0"/>
+			<property name="DowngradeBlock" value="cntLootCrateBloodmoonHorde"/>
+			<property name="SortOrder1" value="B103"/>
+			<property name="SortOrder2" value="0002"/>
+			<property name="FilterTags" value="MC_building,SC_loot,SC_treasureRoom"/>
+		</block>
+		
+	</append>
+
+</configs>

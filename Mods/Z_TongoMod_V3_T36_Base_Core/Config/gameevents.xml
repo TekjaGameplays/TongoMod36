@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	
+	<!-- NOT USED THIS TIME -->
+
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!-- *** GAME_FIRST_SPAWN -->
+
+	<remove xpath="/gameevents/action_sequence[@name='game_first_spawn']"/>
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<append xpath="/gameevents">
+
+		<!--*** ACTION_GIVE_YELLOW_BAG-->
+		<action_sequence name="action_give_yellow_bag">
+			<action class="AddItems">
+				<property name="added_items" value="yellowBagNightBundleTM"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+
+		<!--*** ACTION_GIVE_BLUE_BAG-->
+		<action_sequence name="action_give_blue_bag">
+			<action class="AddItems">
+				<property name="added_items" value="blueBagNightBundleTM"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+
+		<!--*** ACTION_GIVE_RED_BAG-->
+		<action_sequence name="action_give_red_bag">
+			<action class="AddItems">
+				<property name="added_items" value="redBagNightBundleTM"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</action_sequence>
+
+
+		<!-- reward gain skill point-->
+		<action_sequence name="skill_points_gain">
+			<action class="AddSkillPoints">
+				<property name="skill_points" value="1" />
+			</action>
+		</action_sequence>
+
+
+
+		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+		<action_sequence name="RemoveTest">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questRemove" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+			
+		</action_sequence>
+
+		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+		
+		<!-- eventos para las misiones extra de las maquinas de clase -->
+
+		<action_sequence name="questBuilderVending1">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questBuilderVending1" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questBuilderVending2">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questBuilderVending2" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questBuilderVending3">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questBuilderVending3" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questBuilderVending4">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questBuilderVending4" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questFarmerVending1">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questFarmerVending1" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questFarmerVending2">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questFarmerVending2" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questFarmerVending3">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questFarmerVending3" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questChefVending1">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questChefVending1" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questChefVending2">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questChefVending2" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questChefVending3">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questChefVending3" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questHunterVending1">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questHunterVending1" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questHunterVending2">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questHunterVending2" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questHunterVending3">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questHunterVending3" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questMedicVending1">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questMedicVending1" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questMedicVending2">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questMedicVending2" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questMedicVending3">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questMedicVending3" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questMechanicVending1">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questMechanicVending1" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questMechanicVending2">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questMechanicVending2" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questMechanicVending3">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questMechanicVending3" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questSoldierVending1">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questSoldierVending1" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questSoldierVending2">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questSoldierVending2" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<action_sequence name="questSoldierVending3">
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt, Backpack" />
+				<property name="items_tags" value="questSoldierVending3" />
+				<property name="count_type" value="Items" />
+				<property name="count" value="1" />
+			</action>
+		</action_sequence>
+
+		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+		
+		
+		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+
+	</append>
+
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+		
+
+	
+</raiz>

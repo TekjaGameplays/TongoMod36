@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+	<Name value="TongoMod_Moddlet_Backpack"/>
+	<DisplayName value="TongoMod 3.6" />
+	<Description value="Backpack with 84 slots for TongoMod"/>
+	<Author value="Tekja"/>
+	<Version value="3.6"/>
+	<Website value=" " />
+	<SkipWithAntiCheat value="false" />
+</raiz>

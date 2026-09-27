@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	
+	<!-- change all (next) -->
+	
+	
+	<!-- remove vanilla challenge zombies -->
+
+	<!-- burn forest -->
+	<remove xpath="/challenges/challenge[@name='burntSurvivalKillZombie']"/>
+
+	<!-- desert -->
+	<remove xpath="/challenges/challenge[@name='desertSurvivalKillZombie']"/>
+
+	<!-- snow -->
+	<remove xpath="/challenges/challenge[@name='snowSurvivalKillZombie']"/>
+
+	<!-- wasteland -->
+	<remove xpath="/challenges/challenge[@name='wastelandSurvivalKillZombie']"/>
+
+
+	<!-- include new challenges -->
+
+	<append xpath="/challenges">
+
+		<!-- burn forest -->
+
+		<!-- *** 05_KILL_ZOMBIE_IN_BIOME -->
+		<challenge name="burntSurvivalKillZombie" title_key="challengeBurntKillZombie" icon="ui_game_symbol_zombie" group="Burnt Survival"
+			short_description_key="challengeBurntKillZombieShort" description_key="challengeBurntKillZombieDesc"
+			reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+			<objective type="Kill" entity_names="zombieBurntIrradiationElite,zombieBurntElectricElite,zombieBurntFireElite" count="5" biome="burnt_forest"/>
+			<objective type="KillByTag" entity_tags="allbiome,zombieAnimal,desert,snow,wasteland" target_name_key="xuiZombies" count="5" biome="burnt_forest"/>
+		</challenge>
+
+		
+		<!-- desert -->
+
+		<!-- *** 05_KILL_ZOMBIE_IN_BIOME -->
+		<challenge name="desertSurvivalKillZombie" title_key="challengeDesertKillZombie" icon="ui_game_symbol_zombie" group="Desert Survival"
+			short_description_key="challengeDesertKillZombieShort" description_key="challengeDesertKillZombieDesc"
+			reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+			<objective type="Kill" entity_names="zombieRancherIrradiation,zombieRancherElectric,zombieRancherFire" count="5" biome="desert"/>
+			<objective type="KillByTag" entity_tags="allbiome,zombieAnimal,burnt,snow,wasteland" target_name_key="xuiZombies" count="10" biome="desert"/>
+		</challenge>
+
+		
+		<!-- snow -->
+
+		<!-- *** 05_KILL_ZOMBIE_IN_BIOME -->
+		<challenge name="snowSurvivalKillZombie" title_key="challengeSnowKillZombie" icon="ui_game_symbol_zombie" group="Snow Survival"
+			short_description_key="challengeSnowKillZombieShort" description_key="challengeSnowKillZombieDesc"
+			reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+			<objective type="Kill" entity_names="zombieChuckIrradiation,zombieChuckElectric,zombieChuckFire" count="5" biome="snow"/>
+			<objective type="KillByTag" entity_tags="allbiome,zombieAnimal,burnt,desert,wasteland" target_name_key="xuiZombies" count="15" biome="snow"/>
+		</challenge>
+		
+		
+		<!-- wasteland -->
+
+		<!-- *** 05_KILL_ZOMBIE_IN_BIOME -->
+		<challenge name="wastelandSurvivalKillZombie" title_key="challengeWastelandKillZombie" icon="ui_game_symbol_zombie" group="Wasteland Survival"
+			short_description_key="challengeWastelandKillZombieShort" description_key="challengeWastelandKillZombieDesc"
+			reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+			<objective type="Kill" entity_names="zombieMutatedIrradiationElite,zombieMutatedElectricElite,zombieMutatedFireElite" count="5" biome="wasteland"/>
+			<objective type="KillByTag" entity_tags="allbiome,zombieAnimal,burnt,desert,snow" target_name_key="xuiZombies" count="20" biome="wasteland"/>
+		</challenge>
+
+
+
+	</append>
+
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	
+	
+</raiz>

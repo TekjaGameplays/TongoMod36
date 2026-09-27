@@ -1,0 +1,164 @@
+<configs>
+	
+	<append xpath="/gameevents">
+		
+		<!-- SPWAN ARLENES -->
+		<action_sequence name="spawn_TM_Arlene" template="spawn_single">
+			<variable name="zombiename" value="zombieArleneIrradiationComand,zombieArleneElectricComand,zombieArleneFireComand" />
+			<variable name="alertsound" value="zombiefemalealert" />
+		</action_sequence>
+		
+		<!-- SPWAN BURN -->
+		<action_sequence name="spawn_TM_Burn" template="spawn_single">
+			<variable name="zombiename" value="zombieBurntIrradiationElite,zombieBurntElectricElite,zombieBurntFireElite" />
+			<variable name="alertsound" value="zombieburntalert" />
+		</action_sequence>
+		
+		<!-- SPWAN LUMBERJACK -->
+		<action_sequence name="spawn_TM_Lumberjack" template="spawn_single">
+			<variable name="zombiename" value="zombieLumberjackIrradiationElite,zombieLumberjackElectricElite,zombieLumberjackFireElite" />
+			<variable name="alertsound" value="zombielumberjack_alert" />
+		</action_sequence>
+		
+		<!-- SPWAN GENERAL -->
+		<action_sequence name="spawn_TM_General" template="spawn_single">
+			<variable name="zombiename" value="zombieDemolitionIrradiationGeneral,zombieDemolitionElectricGeneral,zombieDemolitionFireGeneral" />
+			<variable name="alertsound" value="demolitionzalert" />
+		</action_sequence>
+		
+		<!-- SPWAN MUTATED -->
+		<action_sequence name="spawn_TM_Mutated" template="spawn_single">
+			<variable name="zombiename" value="zombieMutatedIrradiationElite,zombieMutatedElectricElite,zombieMutatedFireElite" />
+			<variable name="alertsound" value="zombie_mutated_alert" />
+		</action_sequence>
+		
+		<!-- SPWAN WIGHT -->
+		<action_sequence name="spawn_TM_Wight" template="spawn_single">
+			<variable name="zombiename" value="zombieWightIrradiationElite,zombieWightElectricElite,zombieWightFireElite" />
+			<variable name="alertsound" value="zombieferalalert" />
+		</action_sequence>
+		
+		<!-- SPWAN INSECT -->
+		<action_sequence name="spawn_TM_Swarm" template="spawn_single">
+			<variable name="zombiename" value="animalInsectSwarmIrradiation,animalInsectSwarmElectric,animalInsectSwarmFire" />
+			<variable name="alertsound" value="swarmalert" />
+			<variable name="airspawn" value="true" />
+			<variable name="spawncount" value="3" />
+		</action_sequence>
+		
+		<!-- SPWAN PLAGUE -->
+		<action_sequence name="spawn_TM_Plague" template="spawn_single">
+			<variable name="zombiename" value="zombiePlagueSpitterIrradiation,zombiePlagueSpitterElectric,zombiePlagueSpitterFire" />
+			<variable name="alertsound" value="plaguealert" />
+		</action_sequence>
+		
+		<!-- SPWAN FROST -->
+		<action_sequence name="spawn_TM_Frost" template="spawn_single">
+			<variable name="zombiename" value="zombieFrostclawIrradiation,zombieFrostclawElectric,zombieFrostclawFire" />
+			<variable name="alertsound" value="frostclawalert" />
+		</action_sequence>
+		
+		<action_sequence name="tm_remove_duke">
+			<action class="PlaySound">
+				<property name="sound" value="twitch_bad_action" />
+				<property name="phase" value="1" />
+			</action>
+			<action class="RemoveItems">
+				<property name="phase" value="1" />
+				<property name="items_location" value="Toolbelt,Equipment,Backpack" />
+				<property name="items_tags" value="dukes" />
+				<property name="count" value="6000" />
+			</action>
+		</action_sequence>
+		
+		
+		<!-- HORDAS -->
+		<!-- spawn_group_event -->
+		<!--
+		<action_sequence name="tm_horde_spawns">
+			<property name="action_type" value="Game"/>
+			<property name="allow_while_dead" value="false"/>
+			
+			<action class="SpawnEntity">
+				<property name="entity_group" value="TMHorde" param1="group"/>
+				<property name="spawn_count" value="4" param1="count"/>
+				<property name="air_spawn" value="false"/>
+				<property name="add_to_group" value="zombies"/>
+				<property name="safe_spawn" value="true"/>
+				<property name="min_distance" value="10"/>
+				<property name="max_distance" value="20"/>
+				<property name="spawn_type" value="WanderingHorde" />
+			</action>			
+			
+			<action class="PlaySound">
+				<property name="sound" value="horde_spawn_warning"/>
+				<property name="phase" value="0"/>
+			</action>
+			
+			<action class="BeltTooltip">
+				<property name="text_key" value="ScoutHordeE" />
+				<property name="phase" value="0"/>
+			</action>
+		</action_sequence>
+		-->
+		
+		
+		<action_sequence name="tm_horde_template">
+			<property name="action_type" value="Game"/>
+			<property name="allow_while_dead" value="false"/>
+			
+			<action class="SpawnEntity">
+				<property name="entity_names" value="zombieArleneIrradiationComand,zombieScreamerIrradiation,zombieSpiderInfernalIrradiation,zombieArleneElectricComand,zombieScreamerElectric,zombieSpiderInfernalElectric,zombieArleneFireComand,zombieScreamerFire,zombieSpiderInfernalFire" param1="entity"/>
+				<property name="spawn_count" value="4" param1="count"/>
+				<property name="air_spawn" value="false"/>
+				<property name="add_to_group" value="zombies"/>
+				<property name="safe_spawn" value="true"/>
+				<property name="min_distance" value="15"/>
+				<property name="max_distance" value="20"/>
+				<property name="spawn_type" value="WanderingHorde" />
+			</action>			
+			
+			<action class="PlaySound">
+				<property name="sound" value="horde_spawn_warning"/>
+				<property name="phase" value="0"/>
+			</action>
+			
+			<action class="BeltTooltip">
+				<property name="text_key" value="ScoutHordeE" />
+				<property name="phase" value="0"/>
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="tm_horde_gs1" template="tm_horde_template">
+			<variable name="entity" value="zombieArleneIrradiationComand,zombieScreamerIrradiation,zombieSpiderInfernalIrradiation,zombieArleneElectricComand,zombieScreamerElectric,zombieSpiderInfernalElectric,zombieArleneFireComand,zombieScreamerFire,zombieSpiderInfernalFire" />
+			<variable name="count" value="4" />
+		</action_sequence>
+		
+		<action_sequence name="tm_horde_gs1_1" template="tm_horde_template">
+			<variable name="entity" value="animalMiniWolfIrradiationElite,animalMiniWolfElectricElite,animalMiniWolfFireElite" />
+			<variable name="count" value="4" />
+		</action_sequence>
+		
+		<action_sequence name="tm_horde_gs50" template="tm_horde_template">
+			<variable name="entity" value="zombieArleneIrradiationComand,zombieScreamerIrradiation,zombieSpiderInfernalIrradiation,zombieArleneElectricComand,zombieScreamerElectric,zombieSpiderInfernalElectric,zombieArleneFireComand,zombieScreamerFire,zombieSpiderInfernalFire" />
+			<variable name="count" value="10" />
+		</action_sequence>
+		
+		<action_sequence name="tm_horde_gs50_50" template="tm_horde_template">
+			<variable name="entity" value="animalMiniWolfIrradiationElite,animalMiniWolfElectricElite,animalMiniWolfFireElite" />
+			<variable name="count" value="10" />
+		</action_sequence>
+		
+		<action_sequence name="tm_horde_gs200" template="tm_horde_template">
+			<variable name="entity" value="zombieArleneIrradiationComand,zombieScreamerIrradiation,zombieSpiderInfernalIrradiation,zombieTomClar6kIrradiationO,zombieArleneElectricComand,zombieScreamerElectric,zombieSpiderInfernalElectric,zombieTomClar6kElectricO,zombieArleneFireComand,zombieScreamerFire,zombieSpiderInfernalFire,zombieTomClar6kFireO" />
+			<variable name="count" value="10" />
+		</action_sequence>
+		
+		<action_sequence name="tm_horde_gs300" template="tm_horde_template">
+			<variable name="entity" value="zombieScreamerIrradiation,zombieBurntIrradiationElite,zombieMutatedIrradiationElite,zombieWightIrradiationElite,zombieLumberjackIrradiationElite,animalDireWolfIrradiationElite,zombieDemolitionIrradiationGeneral,zombieRancherIrradiation,zombieChuckIrradiation,zombieSuperCopIrradiation,zombieSuperBikerIrradiation,zombieTomClar6kIrradiation,zombieScreamerElectric,zombieBurntElectricElite,zombieMutatedElectricElite,zombieWightElectricElite,zombieLumberjackElectricElite,animalDireWolfElectricElite,zombieDemolitionElectricGeneral,zombieRancherElectric,zombieChuckElectric,zombieSuperCopElectric,zombieSuperBikerElectric,zombieTomClar6kElectric,animalZombieVultureElite,zombieScreamerFire,zombieBurntFireElite,zombieWightFireElite,zombieLumberjackFireElite,animalDireWolfFireElite,zombieDemolitionFireGeneral,zombieRancherFire,zombieChuckFire,zombieSuperCopFire,zombieSuperBikerFire,zombieTomClar6kFire" />
+			<variable name="count" value="10" />
+		</action_sequence>		
+		
+	</append>
+
+</configs>

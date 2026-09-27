@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	
+	<!-- new quest group -->
+
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<!-- * add dificulty pills to starter pack -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestStarterPackTM01']">
+		<item name="itemNormalModeTM" count="1"/>
+		<item name="itemHardModeTM" count="1"/>
+		<item name="itemEasyModeTM" count="1"/>
+	</append>
+
+
+
+	<append xpath="/lootcontainers">
+
+		<!-- * RADIAL QUEST HARD FOR LETTER -->
+		<lootgroup name="groupLetterHardT1">
+			<item name="quest_radialHard1" count="1"/>
+			<item name="quest_radialHard2" count="1"/>
+			<item name="quest_radialHard3" count="1"/>
+			<item name="quest_radialHard4" count="1"/>
+			<item name="quest_radialHard5" count="1"/>
+			<item name="quest_radialHard6" count="1"/>
+			<item name="quest_radialHard7" count="1"/>
+			<item name="quest_radialHard8" count="1"/>
+			<item name="quest_radialHard9" count="1"/>
+			<item name="quest_radialHard10" count="1"/>
+			<item name="quest_radialHard11" count="1"/>
+			<item name="quest_radialHard12" count="1"/>
+			<item name="quest_radialHard13" count="1"/>
+			<item name="quest_radialHard14" count="1"/>
+			<item name="quest_radialHard15" count="1"/>
+		</lootgroup>
+
+		<lootgroup name="groupLetterHardAll" count="1">
+			<item group="groupLetterHardT1" loot_prob_template="ProbT0"/>
+		</lootgroup>
+
+		<!--  * LETTER HARD -->
+		<lootgroup name="groupQuestLetterHardTM01" count="1" >
+			<item group="groupLetterHardT1" />
+		</lootgroup>
+
+		<lootgroup name="groupQuestLetterHardTM" count="all">
+			<item group="groupQuestLetterHardTM01" />
+		</lootgroup>
+
+		<!-- Quest Reward Bundle -->
+		<lootcontainer name="questLetterHardTM" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestLetterHardTM"/>
+		</lootcontainer>
+
+	</append>
+
+
+	<!-- group reward extra radial quest -->
+	<append xpath="/lootcontainers">
+
+		
+		
+		<!-- group reward next (arlene,screamer / arlene horde / demolition horde) -->
+		<lootgroup name="groupQuestcasinoCoinNextTM" count="all">
+			<!--<item name="casinoCoin" count="8000"/>-->
+			<item name="casinoCoin" count="4000"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestBluePaperNextTM" count="all">
+			<item name="resourceBluePaper" count="100"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestBlueSackNextTM" count="all">
+			<item name="blueBagNightBundleTM" count="1"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestBookSchemNextTM" count="all">
+			<item name="groupBookSchemTMBBundle" count="5"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestSkillPointNextTM" count="all">
+			<!--<item name="iconSkillPointTM" count="3"/>-->
+			<item name="iconSkillPointTM" count="2"/>
+		</lootgroup>
+
+		<!-- group reward advanced (tom6k, psycoBurning, psycoRanger, psycoWolf, psycoVulture, psycoLumberjack, psycoChuck, psycoMutant, PsycoCreature, psycoDemolition) -->
+		<lootgroup name="groupQuestcasinoCoinAdvancedTM" count="all">
+			<item name="casinoCoin" count="20000"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestBluePaperAdvancedTM" count="all">
+			<!--<item name="resourceBluePaper" count="250"/>-->
+			<item name="resourceBluePaper" count="300"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestBlueSackAdvancedTM" count="all">
+			<item name="blueBagNightBundleTM" count="5"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestBookSchemAdvancedTM" count="all">
+			<!--<item name="groupBookSchemTMBBundle" count="20"/>-->
+			<item name="groupBookSchemTMBBundle" count="10"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestSkillPointAdvancedTM" count="all">
+			<!--<item name="iconSkillPointTM" count="5"/>-->
+			<item name="iconSkillPointTM" count="3"/>
+		</lootgroup>
+
+		<!-- group reward mega (superPsycoPolice, superPsycoBiker) -->
+		<lootgroup name="groupQuestcasinoCoinMegaTM" count="all">
+			<item name="casinoCoin" count="40000"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestBluePaperMegaTM" count="all">
+			<item name="resourceBluePaper" count="500"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestBlueSackMegaTM" count="all">
+			<item name="redBagNightBundleTM" count="10"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestBookSchemMegaTM" count="all">
+			<!--<item name="groupBookSchemTMCBundle" count="20"/>-->
+			<item name="groupBookSchemTMCBundle" count="10"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestSkillPointMegaTM" count="all">
+			<!--<item name="iconSkillPointTM" count="10"/>-->
+			<item name="iconSkillPointTM" count="5"/>
+		</lootgroup>
+
+	</append>
+
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+</raiz>

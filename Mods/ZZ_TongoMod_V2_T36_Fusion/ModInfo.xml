@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+	<Name value="zz_Tongomod_fusion"/>
+	<DisplayName value="TongoMod 3.6" />
+	<Description value="fusion to integrate TM into Core with external mod"/>
+	<Author value="Tekja"/>
+	<Version value="3.6"/>
+	<Website value=" " />
+	<SkipWithAntiCheat value="false" />
+</raiz>

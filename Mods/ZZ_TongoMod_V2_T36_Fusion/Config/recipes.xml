@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+
+	<!--test-->
+
+
+	<set xpath="/recipes/recipe[@name='modTMHelmetLight']/@craft_area">MKDysmantle</set>
+	<setattribute xpath="/recipes/recipe[@name='modTMHelmetLight']" name="craft_tool">itemToolSonicScrewdiver</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='modTMHelmetLight']" name="tags">learnable,workingDysmantle</setattribute>
+
+	<set xpath="/recipes/recipe[@name='modTMVehicleOffRoadHeadlightsHD']/@craft_area">MKDysmantle</set>
+	<setattribute xpath="/recipes/recipe[@name='modTMVehicleOffRoadHeadlightsHD']" name="craft_tool">itemToolSonicScrewdiver</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='modTMVehicleOffRoadHeadlightsHD']" name="tags">learnable,workingDysmantle</setattribute>
+
+	<set xpath="/recipes/recipe[@name='modTMGunMeleeNiCdBattery']/@craft_area">MKDysmantle</set>
+	<setattribute xpath="/recipes/recipe[@name='modTMGunMeleeNiCdBattery']" name="craft_tool">itemToolSonicScrewdiver</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='modTMGunMeleeNiCdBattery']" name="tags">learnable,workingDysmantle</setattribute>
+
+	<set xpath="/recipes/recipe[@name='modTMBulletFire']/@craft_area">MKDysmantle</set>
+	<setattribute xpath="/recipes/recipe[@name='modTMBulletFire']" name="craft_tool">itemToolSonicScrewdiver</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='modTMBulletFire']" name="tags">learnable,workingDysmantle</setattribute>
+
+	<set xpath="/recipes/recipe[@name='modTMArrowFire']/@craft_area">MKDysmantle</set>
+	<setattribute xpath="/recipes/recipe[@name='modTMArrowFire']" name="craft_tool">itemToolSonicScrewdiver</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='modTMArrowFire']" name="tags">learnable,workingDysmantle</setattribute>
+
+	<set xpath="/recipes/recipe[@name='modTMArrowShock']/@craft_area">MKDysmantle</set>
+	<setattribute xpath="/recipes/recipe[@name='modTMArrowShock']" name="craft_tool">itemToolSonicScrewdiver</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='modTMArrowShock']" name="tags">learnable,workingDysmantle</setattribute>
+
+	<set xpath="/recipes/recipe[@name='ModTMTurbo']/@craft_area">MKDysmantle</set>
+	<setattribute xpath="/recipes/recipe[@name='ModTMTurbo']" name="craft_tool">itemToolSonicScrewdiver</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='ModTMTurbo']" name="tags">learnable,workingDysmantle</setattribute>
+	
+
+	<append xpath="/recipes">
+
+
+		
+		<!-- MODS -->
+
+		<recipe name="modTMHelmetLightSchematic" count="1" craft_time="25" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="modTMVehicleOffRoadHeadlightsHDSchematic" count="1" craft_time="25" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="modTMGunMeleeNiCdBatterySchematic" count="1" craft_time="25" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="8000"/>
+		</recipe>
+
+		<recipe name="modTMBulletFireSchematic" count="1" craft_time="25" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="modTMArrowFireSchematic" count="1" craft_time="25" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="modTMArrowShockSchematic" count="1" craft_time="25" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+		<recipe name="ModTMTurboSchematic" count="1" craft_time="25" craft_area="MKLibros" craft_tool="itemToolDonQuixote" tags="workingLibros">
+			<ingredient name="resourceBluePaper" count="1000"/>
+		</recipe>
+
+
+
+
+	</append>
+
+	<append xpath="/recipes">
+		<recipe name="itemEasyModeTM" count="1" craft_time="5">
+			<ingredient name="resourceYuccaFibers" count="1"/>
+		</recipe>
+		<recipe name="itemHardModeTM" count="1" craft_time="5">
+			<ingredient name="resourceYuccaFibers" count="1"/>
+		</recipe>
+		<recipe name="itemNormalModeTM" count="1" craft_time="5">
+			<ingredient name="resourceYuccaFibers" count="1"/>
+		</recipe>
+	</append>
+	
+	
+</raiz>

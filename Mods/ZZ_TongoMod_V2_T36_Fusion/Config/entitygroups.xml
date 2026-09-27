@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	<!-- ADD MORE ANIMALS TO SPAWN FOR TONGOMOD -->
+
+	<append xpath="/entitygroups">
+
+		<!-- *** ENEMY_ANIMAL_DESERT -->
+		<entitygroup name="EnemyAnimalsDesert">
+			<!--animalCoyote, 30
+			animalZombieVulture, 10
+			animalSnake, 25
+			animalBoar, 7-->
+			
+			<!-- TM ANIMALS -->
+			animalZombieVultureElite, 3
+			animalDireWolfIrradiationElite, 3
+			animalDireWolfElectricElite, 3
+			animalDireWolfFireElite, 3
+		</entitygroup>
+
+		<!-- *** ENEMY_ANIMAL_DESERT_NIGHT-->
+		<entitygroup name="EnemyAnimalsDesertNight">
+			<!--animalCoyote, 30
+			animalZombieVulture, 10
+			animalSnake, 25
+			animalBoar, 7-->
+
+			<!-- TM ANIMALS -->
+			animalZombieVultureElite, 4
+			animalDireWolfIrradiationElite, 4
+			animalDireWolfElectricElite, 4
+			animalDireWolfFireElite, 4
+		</entitygroup>
+
+		<!-- *** TEST -->
+		<entitygroup name="EnemyTestTM">
+
+			<e n="zombieArleneFireComand" />
+			<e n="zombieArleneElectricComand" />
+			<e n="zombieArleneIrradiationComand" />
+			<!--<e n="zombieFatHawaiianFeral" p="0.5" />
+			<e n="zombieSteveFeral" p="0.5" />
+			<e n="zombieWightFeral" p="0.5" />
+			<e n="zombieTomClarkFeral" p="0.5" />
+			<e n="zombieJanitorFeral" p="0.5" />-->
+			
+			<!--zombieArleneFireComand, 4
+			zombieArleneElectricComand, 4
+			zombieArleneIrradiationComand, 4
+
+			zombieMiniArleneIrradiationComand, 4
+			zombieMiniArleneElectricComand, 4
+			zombieMiniArleneFireComand, 4
+
+			zombieSpiderInfernalFire, 4
+			zombieSpiderInfernalElectric, 4
+			zombieSpiderInfernalIrradiation, 4
+
+			zombieTomClar6kIrradiation, 4
+			zombieTomClar6kElectric, 4
+			zombieTomClar6kFire, 4
+
+			zombieDemolitionIrradiationGeneral, 4
+			zombieDemolitionElectricGeneral, 4
+			zombieDemolitionFireGeneral, 4-->
+
+			<!--zombieArleneFireComand, zombieArleneElectricComand, zombieArleneIrradiationComand, zombieMiniArleneIrradiationComand, zombieMiniArleneElectricComand, zombieMiniArleneFireComand, zombieSpiderInfernalFire, zombieSpiderInfernalElectric, zombieSpiderInfernalIrradiation, zombieTomClar6kIrradiation, zombieTomClar6kElectric, zombieTomClar6kFire, zombieDemolitionIrradiationGeneral, zombieDemolitionElectricGeneral, zombieDemolitionFireGeneral-->
+
+		</entitygroup>
+
+		
+
+	</append>
+
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	
+</raiz>

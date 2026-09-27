@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<raiz>
+	<Name value="TongoMod_Moddlet_Farming_A19"/>
+	<DisplayName value="TongoMod 3.6" />
+	<Description value="Turn farming values to A19 version in TongoMod"/>
+	<Author value="Tekja" />
+	<Version value="3.6" />
+	<Website value=" " />
+	<SkipWithAntiCheat value="false" />
+</raiz>

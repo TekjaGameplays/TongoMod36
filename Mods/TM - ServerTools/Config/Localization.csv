@@ -1,0 +1,41 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,spanish,Context
+NextAutoSaveWorld,,,,,The next autosaveworld will be at {time},El próximo autoguardado del mundo sera {time},,
+AutoSaveWorldIn,,,,,AutoSaveWorld in {i}...,Auto guardado del mundo en {i}...,,
+AutoSaveWorldStart,,,,,The autosaveworld is starting...,El autoguardado del mundo esta comenzando...,,
+AutoSaveWorldComplete,,,,,The autosaveworld has completed successfully!,El autoguardado del mundo se completo correctamente!...,,
+
+ScoutHorde,,,,,A horde has been spotted wandering the wastes,Se ha visto una horda vagando por los páramos.,,
+ScoutHordeE,,,,,[FFCC00][TM - ST] A horde has been spotted wandering the wastes,[FFCC00][TM - ST] Se ha visto una horda vagando por los páramos.,,
+
+NextAutoBackup,,,,,The next world backup will be at {time},La próxima copia de seguridad mundial será a las {time},,
+AutoBackupIn,,,,,World backup in {i}...,Copia de seguridad del mundo en {i}...,,
+AutoBackupStart,,,,,The world backup is starting...,El respaldo del mundo está comenzando...,,
+AutoBackupComplete,,,,,The world backup has completed successfully!,¡La copia de seguridad del mundo se ha completado con éxito!,,
+
+HordeToday,,,,,Next horde night is today. It will start at {Time}:00,La próxima noche de la horda es hoy. Comenzará a las {Time}:00,,
+HordeHere,,,,,The horde is here! Hold out until {Time}:00,¡La horda está aquí! Espera hasta las {Time}:00,,
+HordeNext,,,,,Next horde night is in {Value} days,¡La próxima noche de horda es en {Value} días,,
+HordeDisabled,,,,,Horde night are disabled, Las noche de hordas estan desactivadas,,
+HordePlayers,,,,,Total Player(s): {Value},Total de jugador(es): {Value},,
+
+RewardComple,,,,,You have survived the horde you have earned a prize,Has sobrevivido a la horda te has ganado un premio,,
+RewardDead,,,,,You have died during horde and you have lost the prize,Has muerto durante horda y has perdido el premio,,
+
+buffARHordeNightRewardName,,,,,"Horde Night Reward","Premio de noche de Horda",,
+buffARHordeNightRewardDesc,,,,,"Stay alive and receive a Reward!","¡Manténgase vivo y reciba un premio!",,
+buffARHordeNightRewardTooltip,,,,,"[FFFFFF]It's horde night! Stay alive and receive a [F1713C]Reward[-]![-] [32CD32]Good Luck![-]","[FFFFFF]¡Es noche de hordas! ¡Manténgase vivo y reciba un [F1713C]premio[-]![-] [32CD32]¡Buena suerte![-]",,
+
+buffARHordeNightRewardCompleteName,,,,,"Reward","Premio",,
+buffARHordeNightRewardCompleteTooltip,,,,,"[FFFFFF]You have received a [32CD32]Reward[-]![-]","[FFFFFF]¡Has recibido un [32CD32]premio[-]![-]",,
+buffARHordeNightRewardCompleteDesc,,,,,"You have received a Reward!","¡Has recibido un premio!","Du hast eine Belohnung erhalten!",,
+
+AR_SupplyBloodmoonHorde,,,,,"Horde Night Reward","Premio de noche de Horda",,
+cntLootCrateBloodmoonHorde,,,,,"Horde Night Reward","Premio de noche de Horda",,
+cntShippingCrateBloodmoonHorde,,,,,"Horde Night Reward","Premio de noche de Horda",,
+
+xuiTMSettings,,,,,"TM Server Tools","TM Server Tools",,
+xuiGameSettingsTongo,,,,,"TM","TM",,
+goWanderingOrdes,,,,,"Wandering Ordes","Ordas Herrantes",,
+goWanderingOrdesDesc,,,,,"Toggle the mod's roaming hordes on or off","Activa o desactiva las hordas herrantes del mod",,
+xuiComboYesNoOff,,,,,Inactive,Inactivas,,
+xuiComboYesNoOn,,,,,Active,Activas,,

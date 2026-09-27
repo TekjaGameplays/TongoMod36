@@ -1,0 +1,138 @@
+<configs>
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']">
+		
+		<item_modifier name="modTMHelmetLight" installable_tags="head" modifier_tags="misc,modTMHelmetLight" blocked_tags="noMods,clothing" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modTMHelmetLightSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+			<property name="Material" value="Msteel"/>
+			<property name="LightValue" value="100"/>
+			<property name="EconomicValue" value="8000"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipChanged" action="AddPartFPV" part="HeadLight" prefab="#@modfolder:Resources/TMMods.unity3d?HelmetLightHD" parentTransform="CameraNode" localPos="0,0.1,0" localRot="-90,180,0"/>
+				<triggered_effect trigger="onSelfEquipChanged" action="AddPartTPV" part="HeadLight" prefab="#@modfolder:Resources/TMMods.unity3d?HelmetLightHD" parentTransform="Spotlight" localPos="0,0,0" localRot="90,0,0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLight"/>
+				<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLight" active="true"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLight" active="false"/>
+			</effect_group>
+		</item_modifier>		
+		
+		<item_modifier name="modTMVehicleOffRoadHeadlightsHD" installable_tags="vlight" modifier_tags="light" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="UnlockedBy" value="modTMVehicleOffRoadHeadlightsHDSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+			<property name="CustomIcon" value="modTMVehicleOffRoadHeadlightsHD"/>
+			<property name="DescriptionKey" value="modTMVehicleOffRoadHeadlightsHDDesc"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="8000"/>
+			<property name="Group" value="Mods"/>
+			<effect_group tiered="false">
+				<passive_effect name="LightIntensity" operation="perc_set" value="3.5"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modTMBikeSpeedBoost" installable_tags="bicycle" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="DescriptionKey" value="modTMBikeSpeedBoostDesc"/>
+			<property name="TraderStageTemplate" value="modsTier1"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="1000"/>
+			<property name="CustomIcon" value="modTMBikeSpeedBoost"/> 
+			<effect_group tiered="false">
+				<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".40"/>
+				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".58"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="ModTMTurbo" installable_tags="vengine" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DescriptionKey" value="ModTMTurboDesc"/>
+			<property name="UnlockedBy" value="ModTMTurboSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="8000"/>
+			<property name="CustomIcon" value="ModTMTurbo"/> 
+			<effect_group tiered="false">
+				<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".30"/>
+				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".48"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modTMGunMeleeNiCdBattery" installable_tags="weapon,tool" modifier_tags="TMspecialDamageShocked" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modTMGunMeleeNiCdBattery"/>
+			<property name="UnlockedBy" value="modTMGunMeleeNiCdBatterySchematic"/>
+			<property name="TraderStageTemplate" value="modsTier5"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modTMGunMeleeNiCdBatteryDesc"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="8000"/>
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffShocked"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modTMBulletFire" installable_tags="gun" modifier_tags="TMspecialDamageFire" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modTMBulletFire"/>
+			<property name="UnlockedBy" value="modTMBulletFireSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier5"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modTMBulletFireDesc"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="8000"/>
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modTMArrowFire" installable_tags="perkArchery" modifier_tags="TMspecialDamageFire" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modTMArrowFire"/>
+			<property name="UnlockedBy" value="modTMArrowFireSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier5"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modTMArrowFireDesc"/>
+			<property name="DropMeshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/arrow_flamingPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="8000"/>
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modTMArrowShock" installable_tags="perkArchery" modifier_tags="TMspecialDamageShock" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="modTMArrowShock"/>
+			<property name="UnlockedBy" value="modTMArrowShockSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier5"/>
+			<property name="Group" value="Mods,Moddet"/>
+			<property name="DescriptionKey" value="modTMArrowShockDesc"/>
+			<property name="DropMeshfile" value="@:Other/Items/Weapons/Ranged/Bows/Arrows/arrow_flamingPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="8000"/>
+			<effect_group tiered="false">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1"/>
+			</effect_group>
+			<effect_group tiered="false">
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="50"/>
+					<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffShocked"/>
+			</effect_group>
+		</item_modifier>
+		
+	</insertAfter>
+</configs>

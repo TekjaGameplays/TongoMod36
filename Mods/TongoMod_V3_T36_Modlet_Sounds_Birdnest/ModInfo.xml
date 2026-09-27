@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+	<Name value="TongoMod_Moddlet_Sounds_Birdnest"/>
+	<DisplayName value="TongoMod 3.6" />
+	<Description value="Restore sounds birdnest from TongoMod V.2.4 (A20)"/>
+	<Author value="Tekja"/>
+	<Version value="3.6"/>
+	<Website value=" " />
+	<SkipWithAntiCheat value="false" />
+</raiz>

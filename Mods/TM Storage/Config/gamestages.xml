@@ -1,0 +1,101 @@
+<configs>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='01']/spawn[@group='wanderingHordeStageGS1']/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='02']/spawn[@group='wanderingHordeStageGS2']/@num">20</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='03']/spawn[@group='FwanderingHordeStageGS1']/@num">8</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='04']/spawn[@group='FwanderingHordeStageGS1']/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='05']/spawn[@group='FwanderingHordeStageGS1']/@num">8</set>	
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='06']/spawn[@group='FwanderingHordeStageGS2']/@num">14</set>	
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='07']/spawn[@group='FwanderingHordeStageGS4']/@num">16</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='08']/spawn[@group='wanderingHordeStageGS8']/@num">10</set>	
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='09']/spawn[@group='wanderingHordeStageGS8']/@num">12</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='10']/spawn[@group='wanderingHordeStageGS11']/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='11']/spawn[@group='wanderingHordeStageGS14']/@num">12</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='12']/spawn[@group='wanderingHordeStageGS14']/@num">6</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='13']/spawn[@group='FwanderingHordeStageGS7']/@num">14</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='14']/spawn[@group='FwanderingHordeStageGS10']/@num">12</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='15']/spawn[@group='ZombieBikerBarGroup']/@num">16</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='16']/spawn[@group='FwanderingHordeStageGS13']/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='17']/spawn[@group='wanderingHordeStageGS18']/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='18']/spawn[@group='wanderingHordeStageGS22']/@num">14</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='19']/spawn[@group='wanderingHordeStageGS27']/@num">16</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='20']/spawn[@group='ZombieDogGroup']/@num">12</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='21']/spawn[@group='FwanderingHordeStageGS16']/@num">20</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='22']/spawn[@group='FwanderingHordeStageGS19']/@num">16</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='23']/spawn[@group='FwanderingHordeStageGS23']/@num">14</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='24']/spawn[@group='ZombieGhostTownGroup']/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='25']/spawn[@group='wanderingHordeStageGS31']/@num">20</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='26']/spawn[@group='wanderingHordeStageGS36']/@num">14</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='27']/spawn[@group='VultureGroup']/@num">12</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='28']/spawn[@group='wanderingHordeStageGS41']/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='29']/spawn[@group='FwanderingHordeStageGS27']/@num">14</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='30']/spawn[@group='FwanderingHordeStageGS31']/@num">20</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='31']/spawn[@group='FwanderingHordeStageGS35']/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='32']/spawn[@group='wanderingHordeStageGS46']/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='33']/spawn[@group='wanderingHordeStageGS52']/@num">12</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='34']/spawn[@group='ZombieDogGroup']/@num">14</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='35']/spawn[@group='wanderingHordeStageGS58']/@num">18</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='36']/spawn[@group='wanderingHordeStageGS64']/@num">16</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='37']/spawn[@group='FwanderingHordeStageGS40']/@num">20</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='38']/spawn[@group='ZombieAnimalsGroup']/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='39']/spawn[@group='FwanderingHordeStageGS44']/@num">10</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='40']/spawn[@group='FwanderingHordeStageGS49']/@num">27</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='41']/spawn[@group='WolfPack']/@num">15</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='42']/spawn[@group='wanderingHordeStageGS70']/@num">33</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='43']/spawn[@group='wanderingHordeStageGS76']/@num">27</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='44']/spawn[@group='ZombieSoldierGroup']/@num">27</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='45']/spawn[@group='wanderingHordeStageGS82']/@num">30</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='46']/spawn[@group='FwanderingHordeStageGS54']/@num">33</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='47']/spawn[@group='VultureGroup']/@num">24</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='48']/spawn[@group='FwanderingHordeStageGS59']/@num">30</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='49']/spawn[@group='FwanderingHordeStageGS64']/@num">24</set>
+	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='50']/spawn[@group='ZombieBearsGroup']/@num">6</set>
+	
+	<!--
+	<insertAfter xpath="/gamestages/group[@name='animalZombieVultureRadiated']" >
+		<group name="zTMHorde" spawner="TMHorde"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/gamestages/spawner[@name='defenseGSList']" >
+
+		<spawner name="TMHorde">
+			<gamestage stage="1">
+				<spawn group="TMHordeStageGS1" maxAlive="2" duration="1"/>
+			</gamestage>
+				
+			<gamestage stage="50">
+				<spawn group="TMHordeStageGS1" num="10" maxAlive="20" duration="1"/>
+			</gamestage>
+				
+			<gamestage stage="100">
+				<spawn group="TMHordeStageGS1" num="11" maxAlive="21" duration="1"/>
+			</gamestage>
+				
+			<gamestage stage="200">
+				<spawn group="TMHordeStageGS1" num="12" maxAlive="22" duration="1"/>
+			</gamestage>
+			
+			<gamestage stage="300">
+				<spawn group="TMHordeStageGS9999" num="13" maxAlive="23" duration="1"/>
+			</gamestage>
+				
+			<gamestage stage="400">
+				<spawn group="TMHordeStageGS9999" num="14" maxAlive="24" duration="1"/>
+			</gamestage>
+				
+			<gamestage stage="600">
+				<spawn group="TMHordeStageGS9999" num="15" maxAlive="25" duration="1"/>
+			</gamestage>
+				
+			<gamestage stage="800">
+				<spawn group="TMHordeStageGS9999" num="16" maxAlive="26" duration="1"/>
+			</gamestage>
+				
+			<gamestage stage="1000">
+				<spawn group="TMHordeStageGS9999" num="17" maxAlive="27" duration="1"/>
+			</gamestage>
+		</spawner>
+		
+	</insertAfter>
+	-->
+	
+</configs>

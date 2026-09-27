@@ -1,0 +1,94 @@
+<!-- ui_game_symbol_backpack -->
+
+<configs>
+
+	<remove xpath="/nav_object_classes/nav_object_class[@name='bicycle']/onscreen_settings"></remove>
+	
+	<insertAfter xpath="/nav_object_classes/nav_object_class[@name='bicycle']/compass_settings">
+		<onscreen_settings>
+			<property name="sprite_name" value="ui_game_symbol_bicycle"/>
+			<property name="min_distance" value="0"/>
+			<property name="max_distance" value="200"/>
+			<property name="color" value="255,255,100,200"/>
+			<property name="has_pulse" value="true"/>
+			<property name="text_type" value="Distance"/>
+			<property name="offset" value="0,0.9,0" />
+		</onscreen_settings>
+	</insertAfter>
+	
+	<append xpath="/nav_object_classes">
+	
+		<nav_object_class name="navBagAlertWhite">
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_game_symbol_backpack"/>
+				<property name="min_distance" value="10"/>
+				<property name="max_distance" value="300"/>
+				<property name="color" value="255,255,255,200"/>
+				<property name="has_pulse" value="true"/>
+				<property name="text_type" value="Distance"/>
+				<property name="offset" value="0,0.9,0" />
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="navBagAlertYellow">
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_game_symbol_backpack"/>
+				<property name="min_distance" value="10"/>
+				<property name="max_distance" value="300"/>
+				<property name="color" value="255,255,100,200"/>
+				<property name="has_pulse" value="true"/>
+				<property name="text_type" value="Distance"/>
+				<property name="offset" value="0,0.9,0" />
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="navBagAlertBlue">
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_game_symbol_backpack"/>
+				<property name="min_distance" value="10"/>
+				<property name="max_distance" value="300"/>
+				<property name="color" value="150,200,255,200"/>
+				<property name="has_pulse" value="true"/>
+				<property name="text_type" value="Distance"/>
+				<property name="offset" value="0,0.9,0" />
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="navBagAlertRed">
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_game_symbol_backpack"/>
+				<property name="min_distance" value="10"/>
+				<property name="max_distance" value="300"/>
+				<property name="color" value="255,100,64,200"/>
+				<property name="has_pulse" value="true"/>
+				<property name="text_type" value="Distance"/>
+				<property name="offset" value="0,0.9,0" />
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="navBagAlertBlack">
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_game_symbol_backpack"/>
+				<property name="min_distance" value="10"/>
+				<property name="max_distance" value="300"/>
+				<property name="color" value="0,0,0,200"/>
+				<property name="has_pulse" value="true"/>
+				<property name="text_type" value="Distance"/>
+				<property name="offset" value="0,0.9,0" />
+			</onscreen_settings>
+		</nav_object_class>
+		
+		<nav_object_class name="navBagAlertTwitch">
+			<onscreen_settings>
+				<property name="sprite_name" value="ui_game_symbol_backpack"/>
+				<property name="min_distance" value="10"/>
+				<property name="max_distance" value="300"/>
+				<property name="color" value="81,46,95,200"/>
+				<property name="has_pulse" value="true"/>
+				<property name="text_type" value="Distance"/>
+				<property name="offset" value="0,0.9,0" />
+			</onscreen_settings>
+		</nav_object_class>
+		
+	</append>
+</configs>

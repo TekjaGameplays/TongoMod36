@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	
+	<!-- new buffs  -->
+
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<append xpath="/buffs/buff[@name='god']">
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffEasyModeTM"></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHardModeTM"></triggered_effect>
+
+		</effect_group>
+	</append>
+
+	<append xpath="/buffs">
+
+
+		<!-- call event to remove zombie (llama al evento que elimina al zombi) -->
+		<buff name="buffRemoveZombieTM" name_key="buffRemoveZombieTMName" description_key="buffRemoveZombieTMDesc" tooltip_key="buffRemoveZombieTMDesc" icon="ui_game_symbol_fire" icon_color="255,0,0" icon_blink="true">
+			<stack_type value="ignore"/>
+			<duration value="0.1"/>
+			<update_rate value="0.1"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="removeZombieTM"/>
+			</effect_group>
+
+		</buff>
+
+		<!-- easy mode (modo facil) -->
+		<buff name="buffEasyModeTM" name_key="buffEasyModeTMName" description_key="buffEasyModeTMDesc" icon="ui_game_symbol_chikenTM" icon_color="250,250,50" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffEasyModeTMNameShort"/>
+			<display_value value="xxx"/>
+			
+			<effect_group>
+				<!-- added effect activate buff only on the specified zombies within range. -->
+				<!-- se añade activa el bufo solo en los zombis indicados dentro del rango -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="30" buff="buffRemoveZombieTM">
+					<requirement name="!EntityTagCompare" target="other" tags="npc,vehicle,player,turret,drone"/>
+					<requirement name="EntityTagCompare" target="other" tags="zombieTM"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+
+		
+		<!--  hard mode (modo dificil) -->
+		<buff name="buffHardModeTM" name_key="buffHardModeTMName" description_key="buffHardModeTMDesc" icon="ui_game_symbol_demonTM" icon_color="255,0,0" remove_on_death="false">
+			<stack_type value="ignore"/>
+			<display_value_key value="buffHardModeTMNameShort"/>
+			<display_value value="xxx"/>
+
+			<effect_group>
+				<!-- added effect activate buff only on the specified zombies within range. -->
+				<!-- se añade activa el bufo solo en los zombis indicados dentro del rango -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="30" buff="buffHardZombieTM">
+					<requirement name="!EntityTagCompare" target="other" tags="npc,vehicle,player,turret,drone"/>
+					<requirement name="EntityTagCompare" target="other"	tags="zombieTM"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+
+		<!-- hard mode effect 1 "zombie gain HP" (modo dificil efecto 1 "aumento HP zombi") -->
+		<!-- revisar no funciona bien -->
+		<buff name="buffHardZombieTM" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="2"/>
+
+			<effect_group name="Hard Mode">
+			</effect_group>
+
+		</buff>
+
+		
+		
+
+	</append>
+
+	
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<append xpath="/buffs">
+
+		
+		<buff name="buffTestOnlyNext" name_key="buffSkillPoint" description_key="buffSkillPointDesc" icon="ui_game_symbol_skills" icon_color="0,255,0" remove_on_death="false" hidden="true" >
+			<stack_type value="replace"/>
+			<duration value="0"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,1" tags="buffPerkTheDentist"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffPerkTheDentist"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_dentist" play_in_head="true"/>
+				<!--<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="spawn_standard"/>-->
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="spawn_test_TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffTestOnlyNext"/>
+			</effect_group>
+		</buff>
+
+	</append>
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<append xpath="/buffs">
+
+		<buff name="buffTestAreaTM" name_key="buffPerkTheYellowBagName" description_key="buffPerkTheYellowBagDesc" icon="ui_game_symbol_loot_sack" icon_color="255,255,0" remove_on_death="false">
+			<stack_type value="replace"/>
+			<duration value="3"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="30" buff="buffBurningMolotov">
+					<requirement name="!EntityTagCompare" target="other" tags="npc,vehicle,zombie,zombieTM,turret,drone"/>
+					<requirement name="EntityTagCompare" target="other" tags="player"/>
+					<requirement name="HasBuff" buff="buffHardModeTM" />
+					<!--requisito no estar activo--> 
+					<requirement name="HasBuff" buff="buffEasyModeTM" invert="true"/>
+					<!--requisito no estar activo-->
+					<requirement name="HasBuff" buff="buffTestAreaTM" invert="true"/>
+					<!--requisito no estar en Modo Dios--> 
+					<requirement name="HasBuff" buff="god" invert="true"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+
+	</append>
+
+	<append xpath="/buffs">
+
+		<buff name="buffExtraRewardTM" name_key="buffPerkTheYellowBagName" description_key="buffPerkTheYellowBagDesc" icon="ui_game_symbol_loot_sack" icon_color="255,255,0" remove_on_death="false">
+			<stack_type value="replace"/>
+			<duration value="3"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,5" tags="buffPerkTheDentist"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffPerkTheDentist"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_dentist" play_in_head="true"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_give_yellow_bag"/>
+			</effect_group>
+		</buff>
+
+	</append>
+
+	<append xpath="/buffs">
+
+		<buff name="buffFireTestTM" name_key="buffPerkTheYellowBagName" description_key="buffPerkTheYellowBagDesc" icon="ui_game_symbol_loot_sack" icon_color="255,255,0" remove_on_death="false">
+			<stack_type value="replace"/>
+			<duration value="3"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,5" tags="buffPerkTheDentist"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffPerkTheDentist"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="buff_dentist" play_in_head="true"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_mini_fill"/>
+			</effect_group>
+		</buff>
+
+		<!-- All loot for 5 minutes is plant fibers. -->
+		<buff name="buffCrappyLootTM" name_key="buffCrappyLootTM" description_key="buffCrappyLootTMDesc" icon="ui_game_symbol_twitch_crap_loot" icon_color="255,175,175"
+				remove_on_death="false">
+			<stack_type value="ignore"/>
+			<duration value="300"/>
+			<display_value value="duration"/>
+			<tags value="plant_fibers"/>
+
+			<effect_group>
+				<!-- Blinks the display -->
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffCrappyLootTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffCrappyLootTM"/>
+
+				<triggered_effect trigger="onSelfOpenLootContainer" action="SetOverrideLoot" items="resourceYuccaFibers"/>
+				<triggered_effect trigger="onSelfCloseLootContainer" action="SetOverrideLoot" items=""/>
+				<triggered_effect trigger="onSelfBuffRemove" action="SetOverrideLoot" items=""/>
+
+			</effect_group>
+		</buff>
+
+		<!-- More defense (low damage player) -->
+		<buff name="buffShieldEnemiesTM" name_key="buffShieldEnemiesTM" description_key="buffShieldEnemiesTMDesc" icon="ui_game_symbol_twitch_shield_enemies" icon_color="255,175,175"
+			remove_on_death="false">
+			<stack_type value="replace"/>
+			<duration value="30"/>
+			<display_value value="duration"/>
+			<tags value="defense_zombies"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffShieldEnemiesTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffShieldEnemiesTM"/>
+
+
+			</effect_group>
+
+			<effect_group>
+				<passive_effect name="EntityDamage" operation="perc_add" value="-2.5"/>
+			</effect_group>
+		</buff>
+
+		<!-- Temporarily removes all perk attribute points -->
+		<buff name="buffNewbieTM" name_key="buffNewbieTM" description_key="buffNewbieTMDesc" icon="ui_game_symbol_twitch_newbie" icon_color="255,175,175" remove_on_death="false">
+			<stack_type value="replace"/>
+			<duration value="60"/>
+			<display_value value="duration"/>
+			<tags value="buff_newbie"/>
+
+			<effect_group>
+				<!-- Blinks the display -->
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffNewbieTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffNewbieTM"/>
+			</effect_group>
+
+			<effect_group>
+				<passive_effect name="AttributeLevel" operation="base_set" value="1"/>
+				<passive_effect name="PerkLevel" operation="base_set" value="0"/>
+				<passive_effect name="HealthMax" operation="base_set" value="100"/>
+				<passive_effect name="StaminaMax" operation="base_set" value="100"/>
+			</effect_group>
+		</buff>
+
+		<!-- degrade weapons (call event) -->
+		<buff name="buffDegradeWeaponsTM" name_key="buffDegradeWeaponsTM" description_key="buffDegradeWeaponsTMDesc" icon="ui_game_symbol_loot_sack" icon_color="255,255,0" remove_on_death="false" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="3"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,5" tags="buffDegradeWeaponsTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffDegradeWeaponsTM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_degrade"/>
+			</effect_group>
+		</buff>
+
+		<!-- horde dogs (call event) -->
+		<buff name="buffHordeDogsTM" name_key="buffHordeDogsTM" description_key="buffHordeDogsTMDesc" icon="ui_game_symbol_loot_sack" icon_color="255,255,0" remove_on_death="false" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="3"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,5" tags="buffHordeDogsTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffHordeDogsTM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="zombiedogalert" play_in_head="true"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="event_dogs_TM"/>
+			</effect_group>
+		</buff>
+
+		<!-- fog 3 minutes (call events) -->
+		<buff name="buffFogVultureTM" name_key="buffFogVultureTM" description_key="buffFogVultureTMDesc" icon="ui_game_symbol_twitch_newbie" icon_color="255,175,175" remove_on_death="false" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="180"/>
+			<tags value="buffFogVultureTM"/>
+
+			<effect_group>
+				<!-- Blinks the display -->
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffFogVultureTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffFogVultureTM"/>
+
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_weather_fog"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="CallGameEvent" event="action_weather_clear"/>
+			</effect_group>
+
+		</buff>
+
+		<!-- spawn cacti (call event) -->
+		<buff name="buffCactiTM" name_key="buffCactiTM" description_key="buffCactiTMDesc" icon="ui_game_symbol_loot_sack" icon_color="255,255,0" remove_on_death="false" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="3"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,5" tags="buffCactiTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffCactiTM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_cacti"/>
+			</effect_group>
+		</buff>
+
+		<!-- spawn spike (call event) -->
+		<buff name="buffSpikeTM" name_key="buffSpikeTM" description_key="buffSpikeTMDesc" icon="ui_game_symbol_loot_sack" icon_color="255,255,0" remove_on_death="false" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="3"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,5" tags="buffSpikeTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffSpikeTM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_block_spikes"/>
+			</effect_group>
+		</buff>
+
+		<!-- spawn arlene -->
+		<buff name="buffSpawnArleneTM" name_key="buffSkillPoint" description_key="buffSkillPointDesc" icon="ui_game_symbol_skills" icon_color="0,255,0" remove_on_death="false" hidden="true" >
+			<stack_type value="replace"/>
+			<duration value="0"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,1" tags="buffSpawnArleneTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffSpawnArleneTM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="spawn_arlene_TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSpawnArleneTM"/>
+			</effect_group>
+		</buff>
+
+		<!-- spawn arlene mini -->
+		<buff name="buffSpawnArleneMiniTM" name_key="buffSkillPoint" description_key="buffSkillPointDesc" icon="ui_game_symbol_skills" icon_color="0,255,0" remove_on_death="false" hidden="true" >
+			<stack_type value="replace"/>
+			<duration value="0"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,1" tags="buffSpawnArleneMiniTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffSpawnArleneMiniTM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="spawn_arlene_mini_TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSpawnArleneMiniTM"/>
+			</effect_group>
+		</buff>
+
+		<!-- spawn screamer -->
+		<buff name="buffSpawnScreamerTM" name_key="buffSkillPoint" description_key="buffSkillPointDesc" icon="ui_game_symbol_skills" icon_color="0,255,0" remove_on_death="false" hidden="true" >
+			<stack_type value="replace"/>
+			<duration value="0"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,1" tags="buffSpawnScreamerTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffSpawnScreamerTM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="spawn_screamer_TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSpawnScreamerTM"/>
+			</effect_group>
+		</buff>
+
+		<!-- spawn graphene spikes -->
+		<buff name="buffHardSpikeGrapheneTM" name_key="buffSkillPoint" description_key="buffSkillPointDesc" icon="ui_game_symbol_skills" icon_color="0,255,0" remove_on_death="false" hidden="true" >
+			<stack_type value="replace"/>
+			<duration value="0"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,1" tags="buffHardSpikeGrapheneTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffHardSpikeGrapheneTM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_block_spikes_TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHardSpikeGrapheneTM"/>
+			</effect_group>
+		</buff>
+
+		<!-- spawn burn c4 -->
+		<buff name="buffHardBurnC4TM" name_key="buffSkillPoint" description_key="buffSkillPointDesc" icon="ui_game_symbol_skills" icon_color="0,255,0" remove_on_death="false" hidden="true" >
+			<stack_type value="replace"/>
+			<duration value="0"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,1" tags="buffHardBurnC4TM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffHardBurnC4TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_bombblitz2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHardBurnC4TM"/>
+			</effect_group>
+		</buff>
+
+		<!-- spawn mini wolf 1 -->
+		<buff name="buffSpawnMiniwolf1TM" name_key="buffSkillPoint" description_key="buffSkillPointDesc" icon="ui_game_symbol_skills" icon_color="0,255,0" remove_on_death="false" hidden="true" >
+			<stack_type value="replace"/>
+			<duration value="0"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,1" tags="buffSpawnMiniwolf1TM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffSpawnMiniwolf1TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="spawn_miniwolf1_TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSpawnMiniwolf1TM"/>
+			</effect_group>
+		</buff>
+
+		<!-- spawn mini wolf 3 -->
+		<buff name="buffSpawnMiniwolf3TM" name_key="buffSkillPoint" description_key="buffSkillPointDesc" icon="ui_game_symbol_skills" icon_color="0,255,0" remove_on_death="false" hidden="true" >
+			<stack_type value="replace"/>
+			<duration value="0"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,1" tags="buffSpawnMiniwolf3TM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffSpawnMiniwolf3TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="spawn_miniwolf3_TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSpawnMiniwolf3TM"/>
+			</effect_group>
+		</buff>
+
+		<!-- spawn spider -->
+		<buff name="buffSpawnSpiderTM" name_key="buffSkillPoint" description_key="buffSkillPointDesc" icon="ui_game_symbol_skills" icon_color="0,255,0" remove_on_death="false" hidden="true" >
+			<stack_type value="replace"/>
+			<duration value="0"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,1" tags="buffSpawnSpiderTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffSpawnSpiderTM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="spawn_spider_TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSpawnSpiderTM"/>
+			</effect_group>
+		</buff>
+
+		<!-- spawn mines -->
+		<buff name="buffSpawnMinesTM" name_key="buffSkillPoint" description_key="buffSkillPointDesc" icon="ui_game_symbol_skills" icon_color="0,255,0" remove_on_death="false" hidden="true" >
+			<stack_type value="replace"/>
+			<duration value="0"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,1" tags="buffSpawnMinesTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffSpawnMinesTM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_land_mines_TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffSpawnMinesTM"/>
+			</effect_group>
+		</buff>
+
+		<!-- bucket heads -->
+		<buff name="buffBucketHeadsTM" name_key="buffSkillPoint" description_key="buffSkillPointDesc" icon="ui_game_symbol_skills" icon_color="0,255,0" remove_on_death="false" hidden="true" >
+			<stack_type value="replace"/>
+			<duration value="0"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,1" tags="buffBucketHeadsTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffBucketHeadsTM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_bucket_heads_TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBucketHeadsTM"/>
+			</effect_group>
+		</buff>
+
+		<!-- spawn bell -->
+		<buff name="buffScoutScreamerTM" name_key="buffSkillPoint" description_key="buffSkillPointDesc" icon="ui_game_symbol_skills" icon_color="0,255,0" remove_on_death="false" hidden="true" >
+			<stack_type value="replace"/>
+			<duration value="0"/>
+
+			<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,1" tags="buffScoutScreamerTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffScoutScreamerTM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_screamer_scout_TM"/>
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="zombiefemalescoutalert"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffScoutScreamerTM"/>
+			</effect_group>
+		</buff>
+
+		<!-- only head shots -->
+		<buff name="buffHeadshotOnlyTM" name_key="TwitchBuff_HeadshotOnly" description_key="TwitchBuff_HeadshotOnlyDesc" icon="ui_game_symbol_twitch_headshot" icon_color="255,175,175">
+			<stack_type value="replace"/>
+			<duration value="10"/>
+			<display_value value="duration"/>
+			<tags value="buffHeadshotOnlyTM"/>
+
+			<effect_group>
+				<!-- Blinks the display -->
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffHeadshotOnlyTM"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="RemoveBuff" buff="buffHeadshotOnlyTM"/>
+			</effect_group>
+
+			<effect_group>
+				<passive_effect name="HeadShotOnly" operation="base_set" value="1"/>
+			</effect_group>
+
+			<effect_group>
+				<passive_effect name="DamageModifier" operation="perc_add" value="5" tags="head"/>
+			</effect_group>
+		</buff>
+		
+
+	</append>
+
+
+	
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+
+</raiz>

@@ -1,0 +1,128 @@
+<configs>
+
+	<set xpath="/recipes/recipe[@name='resourceClayLump']/ingredient[@name='unit_clay']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='resourceCrushedSand']/ingredient[@name='unit_glass']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='resourceRockSmall']/ingredient[@name='unit_stone']/@count">1</set>
+	
+    <append xpath="/recipes">
+		
+		<!-- Storage -->
+		<recipe name="TMDropBox" count="1" craft_time="5" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="60"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="resourcePaint" count="6"/>
+		</recipe>
+		
+		<recipe name="TMStorageBox" count="1" craft_time="5" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="60"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="resourcePaint" count="6"/>
+		</recipe>
+		
+		<!-- MODS -->
+		<recipe name="modTMHelmetLight" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+			<ingredient name="meleeToolFlashlight02" count="1"/>
+		</recipe>
+		
+		<recipe name="modTMVehicleOffRoadHeadlightsHD" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceHeadlight" count="4"/>
+		</recipe>
+		
+		<recipe name="modTMGunMeleeNiCdBattery" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="carBattery" count="4"/>
+			<ingredient name="resourceLegendaryParts" count="2"/>
+		</recipe>
+		
+		<recipe name="modTMBulletFire" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceBulletTip" count="50"/>
+			<ingredient name="resourceBulletCasing" count="50"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceLegendaryParts" count="2"/>
+		</recipe>
+		
+		<recipe name="modTMArrowFire" count="1" craft_area="workbench" tags="learnable,workbenchCrafting"> 
+			<ingredient name="resourceArrowHeadSteelAP" count="50"/>
+			<ingredient name="ammoGasCan" count="100"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceLegendaryParts" count="2"/>
+		</recipe>
+		
+		<recipe name="modTMArrowShock" count="1" craft_area="workbench" tags="learnable,workbenchCrafting"> 
+			<ingredient name="resourceArrowHeadSteelAP" count="50"/>
+			<ingredient name="carBattery" count="1"/>
+			<ingredient name="resourceGunPowder" count="100"/>
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceLegendaryParts" count="2"/>
+		</recipe>
+		
+		<recipe name="ModTMTurbo" count="1" craft_area="workbench" tags="learnable,workbenchCrafting" >
+			<ingredient name="modVehicleSuperCharger" count="1"/>
+			<ingredient name="resourceForgedSteel" count="20"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceMetalPipe" count="10"/>
+		</recipe>
+		
+		<recipe name="modDyeWhite" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		
+		<recipe name="modDyeBrown" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		
+		<recipe name="modDyeRed" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		
+		<recipe name="modDyeOrange" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		
+		<recipe name="modDyeYellow" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		
+		<recipe name="modDyeGreen" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		
+		<recipe name="modDyeBlue" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		
+		<recipe name="modDyePurple" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		
+		<recipe name="modDyeBlack" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		
+		<recipe name="modDyePink" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+		
+		<!-- TRAMPAS -->
+		<recipe name="TMbarbedWireSpindle1m" count="1" craft_time="2" tags="workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="5"/>
+		</recipe>
+		
+		<recipe name="TMbarbedWireSpindle" count="1" craft_time="2" tags="workbenchCrafting">
+			<ingredient name="resourceScrapIron" count="10"/>
+		</recipe>
+		
+    </append>
+</configs>

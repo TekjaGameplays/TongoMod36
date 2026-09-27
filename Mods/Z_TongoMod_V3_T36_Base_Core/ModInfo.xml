@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="TongoMod_V2_Base_Core" />
+	<DisplayName value="TongoMod 3.5" />
+	<Description value="Base core from TongoMod V3.5 in Version 1.0" />
+	<Author value="Tekja" />
+	<Version value="3.5" />
+	<Website value=" " />
+	<SkipWithAntiCheat value="false" />
+</xml>

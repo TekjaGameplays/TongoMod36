@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	<!-- Back city to all biomes -->
+	<set xpath="/rwgmixer/township[@name='countrytown']/property[@name='biomes']/@value">desert,snow,forest,burntforest</set>
+	<set xpath="/rwgmixer/township[@name='town']/property[@name='biomes']/@value">desert,snow,forest,burntforest</set>
+	<set xpath="/rwgmixer/township[@name='city']/property[@name='biomes']/@value">desert,snow,forest,burntforest</set>
+	<set xpath="/rwgmixer/township[@name='citybig']/property[@name='biomes']/@value">wasteland,desert,snow,forest,burntforest</set>
+		
+	
+</raiz>

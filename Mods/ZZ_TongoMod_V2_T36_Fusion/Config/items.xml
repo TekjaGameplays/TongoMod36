@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+
+	<!-- normalize slots in vanilla items -->
+	<set xpath="items/item[starts-with(@name, 'armorLumberjack')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+	<set xpath="items/item[starts-with(@name, 'armorPreacher')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+	<set xpath="items/item[starts-with(@name, 'armorRogue')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+	<set xpath="items/item[starts-with(@name, 'armorAthletic')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+	<set xpath="items/item[starts-with(@name, 'armorEnforcer')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+
+	<set xpath="items/item[starts-with(@name, 'armorFarmer')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+	<set xpath="items/item[starts-with(@name, 'armorBiker')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+	<set xpath="items/item[starts-with(@name, 'armorScavenger')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+	<set xpath="items/item[starts-with(@name, 'armorRanger')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+	<set xpath="items/item[starts-with(@name, 'armorCommando')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+	<set xpath="items/item[starts-with(@name, 'armorAssassin')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+
+	<set xpath="items/item[starts-with(@name, 'armorMiner')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+	<set xpath="items/item[starts-with(@name, 'armorNomad')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+	<set xpath="items/item[starts-with(@name, 'armorNerd')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+	<set xpath="items/item[starts-with(@name, 'armorRaider')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,2,3,4</set>
+	
+	<set xpath="items/item[starts-with(@name, 'gunBot')]/effect_group/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="items/item[@name='gunExplosivesT3RocketLauncher']/effect_group[@name='gunExplosivesT3RocketLauncher']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+	<set xpath="items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+	<set xpath="items/item[@name='gunRifleT3SniperRifle']/effect_group[@name='gunRifleT3SniperRifle']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+	<set xpath="items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+
+
+	<!-- books - open green / closed red-->
+	<append xpath="/items/item[starts-with(@name,'modTM')]"> <property name="Group" value="SchematicsOnly,TCReading,Tongo"/> </append>
+	<append xpath="/items/item[starts-with(@name,'ModTM')]"> <property name="Group" value="SchematicsOnly,TCReading,Tongo"/> </append>
+
+
+	<!-- downgrade super biker for TongoMod normal mode -->
+
+	<append xpath="/items/item[@name='meleeHandZombieSuperBikerTM']">
+		<property class="Action0">
+			<property name="DamageEntity" value="100"/>
+			<property name="DamageBlock" value="250"/>
+		</property>
+	</append>
+
+
+	<!-- * REWRITE VANILLA ITEMS (PARCHED TEMPORALY) -->
+	<remove xpath="/items/item[@name='foodRawMeatBundle']"/>
+	<append xpath="/items">
+		<item name="foodRawMeatBundle">
+			<property name="CustomIcon" value="foodRawMeatBundle"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="HoldType" value="31"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<!--<property name="Stacknumber" value="10"/>-->
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="100"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="Group" value="Food/Cooking,Basics"/>
+			<property name="SoundPickup" value="meat_raw_grab"/>
+			<property name="SoundPlace" value="meat_raw_place"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="foodRawMeat"/>
+				<property name="Create_item_count" value="5"/>
+			</property>
+		</item>
+	</append>
+
+	<remove xpath="/items/item[@name='foodHoney']"/>
+	<append xpath="/items">
+		<item name="foodHoney">
+			<property name="Tags" value="food,medical,medicalSkill,fitness,farmerFoodBonus"/>
+			<property name="HoldType" value="3"/>
+			<property name="DisplayType" value="foodCureInfection"/>
+			<property name="Meshfile" value="@:Other/Items/Food/masonJarBeerPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="80"/>
+			<!--<property name="Stacknumber" value="10"/>-->
+			<property name="Stacknumber" value="500"/>
+			<property name="Group" value="Science,CFChemicals,Medical,TCMedical"/>
+			<property name="SoundPickup" value="jars_grab"/>
+			<property name="SoundPlace" value="jars_place"/>
+			<property name="TrackerIndexName" value="challenge_stump"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="4"/>
+				<property name="Sound_start" value="player_drinking"/>
+				<property name="Create_item" value="drinkJarEmpty"/>
+				<property name="Use_jar_refund" value="true"/>
+			</property>
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="8"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthFarmer" operation="set" value="3">
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+
+				<display_value name="dCureInfection" value=".05"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>
+			</effect_group>
+		</item>
+	</append>
+
+
+
+
+	<append xpath="/items">
+
+		<!-- *** RADIAL HARD QUEST -->
+
+		<!-- * LETTER HARD-->
+		<item name="questLetterHardTM">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="questLetterTM"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questLetterHardTMDesc"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="EconomicValue" value="500"/>
+			<!--<property name="TraderStageTemplate" value="baseTier3"/>-->
+			<property name="TraderStageTemplate" value="ammoTier3"/>
+			<property class="Action0">
+				<property name="Class" value="OpenLootBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="LootList" value="questLetterHardTM"/>
+			</property>
+		</item>
+
+		<!-- * QUESTS HARD -->
+		<item name="quest_radialHard1">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard1"/>
+				<property name="DescriptionKey" value="quest_radialHard1Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard2">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard2"/>
+				<property name="DescriptionKey" value="quest_radialHard2Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard3">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard3"/>
+				<property name="DescriptionKey" value="quest_radialHard3Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard4">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard4"/>
+				<property name="DescriptionKey" value="quest_radialHard4Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard5">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard5"/>
+				<property name="DescriptionKey" value="quest_radialHard5Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard6">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard6"/>
+				<property name="DescriptionKey" value="quest_radialHard6Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard7">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard7"/>
+				<property name="DescriptionKey" value="quest_radialHard7Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard8">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard8"/>
+				<property name="DescriptionKey" value="quest_radialHard8Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard9">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard9"/>
+				<property name="DescriptionKey" value="quest_radialHard9Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard10">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard10"/>
+				<property name="DescriptionKey" value="quest_radialHard10Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard11">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard11"/>
+				<property name="DescriptionKey" value="quest_radialHard11Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard12">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard12"/>
+				<property name="DescriptionKey" value="quest_radialHard12Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard13">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard13"/>
+				<property name="DescriptionKey" value="quest_radialHard13Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard14">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard14"/>
+				<property name="DescriptionKey" value="quest_radialHard14Desc" />
+			</property>
+		</item>
+
+		<item name="quest_radialHard15">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="questRadialHard15"/>
+				<property name="DescriptionKey" value="quest_radialHard15Desc" />
+			</property>
+		</item>
+
+		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+		
+		<!-- easy mode -->
+		<item name="itemEasyModeTM">
+			<property name="CustomIcon" value="itemEasyModeTM"/>
+			<property name="CustomIconTint" value="f4fb2f"/>
+			<property name="DescriptionKey" value="itemEasyModeTMDesc"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="@:Other/Items/Health/pillBottlePrefab.prefab"/>
+			<property name="DisplayType" value="medicalPainkillers"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_painkillers"/>
+				<requirement name="!HasBuff" buff="buffEasyModeTM"/>
+			</property>
+			<property name="Group" value="Science,CFChemicals,TCMedical,Medical"/>
+
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffHardModeTM"></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffEasyModeTM"/>
+			</effect_group>
+		</item>
+
+		<!-- hard mode -->
+		<item name="itemHardModeTM">
+			<property name="CustomIcon" value="itemHardModeTM"/>
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="DescriptionKey" value="itemHardModeTMDesc"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="@:Other/Items/Health/pillBottlePrefab.prefab"/>
+			<property name="DisplayType" value="medicalPainkillers"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_painkillers"/>
+				<requirement name="!HasBuff" buff="buffHardModeTM"/>
+			</property>
+			<property name="Group" value="Science,CFChemicals,TCMedical,Medical"/>
+
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffEasyModeTM"></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffHardModeTM"/>
+			</effect_group>
+		</item>
+
+		<!-- normal mode -->
+		<item name="itemNormalModeTM">
+			<property name="CustomIcon" value="itemNormalModeTM"/>
+			<property name="CustomIconTint" value="157b01"/>
+			<property name="DescriptionKey" value="itemNormalModeTMDesc"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="@:Other/Items/Health/pillBottlePrefab.prefab"/>
+			<property name="DisplayType" value="medicalPainkillers"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_painkillers"/>
+			</property>
+			<property name="Group" value="Science,CFChemicals,TCMedical,Medical"/>
+
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffEasyModeTM"></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffHardModeTM"></triggered_effect>
+			</effect_group>
+		</item>
+		
+		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+
+
+	</append>
+</raiz>

@@ -1,0 +1,357 @@
+<configs>
+	
+	<append xpath="/blocks">
+		
+		<block name="TMAbandoneBox">
+			<property name="Class" value="CompositeTileEntity"/>
+			<property class="CompositeFeatures">
+				<property class="TEFeatureStorage">
+					<property name="LootList" value="TMStorageXL" />
+				</property>
+			</property>
+			<property name="CustomIcon" value="TMAbandoneBox"/>
+			<property name="DescriptionKey" value="TMAbandonedBoxDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMAbandoneBoxPrefab"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="Path" value="solid"/>
+			<property name="SortOrder1" value="B103"/>
+			<property name="SortOrder2" value="0001"/>
+			<property name="FilterTags" value="MC_building,SC_loot,MC_helpers,SC_treasureRoom"/>
+			<property name="SortOrder1" value="B967"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+		
+		<block name="TMDropBox">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="DropBoxContainer, TM"/>			
+			<property class="CompositeFeatures">
+				<property class="TEFeatureStorage">
+					<property name="LootList" value="TMStorageDBXL" />
+				</property>
+			</property>
+			<property name="CustomIcon" value="TMDropBox"/>
+			<property name="DescriptionKey" value="TMDropBoxDesc"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMDropBoxPrefab"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Texture" value="572"/>
+			<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="FuelValue" value="300"/>
+			<property name="EconomicValue" value="6"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+				<property name="resourcePaint" value="1"/>				
+			</property>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building"/>
+			<property name="Tags" value="timecharge"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+			<property name="SortOrder1" value="B103"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="SortOrder1" value="B967"/>
+			<property name="SortOrder2" value="0000"/>		
+			<property name="UpdateTick" value="200" />
+			<property name="DropBox" value="true" />
+			<property name="TakeDelay" value="2"/>
+		</block>
+		
+		<block name="TMStorageBox">
+			<property name="CreativeMode" value="Player"/>			
+			<property name="Class" value="SecureLootTake, TM"/>
+			<property class="CompositeFeatures">
+				<property class="TEFeatureStorage">
+					<property name="LootList" value="TMStorageXL" />
+				</property>
+			</property>
+			<property name="TakeDelay" value="2"/>			
+			<property name="CustomIcon" value="TMStorageBox"/>
+			<property name="DescriptionKey" value="TMStorageBoxDesc"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMStorageBoxPrefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="AllowedRotations" value="Basic90"/>
+			<property name="FuelValue" value="300"/>
+			<property name="EconomicValue" value="6"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="10"/>
+				<property name="resourcePaint" value="1"/>				
+			</property>
+			<drop event="Destroy" name="resourceScrapIron" count="5,10"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>			
+			<property name="Texture" value="572"/>			
+			<property name="Group" value="Building"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+			<property name="PlaceAltBlockValue" value="TMAmmoBox,TMArmorBox,TMBox,TMCementBox,TMChemistryBox,TMConstructionBox,TMCropBox,TMDrinkBox,TMElectricityBox,TMFoodBox,TMFoodDrinkBox,TMForgeBox,TMMagazineBox,TMMedicalBox,TMModBox,TMOtherBox,TMPartBox,TMResourceBox,TMStorageBox,TMToolBox,TMTrapBox,TMVehicleBox,TMVendorBox,TMWeaponBox"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0000"/>
+		</block>
+		
+		<block name="TMAmmoBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMAmmoBox"/>
+			<property name="DescriptionKey" value="TMAmmoBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMAmmoBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+		
+		<block name="TMArmorBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMArmorBox"/>
+			<property name="DescriptionKey" value="TMArmorBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMArmorBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+		
+		<block name="TMBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMBox"/>
+			<property name="DescriptionKey" value="TMBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+		
+		<block name="TMCementBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMCementBox"/>
+			<property name="DescriptionKey" value="TMCementBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMCementBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+		
+		<block name="TMChemistryBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMChemistryBox"/>
+			<property name="DescriptionKey" value="TMChemistryBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMChemistryBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+		
+		<block name="TMConstructionBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMConstructionBox"/>
+			<property name="DescriptionKey" value="TMConstructionBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMConstructionBox"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+		
+		<block name="TMCropBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMCropBox"/>
+			<property name="DescriptionKey" value="TMCropBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMCropBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+		
+		<block name="TMDrinkBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMDrinkBox"/>
+			<property name="DescriptionKey" value="TMDrinkBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMDrinkBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+		
+		<block name="TMElectricityBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMElectricityBox"/>
+			<property name="DescriptionKey" value="TMElectricityBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMElectricityBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+		
+		<block name="TMFoodBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMFoodBox"/>
+			<property name="DescriptionKey" value="TMFoodBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMFoodBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+		
+		<block name="TMFoodDrinkBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMFoodDrinkBox"/>
+			<property name="DescriptionKey" value="TMFoodDrinkBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMFoodDrinkBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+		
+		<block name="TMForgeBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMForgeBox"/>
+			<property name="DescriptionKey" value="TMForgeBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMForgeBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+		
+		<block name="TMMagazineBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMMagazineBox"/>
+			<property name="DescriptionKey" value="TMMagazineBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMMagazineBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0011"/>
+		</block>
+		
+		<block name="TMMedicalBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMMedicalBox"/>
+			<property name="DescriptionKey" value="TMMedicalBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMMedicalBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0012"/>
+		</block>
+		
+		<block name="TMModBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMModBox"/>
+			<property name="DescriptionKey" value="TMPartBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMModBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0013"/>
+		</block>
+		
+		<block name="TMOtherBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMOtherBox"/>
+			<property name="DescriptionKey" value="TMOtherBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMOtherBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0014"/>
+		</block>
+		
+		<block name="TMPartBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMPartBox"/>
+			<property name="DescriptionKey" value="TMPartBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMPartBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0015"/>
+		</block>
+		
+		<block name="TMResourceBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMResourceBox"/>
+			<property name="DescriptionKey" value="TMResourceBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMResourceBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0016"/>
+		</block>
+		
+		<block name="TMToolBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMToolBox"/>
+			<property name="DescriptionKey" value="TMToolBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMToolBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0017"/>
+		</block>
+		
+		<block name="TMTrapBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMTrapBox"/>
+			<property name="DescriptionKey" value="TMTrapBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMTrapBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0018"/>
+		</block>
+		
+		<block name="TMVehicleBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMVehicleBox"/>
+			<property name="DescriptionKey" value="TMVehicleBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMVehicleBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0019"/>
+		</block>
+		
+		<block name="TMVendorBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMVendorBox"/>
+			<property name="DescriptionKey" value="TMVendorBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMVendorBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0020"/>
+		</block>
+		
+		<block name="TMWeaponBox">
+			<property name="Extends" value="TMStorageBox" param1="Model"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="TMWeaponBox"/>
+			<property name="DescriptionKey" value="TMWeaponBoxDesc"/>
+			<property name="Model" value="#@modfolder:Resources/TMStorage.unity3d?TMWeaponBoxPrefab"/>
+			<property name="SortOrder1" value="B966"/>
+			<property name="SortOrder2" value="0021"/>
+		</block>		
+		
+		<block name="TMbarbedWireSpindle1m">
+			<property name="Extends" value="barbedWireSpindle1m"/>
+			<property name="CustomIcon" value="TMBarbedWireC"/>
+			<property name="Damage_received" value="1"/>
+			<property name="DescriptionKey" value="TMbarbedWireSpindleDesc"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="Damage" value="6"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="Damage_received" value="2"/>
+			<property name="CanPickup" value="true"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="DamageBuffs" value="buffInjuryBleeding"/>
+		</block>
+		
+		<block name="TMbarbedWireSpindle">
+			<property name="Extends" value="barbedWireSpindle"/>
+			<property name="CustomIcon" value="TMBarbedWireL"/>
+			<property name="Damage_received" value="1"/>
+			<property name="DescriptionKey" value="TMbarbedWireSpindleDesc"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="Damage" value="6"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="Damage_received" value="2"/>
+			<property name="CanPickup" value="true"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="DamageBuffs" value="buffInjuryBleeding"/>
+		</block>
+		
+	</append>
+	
+</configs>
